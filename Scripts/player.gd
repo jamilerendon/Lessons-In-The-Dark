@@ -25,6 +25,9 @@ func read_input():
 	direction = direction.normalized()
 	velocity = direction * 200 #sets the built-in CharacterBody2D velocity
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	read_input()
 	move_and_slide() #allows the character to move using the self velocity.
+
+func _ready():
+	add_to_group("player")
