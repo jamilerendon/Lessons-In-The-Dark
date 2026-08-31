@@ -1,26 +1,34 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1787978867
-icon.svg::CompressedTexture2D::954189520467983847::1787966293::1787966298::1::::<><><>0<>0<>2aac00574a14862501bcfe174ad1de02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile::-1::1787352084::0::1::::<><><>0<>0<><>::
-::res://Assets/::1787973117
-Changelog.txt::TextFile::-1::1787968553::0::1::::<><><>0<>0<><>::
-CharacterOneBase_2.png::CompressedTexture2D::3309434338558667043::1787476039::1787968109::1::::<><><>0<>0<>c37e9df054d77637ce560fe1664ad7cb<>res://.godot/imported/CharacterOneBase_2.png-33be1c988a3e3f455c909f3072593b5c.ctex::
-Scene Overview.png::CompressedTexture2D::6918693081835244609::1787968553::1787968567::1::::<><><>0<>0<>f4a3611ddc671cb1f52065bc6168efe8<>res://.godot/imported/Scene Overview.png-91fdda06bcbe292c2fc2e37947216af7.ctex::
-::res://Assets/Texture/::1787973117
-TX Plant.png::CompressedTexture2D::5325175665714855548::1787968552::1787968567::1::::<><><>0<>0<>35365c0c303682433426eba028abd20f<>res://.godot/imported/TX Plant.png-cdc3dfc1de470359be30cd5edc5763c3.ctex::
-TX Player.png::CompressedTexture2D::7387728788246220763::1787968552::1787968567::1::::<><><>0<>0<>3a3708729146b89450b1a6a919c74aab<>res://.godot/imported/TX Player.png-c1679b20be22ee111819ac1e3bd6a7b8.ctex::
-TX Props.png::CompressedTexture2D::6380040763140711720::1787968552::1787968567::1::::<><><>0<>0<>fb1f2c791e8970c4759762388932f33f<>res://.godot/imported/TX Props.png-d70ab2725925c8e1fb6dc1819d02a5a9.ctex::
-TX Shadow Plant.png::CompressedTexture2D::9019043447391229201::1787968552::1787968567::1::::<><><>0<>0<>4a739787847df6891784df1f67c24546<>res://.godot/imported/TX Shadow Plant.png-51bb6b29f8ab22feac34d8027535667f.ctex::
-TX Shadow.png::CompressedTexture2D::5841240472353838612::1787968552::1787968567::1::::<><><>0<>0<>f3086e5bc2b6ff5d01ee129acc8d4d6b<>res://.godot/imported/TX Shadow.png-85d4bd67b5ec7b4f384cf88f04423a9d.ctex::
-TX Struct.png::CompressedTexture2D::1359556495285593430::1787968552::1787968567::1::::<><><>0<>0<>39fe315020cdbb15978b47d7b4876972<>res://.godot/imported/TX Struct.png-9e84bfc1af9eeeea9ebfa37f501f715c.ctex::
-TX Tileset Grass.png::CompressedTexture2D::2136102577653174435::1787968552::1787968567::1::::<><><>0<>0<>572d93e4659ce5e891809b7af9322e2e<>res://.godot/imported/TX Tileset Grass.png-6939de88de186715a6bca23a916bd522.ctex::
-TX Tileset Stone Ground.png::CompressedTexture2D::8384818870539638935::1787968552::1787968567::1::::<><><>0<>0<>f185f64f3bb7933a5aee454ba38acedc<>res://.godot/imported/TX Tileset Stone Ground.png-a92e54d06102ab1e012a6dde3f34225b.ctex::
-TX Tileset Wall.png::CompressedTexture2D::5856943050297932478::1787968552::1787968567::1::::<><><>0<>0<>99c61fbd1a4d284b4c593597bad11a7c<>res://.godot/imported/TX Tileset Wall.png-18e4758e192c4e58b40f4d5da351132c.ctex::
-::res://Assets/Texture/Extra/::1787973117
-TX Plant with Shadow.png::CompressedTexture2D::474971803137623151::1787968552::1787968567::1::::<><><>0<>0<>9ed6248eb6c6a05804103be22137ef72<>res://.godot/imported/TX Plant with Shadow.png-506b28fe1cd8bdfe8fb785a3301adf01.ctex::
-TX Props with Shadow.png::CompressedTexture2D::1756833885601223784::1787968552::1787968567::1::::<><><>0<>0<>d1ef1cfb8e221c296749afe04b8cda52<>res://.godot/imported/TX Props with Shadow.png-92c0ad1f2866f07f6413f755fc600375.ctex::
-::res://Scene/::1787974087
-Main.tscn::PackedScene::1645056518068185656::1787974087::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://cxxwgiy6njsrw::::res://Scene/Player.tscn
-Player.tscn::PackedScene::6436012406696966168::1787971174::0::1::::<><><>0<>0<><>::uid://be2mh5512lj1c::::res://Scripts/player.gd<>uid://bnfd5upicepdb::::res://Assets/CharacterOneBase_2.png
-::res://Scripts/::1787973117
-player.gd::GDScript::2723656985337858914::1787971550::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1788130041
+icon.svg::CompressedTexture2D::954189520467983847::1787980415::1787980415::1::::<><><>0<>0<>2aac00574a14862501bcfe174ad1de02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1787980415::0::1::::<><><>0<>0<><>::
+::res://Assets/::1787980415
+Changelog.txt::TextFile::-1::1787980415::0::1::::<><><>0<>0<><>::
+CharacterOneBase_2.png::CompressedTexture2D::3309434338558667043::1787980415::1787980415::1::::<><><>0<>0<>c37e9df054d77637ce560fe1664ad7cb<>res://.godot/imported/CharacterOneBase_2.png-33be1c988a3e3f455c909f3072593b5c.ctex::
+Scene Overview.png::CompressedTexture2D::6918693081835244609::1787980415::1787980415::1::::<><><>0<>0<>f4a3611ddc671cb1f52065bc6168efe8<>res://.godot/imported/Scene Overview.png-91fdda06bcbe292c2fc2e37947216af7.ctex::
+::res://Assets/Texture/::1787980415
+TX Plant.png::CompressedTexture2D::5325175665714855548::1787980415::1787980415::1::::<><><>0<>0<>35365c0c303682433426eba028abd20f<>res://.godot/imported/TX Plant.png-cdc3dfc1de470359be30cd5edc5763c3.ctex::
+TX Player.png::CompressedTexture2D::7387728788246220763::1787980415::1787980415::1::::<><><>0<>0<>3a3708729146b89450b1a6a919c74aab<>res://.godot/imported/TX Player.png-c1679b20be22ee111819ac1e3bd6a7b8.ctex::
+TX Props.png::CompressedTexture2D::6380040763140711720::1787980415::1787980415::1::::<><><>0<>0<>fb1f2c791e8970c4759762388932f33f<>res://.godot/imported/TX Props.png-d70ab2725925c8e1fb6dc1819d02a5a9.ctex::
+TX Shadow Plant.png::CompressedTexture2D::9019043447391229201::1787980415::1787980415::1::::<><><>0<>0<>4a739787847df6891784df1f67c24546<>res://.godot/imported/TX Shadow Plant.png-51bb6b29f8ab22feac34d8027535667f.ctex::
+TX Shadow.png::CompressedTexture2D::5841240472353838612::1787980415::1787980415::1::::<><><>0<>0<>f3086e5bc2b6ff5d01ee129acc8d4d6b<>res://.godot/imported/TX Shadow.png-85d4bd67b5ec7b4f384cf88f04423a9d.ctex::
+TX Struct.png::CompressedTexture2D::1359556495285593430::1787980415::1787980415::1::::<><><>0<>0<>39fe315020cdbb15978b47d7b4876972<>res://.godot/imported/TX Struct.png-9e84bfc1af9eeeea9ebfa37f501f715c.ctex::
+TX Tileset Grass.png::CompressedTexture2D::2136102577653174435::1787980415::1787980415::1::::<><><>0<>0<>572d93e4659ce5e891809b7af9322e2e<>res://.godot/imported/TX Tileset Grass.png-6939de88de186715a6bca23a916bd522.ctex::
+TX Tileset Stone Ground.png::CompressedTexture2D::8384818870539638935::1787980415::1787980415::1::::<><><>0<>0<>f185f64f3bb7933a5aee454ba38acedc<>res://.godot/imported/TX Tileset Stone Ground.png-a92e54d06102ab1e012a6dde3f34225b.ctex::
+TX Tileset Wall.png::CompressedTexture2D::5856943050297932478::1787980415::1787980415::1::::<><><>0<>0<>99c61fbd1a4d284b4c593597bad11a7c<>res://.godot/imported/TX Tileset Wall.png-18e4758e192c4e58b40f4d5da351132c.ctex::
+::res://Assets/Texture/Extra/::1787980415
+TX Plant with Shadow.png::CompressedTexture2D::474971803137623151::1787980415::1787980415::1::::<><><>0<>0<>9ed6248eb6c6a05804103be22137ef72<>res://.godot/imported/TX Plant with Shadow.png-506b28fe1cd8bdfe8fb785a3301adf01.ctex::
+TX Props with Shadow.png::CompressedTexture2D::1756833885601223784::1787980415::1787980415::1::::<><><>0<>0<>d1ef1cfb8e221c296749afe04b8cda52<>res://.godot/imported/TX Props with Shadow.png-92c0ad1f2866f07f6413f755fc600375.ctex::
+::res://Doors/::1788070196
+room_1_to_room_2.gd::GDScript::1454390186893741039::1788067625::0::1::::<>Area2D<><>0<>0<><>::
+room_2_to_room_1.gd::GDScript::1681655847293070426::1788070196::0::1::::<>Area2D<><>0<>0<><>::
+::res://Scene/::1788071461
+fade.tscn::PackedScene::5824832759688106315::1788067956::0::1::::<><><>0<>0<><>::uid://csapf7y5xvgnw::::res://Scripts/transition_manager.gd
+Main.tscn::PackedScene::1645056518068185656::1788071450::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://balb3y3uekskl::::res://Scripts/room.gd<>uid://cxxwgiy6njsrw::::res://Scene/Player.tscn<>uid://uyrugshl5ut0::::res://Doors/room_1_to_room_2.gd
+Player.tscn::PackedScene::6436012406696966168::1788071452::0::1::::<><><>0<>0<><>::uid://be2mh5512lj1c::::res://Scripts/player.gd<>uid://bnfd5upicepdb::::res://Assets/CharacterOneBase_2.png
+Room2.tscn::PackedScene::3237990859915026595::1788071451::0::1::::<><><>0<>0<><>::uid://balb3y3uekskl::::res://Scripts/room.gd<>uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://cxxwgiy6njsrw::::res://Scene/Player.tscn<>uid://x7uvj1x5xe7s::::res://Doors/room_2_to_room_1.gd
+TransitionManager.tscn::PackedScene::8619002402199391615::1788071461::0::1::::<><><>0<>0<><>::uid://csapf7y5xvgnw::::res://Scripts/transition_manager.gd
+::res://Scripts/::1788071392
+player.gd::GDScript::2723656985337858914::1788061794::0::1::::<>CharacterBody2D<><>0<>0<><>::
+room.gd::GDScript::2409240862939257271::1788071392::0::1::::<>Node2D<><>0<>0<><>::
+transition_manager.gd::GDScript::6037161955948948288::1788070951::0::1::::<>CanvasLayer<><>0<>0<><>::
