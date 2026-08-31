@@ -31,3 +31,8 @@ func _physics_process(_delta):
 
 func _ready():
 	add_to_group("player")
+	var camera = get_node_or_null("Camera2D")
+	if camera:
+		camera.make_current()
+	else:
+		print("Camera2D not found as a child of Player!")

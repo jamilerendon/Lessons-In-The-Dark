@@ -18,5 +18,4 @@ texture = ExtResource("1_6l3be")
 position = Vector2(2, 0.5)
 shape = SubResource("RectangleShape2D_xvx6h")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2124938979]
-limit_enabled = false
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=2124938979]
