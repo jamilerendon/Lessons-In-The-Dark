@@ -1,4 +1,3 @@
+res://Scripts/player.gd
 res://Scripts/room.gd
 res://Scene/Player.tscn
-res://Scene/Main.tscn
-res://Scene/Room2.tscn
