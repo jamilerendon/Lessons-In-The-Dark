@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://5o0kd0wfswv8" path="res://Assets/Texture/TX Tileset Grass.png" id="2_yqnxu"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="3_i11sh"]
 [ext_resource type="Script" uid="uid://x7uvj1x5xe7s" path="res://Doors/TestTilemap_to_Tilemap1.gd" id="4_w57gw"]
+[ext_resource type="PackedScene" uid="uid://bg0n7sksj0r3q" path="res://Scene/Menu/PauseMenu.tscn" id="5_yqnxu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0m5d6"]
 texture = ExtResource("2_yqnxu")
@@ -236,5 +237,9 @@ script = ExtResource("4_w57gw")
 position = Vector2(-0.002929693, -0.139992)
 scale = Vector2(1.0000076, 1.0009921)
 polygon = PackedVector2Array(386, 160, 387, 160, 387, 223, 386, 223)
+
+[node name="Pause" type="CanvasLayer" parent="." unique_id=276416095]
+
+[node name="PauseMenu" parent="Pause" unique_id=1646227912 instance=ExtResource("5_yqnxu")]
 
 [connection signal="body_entered" from="Door to Room 1" to="Door to Room 1" method="_on_body_entered"]

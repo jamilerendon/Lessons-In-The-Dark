@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://balb3y3uekskl" path="res://Scripts/TilemapSettings.gd" id="1_r5vua"]
 [ext_resource type="Texture2D" uid="uid://5o0kd0wfswv8" path="res://Assets/Texture/TX Tileset Grass.png" id="2_nivak"]
+[ext_resource type="PackedScene" uid="uid://bg0n7sksj0r3q" path="res://Scene/Menu/PauseMenu.tscn" id="3_nivak"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="3_s0l11"]
 [ext_resource type="Script" uid="uid://uyrugshl5ut0" path="res://Doors/Tilemap1_to_TestTilemap.gd" id="4_mlr5m"]
 
@@ -233,5 +234,10 @@ position = Vector2(337, 350)
 
 [node name="Default" type="Marker2D" parent="." unique_id=2009778059]
 position = Vector2(65, 192)
+
+[node name="Pause" type="CanvasLayer" parent="." unique_id=1748455657]
+
+[node name="PauseMenu" parent="Pause" unique_id=1646227912 instance=ExtResource("3_nivak")]
+size_flags_horizontal = 4
 
 [connection signal="body_entered" from="Door to Room 2" to="Door to Room 2" method="_on_body_entered"]
