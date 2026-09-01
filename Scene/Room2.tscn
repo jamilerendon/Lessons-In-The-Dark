@@ -223,7 +223,7 @@ position = Vector2(65, 191)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions" unique_id=726890118]
 polygon = PackedVector2Array(385, 319, 384, -1, -1, 0, -256, 0, -256, 384, 289, 384, 289, 388, -258, 386, -257, -2, 385, -2, 386, 195, 386, 319)
 
-[node name="EntryDefault" type="Marker2D" parent="." unique_id=84068842]
+[node name="Default" type="Marker2D" parent="." unique_id=84068842]
 position = Vector2(419, 190)
 
 [node name="EntryFromRoom1" type="Marker2D" parent="." unique_id=1266106018]

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://du2dyfed1ud32"]
 
-[ext_resource type="Script" uid="uid://csapf7y5xvgnw" path="res://Scripts/transition_manager.gd" id="1_myqf3"]
+[ext_resource type="Script" uid="uid://csapf7y5xvgnw" path="res://Scripts/Transition.gd" id="1_sdr44"]
 
 [node name="TransitionManager" type="CanvasLayer" unique_id=1612142552]
-script = ExtResource("1_myqf3")
+script = ExtResource("1_sdr44")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=420317055]
 modulate = Color(1, 1, 1, 0)
