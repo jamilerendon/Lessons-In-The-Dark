@@ -1,13 +1,11 @@
 extends CanvasLayer
 
 @onready var fade_rect: ColorRect = $ColorRect
-var next_entry_point: String = "Default"
+var next_poe: String = "Default" #next_poe means the next point of entry
 
-func go_to_room(scene_path: String, entry_point_name: String):
-	next_entry_point = entry_point_name
-	print("go_to_room called with entry point: ", entry_point_name)
+func room_change(scene: String, _poe_name: String):
 	await fade_out()
-	get_tree().call_deferred("change_scene_to_file", scene_path)
+	get_tree().call_deferred("change_scene_to_file", scene)
 	await get_tree().process_frame # wait a frame for new scene to load
 	await fade_in()
 
