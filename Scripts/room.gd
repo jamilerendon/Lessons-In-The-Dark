@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	var entry_name = TransitionManager.next_entry_point
+	var entry_name = Transition.next_entry_point
 	var marker = get_node_or_null(entry_name)
 	var player = get_node_or_null("Player")
 	
@@ -21,6 +21,7 @@ func set_camera_behavior(camera: Camera2D, tilemap: TileMap) -> void:
 	var top_left_px = Vector2(used_rect.position * cell_size) + tilemap.global_position
 	var bottom_right_px = Vector2((used_rect.position + used_rect.size) * cell_size) + tilemap.global_position
 	
+<<<<<<< Updated upstream
 	var room_width = bottom_right_px.x - top_left_px.x
 	var room_height = bottom_right_px.y - top_left_px.y
 	var viewport_size = camera.get_viewport_rect().size
@@ -51,3 +52,9 @@ func set_camera_behavior(camera: Camera2D, tilemap: TileMap) -> void:
 		camera.limit_right = 10000000
 		camera.limit_bottom = 10000000
 		camera.position_smoothing_enabled = true
+=======
+	camera.limit_left = int(top_left_px.x)
+	camera.limit_top = int(top_left_px.y)
+	camera.limit_right = int(bottom_right_px.x)
+	camera.limit_bottom = int(bottom_right_px.y)
+>>>>>>> Stashed changes

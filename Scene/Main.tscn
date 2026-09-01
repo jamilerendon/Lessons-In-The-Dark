@@ -231,7 +231,7 @@ polygon = PackedVector2Array(384, 320, 383, 320, 383, 383, 289, 383, 289, 384, 3
 [node name="EntryFromRoom2" type="Marker2D" parent="." unique_id=825250715]
 position = Vector2(337, 350)
 
-[node name="EntryDefault" type="Marker2D" parent="." unique_id=2009778059]
+[node name="Default" type="Marker2D" parent="." unique_id=2009778059]
 position = Vector2(65, 192)
 
 [connection signal="body_entered" from="Door to Room 2" to="Door to Room 2" method="_on_body_entered"]

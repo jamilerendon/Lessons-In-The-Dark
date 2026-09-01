@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 @onready var fade_rect: ColorRect = $ColorRect
-var next_entry_point: String = "EntryDefault"
+var next_entry_point: String = "Default"
 
 func go_to_room(scene_path: String, entry_point_name: String):
 	next_entry_point = entry_point_name
