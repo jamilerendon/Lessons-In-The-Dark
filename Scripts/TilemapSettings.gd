@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	var entry_name = Transition.next_entry_point
+	var entry_name = Transition.next_poe
 	var marker = get_node_or_null(entry_name)
 	var player = get_node_or_null("Player")
 	
@@ -12,11 +12,11 @@ func _ready():
 		var camera = player.get_node_or_null("CharacterBody2D/Camera2D")
 		var tilemap = get_node_or_null("TileMap")
 		if camera and tilemap:
-			clamp_camera_to_tilemap(camera, tilemap)
+			lock_camera_to_tilemap(camera, tilemap)
 		else:
-			print("SKIPPED clamping — camera or tilemap was null")
+			print("Skipped locking, camera or tilemap was null")
 
-func clamp_camera_to_tilemap(camera: Camera2D, tilemap: TileMap) -> void:
+func lock_camera_to_tilemap(camera: Camera2D, tilemap: TileMap) -> void:
 	var used_rect: Rect2i = tilemap.get_used_rect()
 	var cell_size: Vector2i = tilemap.tile_set.tile_size
 	
