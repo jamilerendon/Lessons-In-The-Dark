@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://b3tnjnrvhvbbw"]
+
+[ext_resource type="Script" uid="uid://dw8jypu1efae5" path="res://Scripts/MainMenu.gd" id="1_v5mi7"]
+[ext_resource type="FontFile" uid="uid://dfkdbs8f7wygw" path="res://Scene/Menu/Milky Cream.otf" id="2_60v5t"]
+[ext_resource type="Script" uid="uid://desd00t8yedbt" path="res://Scripts/DisplaySettings.gd" id="3_kbsla"]
+[ext_resource type="Script" uid="uid://3f7fs3xj6km2" path="res://Scripts/MainVolume.gd" id="3_q7bsc"]
+[ext_resource type="Script" uid="uid://cc6rlpa2s5qh0" path="res://Scripts/MusicVolume.gd" id="4_ng4i6"]
+[ext_resource type="Script" uid="uid://pa872f0t5nuk" path="res://Scripts/SFXVolume.gd" id="5_kbsla"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_xvx6h"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_r56om"]
+color = Color(0.15294118, 0.5411765, 0.9411765, 1)
+thickness = 6
+
+[node name="MainMenu" type="Control" unique_id=1393879052]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_v5mi7")
+
+[node name="MainMenuButtons" type="VBoxContainer" parent="." unique_id=1253919938]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.5
+offset_top = -26.0
+offset_right = 77.5
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="MainMenuButtons" unique_id=292567676]
+layout_mode = 2
+mouse_filter = 1
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="MainMenuButtons" unique_id=291707927]
+layout_mode = 2
+mouse_filter = 1
+text = "Settings"
+
+[node name="Quit Game" type="Button" parent="MainMenuButtons" unique_id=1389408161]
+layout_mode = 2
+mouse_filter = 1
+text = "Quit Game"
+
+[node name="Game Name" type="Label" parent="." unique_id=468723349]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.234375
+anchor_top = 0.16111112
+anchor_right = 0.765625
+anchor_bottom = 0.28333333
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_60v5t")
+theme_override_font_sizes/font_size = 55
+text = "Lessons in the Dark"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="Panel" parent="." unique_id=348527560]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.0
+offset_top = -140.0
+offset_right = 249.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsLabel" type="Label" parent="Settings" unique_id=2121699008]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_right = 96.0
+offset_bottom = 34.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_60v5t")
+theme_override_font_sizes/font_size = 20
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackToMenu" type="Button" parent="Settings" unique_id=508654927]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.75
+offset_top = -31.0
+offset_right = 80.75
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back to Menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings" unique_id=1798698535]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 46.0
+offset_right = 392.0
+offset_bottom = 102.0
+
+[node name="DisplaySettings" type="OptionButton" parent="Settings/VBoxContainer" unique_id=1011424876]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Borderless Windowed"
+popup/item_1/id = 1
+popup/item_2/text = "Windowed"
+popup/item_2/id = 2
+script = ExtResource("3_kbsla")
+
+[node name="Audio Control" type="VBoxContainer" parent="Settings/VBoxContainer" unique_id=1822441593]
+layout_mode = 2
+
+[node name="MainVolume" type="HSlider" parent="Settings/VBoxContainer/Audio Control" unique_id=1387579871]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_xvx6h")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_r56om")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_r56om")
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("3_q7bsc")
+audio_bus_name = "Master"
+
+[node name="MainVolumeLabel" type="Label" parent="Settings/VBoxContainer/Audio Control/MainVolume" unique_id=1492263867]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = -15.0
+offset_right = -2.0
+offset_bottom = 8.0
+grow_vertical = 2
+text = "Main"
+
+[node name="MusicVolume" type="HSlider" parent="Settings/VBoxContainer/Audio Control" unique_id=350086361]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_xvx6h")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_r56om")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_r56om")
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("4_ng4i6")
+audio_bus_name = "Music"
+
+[node name="MusicVolumeLabel" type="Label" parent="Settings/VBoxContainer/Audio Control/MusicVolume" unique_id=884079023]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -13.0
+offset_right = -3.0
+offset_bottom = 10.0
+grow_vertical = 2
+text = "Music"
+
+[node name="SFXVolume" type="HSlider" parent="Settings/VBoxContainer/Audio Control" unique_id=1856597416]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_xvx6h")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_r56om")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_r56om")
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("5_kbsla")
+audio_bus_name = "SFX"
+
+[node name="SFXVolumeLabel" type="Label" parent="Settings/VBoxContainer/Audio Control/SFXVolume" unique_id=931376095]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -13.0
+offset_right = -4.0
+offset_bottom = 10.0
+grow_vertical = 2
+text = "SFX"
+
+[connection signal="pressed" from="MainMenuButtons/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MainMenuButtons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MainMenuButtons/Quit Game" to="." method="_on_quit_game_pressed"]
+[connection signal="pressed" from="Settings/BackToMenu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="value_changed" from="Settings/VBoxContainer/Audio Control/MainVolume" to="Settings/VBoxContainer/Audio Control/MainVolume" method="_on_value_changed"]
+[connection signal="value_changed" from="Settings/VBoxContainer/Audio Control/MusicVolume" to="Settings/VBoxContainer/Audio Control/MusicVolume" method="_on_value_changed"]
+[connection signal="value_changed" from="Settings/VBoxContainer/Audio Control/SFXVolume" to="Settings/VBoxContainer/Audio Control/SFXVolume" method="_on_value_changed"]

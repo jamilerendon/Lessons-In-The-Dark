@@ -29,5 +29,17 @@ func _physics_process(_delta):
 	read_input()
 	move_and_slide() #allows the character to move using the self velocity.
 
+func _notification(what):
+	if what == NOTIFICATION_APPLICATION_FOCUS_IN:
+		# Game window is focused
+		if !get_tree().paused:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	
+	if what == NOTIFICATION_APPLICATION_FOCUS_OUT:
+		# Game window lost focus (Alt-Tab, Windows key, clicking outside)
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+
 func _ready():
 	add_to_group("player")
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
