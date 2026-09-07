@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dsru0pb0ktb4f"]
+
+[ext_resource type="Script" uid="uid://ljng2bbcc0nd" path="res://Scene/Dialouge/dialouge_trigger.gd" id="1_5l6a0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbsvi"]
+size = Vector2(122, 96)
+
+[node name="DialougeTrigger" type="Node2D" unique_id=1395628217]
+script = ExtResource("1_5l6a0")
+dialouges = Array[String](["First Line", "Second Line", "Third line", "Fourth Line"])
+speakerNames = Array[String](["First person", "(you)", "First person", "(you)"])
+
+[node name="Trigger" type="Area2D" parent="." unique_id=1294280101]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger" unique_id=1315301036]
+position = Vector2(51, 38)
+shape = SubResource("RectangleShape2D_bbsvi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=527280514]
+offset_right = 103.0
+offset_bottom = 63.0
+
+[connection signal="body_entered" from="Trigger" to="." method="start_dialogue"]

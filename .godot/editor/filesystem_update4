@@ -1,8 +1,6 @@
-res://Scripts/Player.gd
-res://Scripts/PauseMenu.gd
-res://Scene/Menu/MainMenu.tscn
-res://Scene/Menu/PauseMenu.tscn
-res://Scene/Tilemaps/Tilemap1.tscn
 res://Scene/Menu/PauseMenu.gdshader
+res://Scene/dialouge_ui.tscn
+res://Scene/Dialouge/dialouge_trigger.tscn
+res://Scene/Dialouge/dialouge_trigger.gd
+res://Scene/Other/Player.tscn
 res://Scene/Tilemaps/TestTilemap.tscn
-res://Scripts/MainMenu.gd
