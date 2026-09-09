@@ -1,8 +1,13 @@
-res://Scripts/Player.gd
 res://Scripts/PauseMenu.gd
-res://Scene/Menu/MainMenu.tscn
 res://Scene/Menu/PauseMenu.tscn
-res://Scene/Tilemaps/Tilemap1.tscn
 res://Scene/Menu/PauseMenu.gdshader
-res://Scene/Tilemaps/TestTilemap.tscn
+res://Scene/Menu/MainMenu.tscn
+res://Scene/Menu/Settings.tscn
+res://Scripts/Settings.gd
+res://Scripts/Transition.gd
 res://Scripts/MainMenu.gd
+res://Scripts/TilemapSettings.gd
+res://Scene/Other/Fade.tscn
+res://Scene/Other/Player.tscn
+res://Scene/Tilemaps/TestTilemap.tscn
+res://Scene/Tilemaps/Tilemap1.tscn

@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1788289462
+::res://::1788927662
 default_bus_layout.tres::AudioBusLayout::2040905546945627142::1788286387::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1788289155::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::954189520467983847::1788140336::1788140336::1::::<><><>0<>0<>2aac00574a14862501bcfe174ad1de02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -25,24 +25,25 @@ TX Props with Shadow.png::CompressedTexture2D::1756833885601223784::1788140336::
 TestTilemap_to_Tilemap1.gd::GDScript::1681655847293070426::1788251682::0::1::::<>Area2D<><>0<>0<><>::
 Tilemap1_to_TestTilemap.gd::GDScript::1454390186893741039::1788251682::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Scene/::1788281025
-::res://Scene/Menu/::1788289451
-MainMenu.tscn::PackedScene::4391737585965803444::1788289451::0::1::::<><><>0<>0<><>::uid://dw8jypu1efae5::::res://Scripts/MainMenu.gd<>uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf<>uid://desd00t8yedbt::::res://Scripts/DisplaySettings.gd<>uid://3f7fs3xj6km2::::res://Scripts/MainVolume.gd<>uid://cc6rlpa2s5qh0::::res://Scripts/MusicVolume.gd<>uid://pa872f0t5nuk::::res://Scripts/SFXVolume.gd
-MenuSettings.tscn::PackedScene::2582663769013943351::1788283303::0::1::::<><><>0<>0<><>::uid://d0tnfh5knv78s::::res://Scripts/MenuSettings.gd
+::res://Scene/Menu/::1788299514
+MainMenu.tscn::PackedScene::4391737585965803444::1788299514::0::1::::<><><>0<>0<><>::uid://dw8jypu1efae5::::res://Scripts/MainMenu.gd<>uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf<>uid://desd00t8yedbt::::res://Scripts/DisplaySettings.gd<>uid://3f7fs3xj6km2::::res://Scripts/MainVolume.gd<>uid://cc6rlpa2s5qh0::::res://Scripts/MusicVolume.gd<>uid://pa872f0t5nuk::::res://Scripts/SFXVolume.gd
 Milky Cream.otf::FontFile::7531034980251947986::1788283774::1788283774::1::::<><><>0<>0<>ee5d3e5eba606b2076a2b8e8b1742a8a<>res://.godot/imported/Milky Cream.otf-3c3c4d4bd899fcf8f6b99cb19a7f8082.fontdata::
+PauseMenu.gdshader::Shader::5739540985704248756::1788294127::0::1::::<><><>0<>0<><>::
+PauseMenu.tscn::PackedScene::2860010617382925092::1788295197::0::1::::<><><>0<>0<><>::uid://chb22reaifjvn::::res://Scripts/PauseMenu.gd<>uid://cn1jnwdwlamka::::res://Scene/Menu/PauseMenu.gdshader
 ::res://Scene/Other/::1788251764
 Fade.tscn::PackedScene::2004717147261750750::1788247921::0::1::::<><><>0<>0<><>::uid://csapf7y5xvgnw::::res://Scripts/Transition.gd
 Player.tscn::PackedScene::6436012406696966168::1788251764::0::1::::<><><>0<>0<><>::uid://be2mh5512lj1c::::res://Scripts/Player.gd<>uid://bnfd5upicepdb::::res://Assets/CharacterOneBase_2.png
 Transition.tscn::PackedScene::8619002402199391615::1788247824::0::1::::<><><>0<>0<><>::uid://csapf7y5xvgnw::::res://Scripts/Transition.gd
-::res://Scene/Tilemaps/::1788281049
-TestTilemap.tscn::PackedScene::3237990859915026595::1788251626::0::1::::<><><>0<>0<><>::uid://balb3y3uekskl::::res://Scripts/TilemapSettings.gd<>uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://x7uvj1x5xe7s::::res://Doors/TestTilemap_to_Tilemap1.gd
-Tilemap1.tscn::PackedScene::1645056518068185656::1788281049::0::1::::<><><>0<>0<><>::uid://balb3y3uekskl::::res://Scripts/TilemapSettings.gd<>uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://uyrugshl5ut0::::res://Doors/Tilemap1_to_TestTilemap.gd
-::res://Scripts/::1788289106
+::res://Scene/Tilemaps/::1788295488
+TestTilemap.tscn::PackedScene::3237990859915026595::1788295488::0::1::::<><><>0<>0<><>::uid://balb3y3uekskl::::res://Scripts/TilemapSettings.gd<>uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://x7uvj1x5xe7s::::res://Doors/TestTilemap_to_Tilemap1.gd<>uid://bg0n7sksj0r3q::::res://Scene/Menu/PauseMenu.tscn
+Tilemap1.tscn::PackedScene::1645056518068185656::1788295488::0::1::::<><><>0<>0<><>::uid://balb3y3uekskl::::res://Scripts/TilemapSettings.gd<>uid://5o0kd0wfswv8::::res://Assets/Texture/TX Tileset Grass.png<>uid://bg0n7sksj0r3q::::res://Scene/Menu/PauseMenu.tscn<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://uyrugshl5ut0::::res://Doors/Tilemap1_to_TestTilemap.gd
+::res://Scripts/::1788299429
 DisplaySettings.gd::GDScript::7477404364997069761::1788289106::0::1::::<>OptionButton<><>0<>0<><>::
-MainMenu.gd::GDScript::8772131208921807438::1788284726::0::1::::<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8772131208921807438::1788299305::0::1::::<>Control<><>0<>0<><>::
 MainVolume.gd::GDScript::1977562373106355395::1788287140::0::1::::<>HSlider<><>0<>0<><>::
-MenuSettings.gd::GDScript::8954004983712910636::1788283303::0::1::::<>Control<><>0<>0<><>::
 MusicVolume.gd::GDScript::4978267386750364215::1788287140::0::1::::<>HSlider<><>0<>0<><>::
-Player.gd::GDScript::2723656985337858914::1788250748::0::1::::<>CharacterBody2D<><>0<>0<><>::
+PauseMenu.gd::GDScript::5267916124933683747::1788299429::0::1::::<>Control<><>0<>0<><>::
+Player.gd::GDScript::2723656985337858914::1788296263::0::1::::<>CharacterBody2D<><>0<>0<><>::
 SFXVolume.gd::GDScript::1054894887753682534::1788287140::0::1::::<>HSlider<><>0<>0<><>::
 TilemapSettings.gd::GDScript::2409240862939257271::1788250884::0::1::::<>Node2D<><>0<>0<><>::
 Transition.gd::GDScript::6037161955948948288::1788251326::0::1::::<>CanvasLayer<><>0<>0<><>::
