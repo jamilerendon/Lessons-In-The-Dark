@@ -15,6 +15,12 @@ func _ready():
 			lock_camera_to_tilemap(camera, tilemap)
 		else:
 			print("Skipped locking, camera or tilemap was null")
+	
+	if Transition.reopen_pause_menu:
+		Transition.reopen_pause_menu = false
+		var pause_menu = get_node_or_null("Pause/PauseMenu")  # adjust to match actual path
+		if pause_menu:
+			pause_menu.pause()
 
 func lock_camera_to_tilemap(camera: Camera2D, tilemap: TileMap) -> void:
 	var used_rect: Rect2i = tilemap.get_used_rect()
