@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://doxg5ai681w1t"]
+
+[node name="dialouge_ui" type="Control" unique_id=1023885564]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Canvas" type="CanvasLayer" parent="." unique_id=1693578444]
+
+[node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=617731522]
+offset_top = 247.0
+offset_right = 640.0
+offset_bottom = 351.0
+color = Color(0, 0, 0, 1)
+
+[node name="SpeakerName" type="RichTextLabel" parent="Canvas" unique_id=697746614]
+offset_left = 22.0
+offset_top = 247.0
+offset_right = 172.0
+offset_bottom = 287.0
+text = "Speaker Name"
+
+[node name="DialougeText" type="RichTextLabel" parent="Canvas" unique_id=1327571914]
+offset_left = 22.0
+offset_top = 274.0
+offset_right = 625.0
+offset_bottom = 351.0
+text = "This is dialouge Text..."
+
+[node name="Button" type="Button" parent="Canvas" unique_id=1430894970]
+offset_left = 461.0
+offset_top = 318.0
+offset_right = 614.0
+offset_bottom = 349.0
+theme_override_font_sizes/font_size = 13
+text = "Continue"
