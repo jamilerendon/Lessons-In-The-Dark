@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddiw2wy428316"
-path="res://.godot/imported/TX Player.png-c1679b20be22ee111819ac1e3bd6a7b8.ctex"
+path="res://.godot/imported/TX Player.png-fece39cf9c0bbb1a62fea196e47d002f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Texture/TX Player.png"
-dest_files=["res://.godot/imported/TX Player.png-c1679b20be22ee111819ac1e3bd6a7b8.ctex"]
+source_file="res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Player.png"
+dest_files=["res://.godot/imported/TX Player.png-fece39cf9c0bbb1a62fea196e47d002f.ctex"]
 
 [params]
 

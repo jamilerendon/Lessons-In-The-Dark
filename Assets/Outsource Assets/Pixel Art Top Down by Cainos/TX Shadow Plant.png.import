@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1q5lfa8trbm4"
-path="res://.godot/imported/TX Shadow Plant.png-51bb6b29f8ab22feac34d8027535667f.ctex"
+path="res://.godot/imported/TX Shadow Plant.png-7f060cca8f3285fbbada7fe3586991bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Texture/TX Shadow Plant.png"
-dest_files=["res://.godot/imported/TX Shadow Plant.png-51bb6b29f8ab22feac34d8027535667f.ctex"]
+source_file="res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Shadow Plant.png"
+dest_files=["res://.godot/imported/TX Shadow Plant.png-7f060cca8f3285fbbada7fe3586991bc.ctex"]
 
 [params]
 
