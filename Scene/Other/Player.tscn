@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxxwgiy6njsrw"]
 
 [ext_resource type="Script" uid="uid://be2mh5512lj1c" path="res://Scripts/player.gd" id="1_kbf4m"]
-[ext_resource type="Texture2D" uid="uid://bnfd5upicepdb" path="res://Assets/CharacterOneBase_2.png" id="2_wocwi"]
+[ext_resource type="Texture2D" uid="uid://bnfd5upicepdb" path="res://Assets/KikiCharacterBase_1.png" id="2_wocwi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
 size = Vector2(42, 59)

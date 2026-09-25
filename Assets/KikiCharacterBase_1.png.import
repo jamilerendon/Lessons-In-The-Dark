@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnfd5upicepdb"
-path="res://.godot/imported/CharacterOneBase_2.png-33be1c988a3e3f455c909f3072593b5c.ctex"
+path="res://.godot/imported/KikiCharacterBase_1.png-71cf2cf02be05329607700f0bf39a9c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/CharacterOneBase_2.png"
-dest_files=["res://.godot/imported/CharacterOneBase_2.png-33be1c988a3e3f455c909f3072593b5c.ctex"]
+source_file="res://Assets/KikiCharacterBase_1.png"
+dest_files=["res://.godot/imported/KikiCharacterBase_1.png-71cf2cf02be05329607700f0bf39a9c3.ctex"]
 
 [params]
 
