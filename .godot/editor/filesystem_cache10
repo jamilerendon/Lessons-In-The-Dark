@@ -1,13 +1,16 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1790350667
+::res://::1790352280
 default_bus_layout.tres::AudioBusLayout::2040905546945627142::1788449158::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1788449158::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::954189520467983847::1788282900::1788282900::1::::<><><>0<>0<>2aac00574a14862501bcfe174ad1de02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1787719179::0::1::::<><><>0<>0<><>::
-::res://Assets/::1790350667
+::res://Assets/::1790353481
 Changelog.txt::TextFile::-1::1788282899::0::1::::<><><>0<>0<><>::
 KikiCharacterBase_1.png::CompressedTexture2D::3309434338558667043::1788282899::1790350669::1::::<><><>0<>0<>0f0d8f9dc73059dc9c5325a741003b10<>res://.godot/imported/KikiCharacterBase_1.png-71cf2cf02be05329607700f0bf39a9c3.ctex::
 Scene Overview.png::CompressedTexture2D::6918693081835244609::1788282900::1788282900::1::::<><><>0<>0<>f4a3611ddc671cb1f52065bc6168efe8<>res://.godot/imported/Scene Overview.png-91fdda06bcbe292c2fc2e37947216af7.ctex::
+::res://Assets/Created Assets/::1790353494
+::res://Assets/Created Assets/Buildings/::1790353500
+WoodenDoor_1(32x32).png::CompressedTexture2D::456446199581096692::1790353412::1790353513::1::::<><><>0<>0<>81e5d86c3a22690b775beb48b8de10e0<>res://.godot/imported/WoodenDoor_1(32x32).png-1f818fa653ff82d8ee9b8bb36f549dc0.ctex::
 ::res://Assets/Outsource Assets/::1790350181
 ::res://Assets/Outsource Assets/Animal Farm/::1790350173
 COUPON.png::CompressedTexture2D::1442671006523941583::1790350173::1790350173::1::::<><><>0<>0<>e8032e9c6bfd10f47b1c1e6bc26ede8d<>res://.godot/imported/COUPON.png-9a3ff347d7366dece7196f485aa4fa3c.ctex::
@@ -3150,12 +3153,12 @@ dialouge_ui.tscn::PackedScene::8189804439940957855::1790350183::0::1::::<><><>0<
 ::res://Scene/Dialouge/::1790350183
 dialouge_trigger.gd::GDScript::791458135197761969::1790350183::0::1::::<>Node2D<><>0<>0<><>::
 dialouge_trigger.tscn::PackedScene::8459015433630908411::1790350183::0::1::::<><><>0<>0<><>::uid://ljng2bbcc0nd::::res://Scene/Dialouge/dialouge_trigger.gd
-::res://Scene/Levels/::1790350478
-KikiHouse.tscn::PackedScene::4561323876123697043::1790350478::0::1::::<><><>0<>0<><>::
-::res://Scene/Menu/::1790350478
+::res://Scene/Levels/::1790352814
+KikiHouse.tscn::PackedScene::4561323876123697043::1790352814::0::1::::<><><>0<>0<><>::uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://cnkxecsqm1rn3::::res://Assets/Outsource Assets/Main Character House/Tiled_files/house_details.png<>uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png
+::res://Scene/Menu/::1790352723
 MainMenu.tscn::PackedScene::4391737585965803444::1790350183::0::1::::<><><>0<>0<><>::uid://dw8jypu1efae5::::res://Scripts/MainMenu.gd<>uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf
 Milky Cream.otf::FontFile::7531034980251947986::1788449158::1788449158::1::::<><><>0<>0<>ee5d3e5eba606b2076a2b8e8b1742a8a<>res://.godot/imported/Milky Cream.otf-3c3c4d4bd899fcf8f6b99cb19a7f8082.fontdata::
-PauseMenu.gdshader::Shader::5739540985704248756::1790350478::0::1::::<><><>0<>0<><>::
+PauseMenu.gdshader::Shader::5739540985704248756::1790352723::0::1::::<><><>0<>0<><>::
 PauseMenu.tscn::PackedScene::2860010617382925092::1788449158::0::1::::<><><>0<>0<><>::uid://chb22reaifjvn::::res://Scripts/PauseMenu.gd<>uid://cn1jnwdwlamka::::res://Scene/Menu/PauseMenu.gdshader
 Settings.tscn::PackedScene::3491122480485956696::1790350183::0::1::::<><><>0<>0<><>::uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf<>uid://dbsdwf8t6jbeq::::res://Scripts/Settings.gd<>uid://desd00t8yedbt::::res://Scripts/DisplaySettings.gd<>uid://3f7fs3xj6km2::::res://Scripts/MainVolume.gd<>uid://cc6rlpa2s5qh0::::res://Scripts/MusicVolume.gd<>uid://pa872f0t5nuk::::res://Scripts/SFXVolume.gd
 ::res://Scene/Other/::1790350667
