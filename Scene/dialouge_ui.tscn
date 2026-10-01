@@ -11,18 +11,18 @@ grow_vertical = 2
 
 [node name="Canvas" type="CanvasLayer" parent="." unique_id=1693578444]
 
-[node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=617731522]
-offset_top = 247.0
-offset_right = 640.0
-offset_bottom = 351.0
-color = Color(0, 0, 0, 1)
-
 [node name="SpeakerName" type="RichTextLabel" parent="Canvas" unique_id=697746614]
 offset_left = 22.0
 offset_top = 247.0
 offset_right = 172.0
 offset_bottom = 287.0
 text = "Speaker Name"
+
+[node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=617731522]
+offset_top = 247.0
+offset_right = 640.0
+offset_bottom = 351.0
+color = Color(0, 0, 0, 1)
 
 [node name="DialougeText" type="RichTextLabel" parent="Canvas" unique_id=1327571914]
 offset_left = 22.0

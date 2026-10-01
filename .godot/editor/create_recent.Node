@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
 TileMapLayer
+=======
+TextureRect
+Button
+Label
+ScrollContainer
+>>>>>>> Stashed changes
 ColorRect
 CollisionShape2D
 Area2D
-Button
 RichTextLabel
 CanvasLayer
 PanelContainer
@@ -11,4 +17,7 @@ Panel
 VBoxContainer
 Control
 OptionButton
+<<<<<<< Updated upstream
 Label
+=======
+>>>>>>> Stashed changes
