@@ -1,2 +1,7 @@
+<<<<<<< Updated upstream
 res://Scene/Levels/KikiHouse.tscn
+=======
+res://Scripts/MainMenu.gd
+res://Scene/Menu/MainMenu.tscn
+>>>>>>> Stashed changes
 res://Scene/Menu/PauseMenu.gdshader
