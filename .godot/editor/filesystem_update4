@@ -1,3 +1,6 @@
-res://Scripts/DisplaySettings.gd
 res://Scene/Levels/KikiHouse.tscn
 res://Scene/Menu/PauseMenu.gdshader
+res://Scene/Levels/7_SchoolHalls.tscn
+res://Scene/Levels/17_SchoolHalls5.tscn
+res://Scene/Levels/2_KikiHouseOutside.tscn
+res://Scene/Levels/1_KikiHouseInside.tscn
