@@ -1,3 +1,2 @@
-res://Scripts/MainMenu.gd
-res://Scene/Menu/MainMenu.tscn
+res://Scene/Levels/KikiHouse.tscn
 res://Scene/Menu/PauseMenu.gdshader
