@@ -1,23 +1,14 @@
-<<<<<<< Updated upstream
+CollisionShape2D
+CollisionPolygon2D
+StaticBody2D
 TileMapLayer
-=======
 TextureRect
 Button
 Label
 ScrollContainer
->>>>>>> Stashed changes
 ColorRect
-CollisionShape2D
 Area2D
 RichTextLabel
 CanvasLayer
 PanelContainer
 AnimationPlayer
-Panel
-VBoxContainer
-Control
-OptionButton
-<<<<<<< Updated upstream
-Label
-=======
->>>>>>> Stashed changes
