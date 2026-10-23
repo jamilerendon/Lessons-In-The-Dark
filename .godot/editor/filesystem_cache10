@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792765977
+::res://::1792769264
 default_bus_layout.tres::AudioBusLayout::2040905546945627142::1788449158::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1788449158::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::954189520467983847::1788282900::1788282900::1::::<><><>0<>0<>2aac00574a14862501bcfe174ad1de02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -3180,11 +3180,11 @@ dialouge_ui.tscn::PackedScene::8189804439940957855::1790967314::0::1::::<><><>0<
 ::res://Scene/Dialouge/::1790350183
 dialouge_trigger.gd::GDScript::791458135197761969::1790350183::0::1::::<>Node2D<><>0<>0<><>::
 dialouge_trigger.tscn::PackedScene::8459015433630908411::1790350183::0::1::::<><><>0<>0<><>::uid://ljng2bbcc0nd::::res://Scene/Dialouge/dialouge_trigger.gd
-::res://Scene/Levels/::1791560139
+::res://Scene/Levels/::1792769226
 1_KikiHouseInside.tscn::PackedScene::922381374474352185::1790967314::0::1::::<><><>0<>0<><>::uid://dyewu80cwi50e::::res://Assets/Outsource Assets/Main Character House/Tiled_files/Interior.png<>uid://bgdxxwp7cmrta::::res://Assets/Created Assets/Buildings/KikisHouseLayout_1.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://c07gnncqwsv1a::::res://Assets/Outsource Assets/Main Character House/Tiled_files/walls_floor.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://bxqeicjbogna7::::res://Assets/Created Assets/Buildings/LargeWoodFloor_1(90x90).png
-2_KikiHouseOutside.tscn::PackedScene::4561323876123697043::1791560139::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://qf0a0q8ywfx::::res://Assets/Outsource Assets/Main Character House/PNG/exterior.png<>uid://yqc7ttwg2x4e::::res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png<>uid://bgdxxwp7cmrta::::res://Assets/Created Assets/Buildings/KikisHouseLayout_1.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn
-3_BusStation.tscn::PackedScene::3146140205507160232::1790967314::0::1::::<><><>0<>0<><>::
-4_SchoolGates.tscn::PackedScene::3625630375471586072::1790967314::0::1::::<><><>0<>0<><>::
+2_KikiHouseOutside.tscn::PackedScene::4561323876123697043::1792768385::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://qf0a0q8ywfx::::res://Assets/Outsource Assets/Main Character House/PNG/exterior.png<>uid://yqc7ttwg2x4e::::res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png<>uid://bgdxxwp7cmrta::::res://Assets/Created Assets/Buildings/KikisHouseLayout_1.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn
+3_BusStation.tscn::PackedScene::3146140205507160232::1792769226::0::1::::<><><>0<>0<><>::uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png
+4_SchoolGates.tscn::PackedScene::3625630375471586072::1792768346::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://0vvcdrrnem62::::res://Assets/Outsource Assets/Chapel/PNG/Exterior.png
 5_ForestOutsideKikiHouse.tscn::PackedScene::1820874648783425111::1791558632::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn<>uid://yqc7ttwg2x4e::::res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png
 6_SchoolGates2.tscn::PackedScene::1827234728996960403::1790967314::0::1::::<><><>0<>0<><>::
 7_SchoolHalls.tscn::PackedScene::9205926255153349612::1790967314::0::1::::<><><>0<>0<><>::
@@ -3198,12 +3198,12 @@ dialouge_trigger.tscn::PackedScene::8459015433630908411::1790350183::0::1::::<><
 15_SchoolHalls4.tscn::PackedScene::7691390342484983952::1790967314::0::1::::<><><>0<>0<><>::
 16_Dorms2.tscn::PackedScene::5055847433451635952::1790967314::0::1::::<><><>0<>0<><>::
 17_SchoolHalls5.tscn::PackedScene::1437939057683151817::1790967314::0::1::::<><><>0<>0<><>::
-18_SchoolForest.tscn::PackedScene::8176709096291287100::1790967314::0::1::::<><><>0<>0<><>::
+18_SchoolForest.tscn::PackedScene::8176709096291287100::1792769158::0::1::::<><><>0<>0<><>::uid://5o0kd0wfswv8::::res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png<>uid://0b17i2orjqhh::::res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png<>uid://yqc7ttwg2x4e::::res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png<>uid://cxxwgiy6njsrw::::res://Scene/Other/Player.tscn
 19_SchoolHalls.tscn::PackedScene::3439967516591268749::1790967314::0::1::::<><><>0<>0<><>::
-::res://Scene/Menu/::1791557130
+::res://Scene/Menu/::1792766466
 MainMenu.tscn::PackedScene::4391737585965803444::1790967314::0::1::::<><><>0<>0<><>::uid://dw8jypu1efae5::::res://Scripts/MainMenu.gd<>uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf<>uid://dphmgnq6wv04q::::res://Assets/LessonsInTheDarkMainMenuScreen.png<>uid://desd00t8yedbt::::res://Scripts/DisplaySettings.gd<>uid://3f7fs3xj6km2::::res://Scripts/MainVolume.gd<>uid://cc6rlpa2s5qh0::::res://Scripts/MusicVolume.gd<>uid://pa872f0t5nuk::::res://Scripts/SFXVolume.gd
 Milky Cream.otf::FontFile::7531034980251947986::1788449158::1788449158::1::::<><><>0<>0<>ee5d3e5eba606b2076a2b8e8b1742a8a<>res://.godot/imported/Milky Cream.otf-3c3c4d4bd899fcf8f6b99cb19a7f8082.fontdata::
-PauseMenu.gdshader::Shader::5739540985704248756::1791557130::0::1::::<><><>0<>0<><>::
+PauseMenu.gdshader::Shader::5739540985704248756::1792766466::0::1::::<><><>0<>0<><>::
 PauseMenu.tscn::PackedScene::2860010617382925092::1788449158::0::1::::<><><>0<>0<><>::uid://chb22reaifjvn::::res://Scripts/PauseMenu.gd<>uid://cn1jnwdwlamka::::res://Scene/Menu/PauseMenu.gdshader
 Settings.tscn::PackedScene::3491122480485956696::1790350183::0::1::::<><><>0<>0<><>::uid://dfkdbs8f7wygw::::res://Scene/Menu/Milky Cream.otf<>uid://dbsdwf8t6jbeq::::res://Scripts/Settings.gd<>uid://desd00t8yedbt::::res://Scripts/DisplaySettings.gd<>uid://3f7fs3xj6km2::::res://Scripts/MainVolume.gd<>uid://cc6rlpa2s5qh0::::res://Scripts/MusicVolume.gd<>uid://pa872f0t5nuk::::res://Scripts/SFXVolume.gd
 ::res://Scene/Other/::1791558379
