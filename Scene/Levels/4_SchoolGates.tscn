@@ -2158,3 +2158,8 @@ tile_set = SubResource("TileSet_goq1x")
 
 [node name="Tile3" type="TileMapLayer" parent="." unique_id=834285564]
 tile_set = SubResource("TileSet_hhk1v")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1128576149]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=737075638]
+polygon = PackedVector2Array(0, 0, 0, 640, 1024, 640, 1024, 0, 0, 0, -1, -1, 1025, -1, 1025, 641, -1, 641, -1, -1)

@@ -1,9 +1,9 @@
+CollisionPolygon2D
+StaticBody2D
 Node
 ColorRect
 TileMapLayer
 CollisionShape2D
-CollisionPolygon2D
-StaticBody2D
 TextureRect
 Button
 Label
@@ -12,4 +12,3 @@ Area2D
 RichTextLabel
 CanvasLayer
 PanelContainer
-AnimationPlayer
