@@ -1,8 +1,8 @@
+TileMapLayer
 CollisionPolygon2D
 StaticBody2D
 Node
 ColorRect
-TileMapLayer
 CollisionShape2D
 TextureRect
 Button
