@@ -2664,3 +2664,8 @@ tile_set = SubResource("TileSet_jsyhb")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("3_eksel")]
 position = Vector2(321, 181)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1985161909]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1319324051]
+polygon = PackedVector2Array(0, 0, 0, 368, 641, 368, 641, 1, 0, 0, -1, -1, 642, 0, 642, 370, -2, 370, -1, -1)
