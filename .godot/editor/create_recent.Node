@@ -1,9 +1,9 @@
-TileMapLayer
 CollisionPolygon2D
 StaticBody2D
+CollisionShape2D
+TileMapLayer
 Node
 ColorRect
-CollisionShape2D
 TextureRect
 Button
 Label

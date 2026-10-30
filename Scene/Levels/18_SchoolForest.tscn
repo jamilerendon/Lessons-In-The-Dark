@@ -3345,4 +3345,4 @@ position = Vector2(321, 181)
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=7133589]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=734522455]
-polygon = PackedVector2Array(1, 1, 0, 368, 641, 368, 641, 1, 1, 1, 0, 0, 642, 0, 642, 369, -1, 369, 0, 0)
+polygon = PackedVector2Array(1, 1, 0, 362, 641, 362, 641, 1, 1, 1, 0, 0, 642, 0, 642, 363, -1, 363, 0, 0)

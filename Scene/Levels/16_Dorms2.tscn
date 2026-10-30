@@ -5042,3 +5042,8 @@ tile_set = SubResource("TileSet_ylj3g")
 scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAATAAYAAAAUABMAABASAAYAAAAVABMAABATAAcAAAAUABQAABASAAcAAAAVABQAABATAAgAAAAUABUAABASAAgAAAAVABUAABABAAYAAAAVABMAAAAAAAYAAAAUABMAAAABAAcAAAAVABQAAAAAAAcAAAAUABQAAAABAAgAAAAVABUAAAAAAAgAAAAUABUAAAA=")
 tile_set = SubResource("TileSet_jq2s7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1444568177]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1035043564]
+polygon = PackedVector2Array(0, 90, 0, 352, 640, 352, 640, 90, 0, 90, -1, -1, 641, -1, 641, 353, -1, 353, -1, -1)
