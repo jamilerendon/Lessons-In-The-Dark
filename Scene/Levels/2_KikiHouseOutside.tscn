@@ -6017,7 +6017,7 @@ texture = ExtResource("3_qimsi")
 sources/0 = SubResource("TileSetAtlasSource_n7i0p")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r56om"]
-size = Vector2(377, 339)
+size = Vector2(377, 296)
 
 [node name="KikiHouse" type="Node2D" unique_id=1426011645]
 
@@ -6071,5 +6071,5 @@ position = Vector2(659, 358)
 polygon = PackedVector2Array(0, 640, 0, 0, 1024, 0, 1024, 640, -1, 640, -1, 641, 1025, 641, 1025, -1, -1, -1, -1, 640)
 
 [node name="HomeCollision" type="CollisionShape2D" parent="StaticBody2D" unique_id=1716482324]
-position = Vector2(207.5, 168.5)
+position = Vector2(207.5, 147)
 shape = SubResource("RectangleShape2D_r56om")

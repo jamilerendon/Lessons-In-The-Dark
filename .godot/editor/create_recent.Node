@@ -1,6 +1,7 @@
+CollisionShape2D
+TileMap
 CollisionPolygon2D
 StaticBody2D
-CollisionShape2D
 TileMapLayer
 Node
 ColorRect
@@ -11,4 +12,3 @@ ScrollContainer
 Area2D
 RichTextLabel
 CanvasLayer
-PanelContainer
