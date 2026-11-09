@@ -12,7 +12,7 @@ func _ready() -> void:
 	credits.visible=false
 
 func _on_play_pressed() -> void:
-	Transition.room_change("res://Scene/Tilemaps/Tilemap1.tscn", "EntryDefault")
+	Transition.room_change("res://Scene/Levels/1_KikiHouseInside.tscn", "EntryDefault")
 
 func _on_settings_pressed() -> void:
 	Transition.return_scene_path = "res://Scene/Menu/MainMenu.tscn"

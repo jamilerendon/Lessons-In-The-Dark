@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://5o0kd0wfswv8" path="res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png" id="2_uawo6"]
 [ext_resource type="Texture2D" uid="uid://c07gnncqwsv1a" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/walls_floor.png" id="3_0lou5"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="3_agu4a"]
+[ext_resource type="Script" uid="uid://bat3wmfkfu228" path="res://Doors/L3ToL2.gd" id="5_yjvgm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0lou5"]
 texture = ExtResource("2_uawo6")
@@ -3986,6 +3987,10 @@ texture = ExtResource("1_ectjf")
 [sub_resource type="TileSet" id="TileSet_vooaa"]
 sources/0 = SubResource("TileSetAtlasSource_gbccf")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xvx6h"]
+a = Vector2(-80, -31)
+b = Vector2(-80, 28)
+
 [node name="BusStation" type="Node2D" unique_id=16650455]
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=320132237]
@@ -4036,9 +4041,20 @@ tile_map_data = PackedByteArray("AAABAAoAAAAFABcAAAABAAsAAAAFABgAAAABAAwAAAAFABk
 tile_set = SubResource("TileSet_vooaa")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("3_agu4a")]
-position = Vector2(313, 184)
+position = Vector2(81, 111)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=2098456378]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2" unique_id=732432563]
-polygon = PackedVector2Array(-7, 5, 0, 427, 640, 426, 640, 5, -7, 5, -8, 2, 642, 2, 641, 427, -1, 428, -8, 2)
+polygon = PackedVector2Array(0, 5, 0, 427, 640, 426, 640, 5, 0, 5, -2, 2, 642, 2, 641, 427, -1, 428, -2, 2)
+
+[node name="L3ToL2" type="Area2D" parent="." unique_id=1570766312 groups=["player"]]
+position = Vector2(81, 111)
+script = ExtResource("5_yjvgm")
+
+[node name="L3ToL2Collision" type="CollisionShape2D" parent="L3ToL2" unique_id=409608034]
+shape = SubResource("SegmentShape2D_xvx6h")
+
+[node name="L2ToL3" type="Marker2D" parent="L3ToL2" unique_id=893577582]
+
+[connection signal="body_entered" from="L3ToL2" to="L3ToL2" method="_on_body_entered"]

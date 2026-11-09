@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://yqc7ttwg2x4e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png" id="4_brm10"]
 [ext_resource type="Texture2D" uid="uid://bgdxxwp7cmrta" path="res://Assets/Created Assets/Buildings/KikisHouseLayout_1.png" id="5_tj2xi"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="6_essnw"]
+[ext_resource type="Script" uid="uid://cxffuacekg88o" path="res://Doors/L2ToL1.gd" id="7_dsy2d"]
+[ext_resource type="Script" uid="uid://dcsg7hvt0ajlp" path="res://Doors/L2ToL3.gd" id="8_qimsi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dsy2d"]
 texture = ExtResource("1_fcauy")
@@ -6019,6 +6021,14 @@ sources/0 = SubResource("TileSetAtlasSource_n7i0p")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r56om"]
 size = Vector2(377, 296)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xvx6h"]
+a = Vector2(20, -56)
+b = Vector2(-17, -56)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r56om"]
+a = Vector2(40, -24)
+b = Vector2(40, 21)
+
 [node name="KikiHouse" type="Node2D" unique_id=1426011645]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1733035029]
@@ -6063,7 +6073,7 @@ tile_map_data = PackedByteArray("AAA6AAAAAAAAACYAAAA6AAEAAAAAACcAAAA6AAIAAAAAACg
 tile_set = SubResource("TileSet_f5fhm")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("6_essnw")]
-position = Vector2(659, 358)
+position = Vector2(272, 352)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=108578560]
 
@@ -6073,3 +6083,26 @@ polygon = PackedVector2Array(0, 640, 0, 0, 1024, 0, 1024, 640, -1, 640, -1, 641,
 [node name="HomeCollision" type="CollisionShape2D" parent="StaticBody2D" unique_id=1716482324]
 position = Vector2(207.5, 147)
 shape = SubResource("RectangleShape2D_r56om")
+
+[node name="L2ToL1" type="Area2D" parent="." unique_id=780637800 groups=["player"]]
+position = Vector2(272, 352)
+script = ExtResource("7_dsy2d")
+
+[node name="L2ToL1Collision" type="CollisionShape2D" parent="L2ToL1" unique_id=1941630925]
+shape = SubResource("SegmentShape2D_xvx6h")
+
+[node name="L1ToL2" type="Marker2D" parent="L2ToL1" unique_id=206225045]
+
+[node name="L2ToL3" type="Area2D" parent="." unique_id=1487255704 groups=["player"]]
+position = Vector2(7, 121)
+script = ExtResource("8_qimsi")
+
+[node name="L2ToL3Collision" type="CollisionShape2D" parent="L2ToL3" unique_id=463195816]
+position = Vector2(976, 415)
+shape = SubResource("SegmentShape2D_r56om")
+
+[node name="L3ToL2" type="Marker2D" parent="L2ToL3" unique_id=1195754356]
+position = Vector2(976, 415)
+
+[connection signal="body_entered" from="L2ToL1" to="L2ToL1" method="_on_body_entered"]
+[connection signal="body_entered" from="L2ToL3" to="L2ToL3" method="_on_body_entered"]

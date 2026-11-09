@@ -1,4 +1,10 @@
+res://Scripts/MainMenu.gd
 res://Scene/Levels/1_KikiHouseInside.tscn
 res://Scene/Menu/PauseMenu.gdshader
-res://convert_layers.gd
+res://Doors/L1ToL2.gd
 res://Scene/Levels/2_KikiHouseOutside.tscn
+res://Doors/L2ToL1.gd
+res://Doors/L2ToL3.gd
+res://Doors/L3ToL2.gd
+res://Scene/Levels/3_BusStation.tscn
+res://Scripts/Player.gd

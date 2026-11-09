@@ -43,3 +43,11 @@ func _notification(what):
 func _ready():
 	add_to_group("player")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+
+	var room: Node = self
+	while room.get_parent() != null and room.get_parent() != get_tree().root:
+		room = room.get_parent()
+
+	var marker := room.find_child(Transition.next_poe, true, false) as Node2D
+	if marker:
+		global_position = marker.global_position
