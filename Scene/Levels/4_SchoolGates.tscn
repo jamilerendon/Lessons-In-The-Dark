@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="2_3vhby"]
 [ext_resource type="Texture2D" uid="uid://0vvcdrrnem62" path="res://Assets/Outsource Assets/Chapel/PNG/Exterior.png" id="3_8400w"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_3vhby"]
+[ext_resource type="Script" uid="uid://31gl8tf1lro6" path="res://Doors/L4ToL3.gd" id="5_uqa0u"]
+[ext_resource type="Script" uid="uid://0ei21j3t04p" path="res://Doors/L4ToL5.gd" id="6_0nsx5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3vhby"]
 texture = ExtResource("1_vaki1")
@@ -4037,6 +4039,13 @@ sources/0 = SubResource("TileSetAtlasSource_tjmd1")
 sources/1 = SubResource("TileSetAtlasSource_2es1j")
 sources/2 = SubResource("TileSetAtlasSource_sjdch")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xvx6h"]
+b = Vector2(57, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r56om"]
+a = Vector2(-144, 67)
+b = Vector2(126, 67)
+
 [node name="4SchoolGates" type="Node2D" unique_id=684640016]
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1669513121]
@@ -4103,3 +4112,25 @@ position = Vector2(517, 445)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=737075638]
 polygon = PackedVector2Array(0, 0, 0, 640, 1024, 640, 1024, 0, 0, 0, -1, -1, 1025, -1, 1025, 641, -1, 641, -1, -1)
+
+[node name="L4ToL3" type="Area2D" parent="." unique_id=1007816095 groups=["player"]]
+position = Vector2(520, 238)
+script = ExtResource("5_uqa0u")
+
+[node name="L4ToL3Collision" type="CollisionShape2D" parent="L4ToL3" unique_id=300730124]
+position = Vector2(-27, -60)
+shape = SubResource("SegmentShape2D_xvx6h")
+
+[node name="L3ToL4" type="Marker2D" parent="L4ToL3" unique_id=1808322954]
+
+[node name="L4ToL5" type="Area2D" parent="." unique_id=760915339 groups=["player"]]
+position = Vector2(644, 566)
+script = ExtResource("6_0nsx5")
+
+[node name="L4ToL5Collision" type="CollisionShape2D" parent="L4ToL5" unique_id=566139479]
+shape = SubResource("SegmentShape2D_r56om")
+
+[node name="L5ToL4" type="Marker2D" parent="L4ToL5" unique_id=1949953513]
+
+[connection signal="body_entered" from="L4ToL3" to="L4ToL3" method="_on_body_entered"]
+[connection signal="body_entered" from="L4ToL5" to="L4ToL5" method="_on_body_entered"]
