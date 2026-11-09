@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="3_40w01"]
 [ext_resource type="Texture2D" uid="uid://bxqeicjbogna7" path="res://Assets/Created Assets/Buildings/LargeWoodFloor_1(90x90).png" id="4_rvo54"]
 [ext_resource type="Texture2D" uid="uid://rutjknfikhp5" path="res://Assets/Outsource Assets/Glassblowers Workshop/Tiled_files/Interior_objects.png" id="6_40w01"]
+[ext_resource type="Script" uid="uid://cqjtyvkvqkjcd" path="res://Doors/L1ToL2.gd" id="7_40w01"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dlut7"]
 texture = ExtResource("3_40w01")
@@ -3788,6 +3789,10 @@ radius = 14.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xvx6h"]
 radius = 14.0
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r56om"]
+a = Vector2(38, -43)
+b = Vector2(-36, -43)
+
 [node name="KikiHouseInside" type="Node2D" unique_id=1642105725]
 y_sort_enabled = true
 
@@ -3908,3 +3913,14 @@ shape = SubResource("CapsuleShape2D_f5fhm")
 [node name="Right Couch" type="CollisionShape2D" parent="StaticBody2D" unique_id=1347188368]
 position = Vector2(297, 144.99998)
 shape = SubResource("CapsuleShape2D_xvx6h")
+
+[node name="L1ToL2" type="Area2D" parent="." unique_id=1172541598 groups=["player"]]
+position = Vector2(393, 56)
+script = ExtResource("7_40w01")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="L1ToL2" unique_id=573241130]
+shape = SubResource("SegmentShape2D_r56om")
+
+[node name="L2ToL1" type="Marker2D" parent="L1ToL2" unique_id=1268613766]
+
+[connection signal="body_entered" from="L1ToL2" to="L1ToL2" method="_on_body_entered"]
