@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="2_hlmpg"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="3_eksel"]
 [ext_resource type="Texture2D" uid="uid://yqc7ttwg2x4e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png" id="3_hlmpg"]
+[ext_resource type="Script" uid="uid://m5r0pksldso5" path="res://Doors/L5ToL4.gd" id="5_eksel"]
+[ext_resource type="Script" uid="uid://dumtv8ncngvpl" path="res://Doors/L5ToL6.gd" id="6_48od0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48od0"]
 texture = ExtResource("1_ihssk")
@@ -3974,6 +3976,13 @@ texture = ExtResource("2_hlmpg")
 [sub_resource type="TileSet" id="TileSet_er03j"]
 sources/0 = SubResource("TileSetAtlasSource_kfbwy")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xvx6h"]
+b = Vector2(-1, 84)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r56om"]
+a = Vector2(-227, 39)
+b = Vector2(227, 40)
+
 [node name="5ForestOutsideKikiHouse" type="Node2D" unique_id=1313743042]
 
 [node name="Grass_1" type="TileMapLayer" parent="." unique_id=1733356107]
@@ -4023,3 +4032,25 @@ position = Vector2(321, 181)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1319324051]
 polygon = PackedVector2Array(0, 0, 0, 362, 641, 362, 641, 1, 0, 0, -1, -1, 642, 0, 642, 363, -1, 363, -1, -1)
+
+[node name="L5ToL4" type="Area2D" parent="." unique_id=385438793 groups=["player"]]
+position = Vector2(104, 93)
+script = ExtResource("5_eksel")
+
+[node name="L5ToL4Collision" type="CollisionShape2D" parent="L5ToL4" unique_id=1951540119]
+position = Vector2(-102, -25)
+shape = SubResource("SegmentShape2D_xvx6h")
+
+[node name="L4ToL5" type="Marker2D" parent="L5ToL4" unique_id=1982701476]
+
+[node name="L5ToL6" type="Area2D" parent="." unique_id=37284665 groups=["player"]]
+position = Vector2(318, 320)
+script = ExtResource("6_48od0")
+
+[node name="L5ToL6Collision" type="CollisionShape2D" parent="L5ToL6" unique_id=1791593414]
+shape = SubResource("SegmentShape2D_r56om")
+
+[node name="L6ToL5" type="Marker2D" parent="L5ToL6" unique_id=1950624426]
+
+[connection signal="body_entered" from="L5ToL4" to="L5ToL4" method="_on_body_entered"]
+[connection signal="body_entered" from="L5ToL6" to="L5ToL6" method="_on_body_entered"]

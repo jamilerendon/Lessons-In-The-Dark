@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="1_s47h5"]
 [ext_resource type="Texture2D" uid="uid://bm2rxr7ijyffh" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Walls_interior.png" id="1_vdgxu"]
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_s47h5"]
+[ext_resource type="Script" uid="uid://dqhsrcskxtrq1" path="res://Doors/L9ToL8.gd" id="4_yk8ub"]
+[ext_resource type="Script" uid="uid://bv7r8d06jjgyh" path="res://Doors/L9ToL10.gd" id="5_1d0bi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aeag7"]
 texture = ExtResource("1_s47h5")
@@ -4205,3 +4207,20 @@ tile_set = SubResource("TileSet_jq2s7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2" unique_id=957893998]
 polygon = PackedVector2Array(0, 90, 0, 352, 640, 352, 640, 90, 0, 90, -1, -1, 641, -1, 641, 353, -1, 353, -1, -1)
+
+[node name="L9ToL8" type="Area2D" parent="." unique_id=581170171]
+script = ExtResource("4_yk8ub")
+
+[node name="L9ToL8Collision" type="CollisionShape2D" parent="L9ToL8" unique_id=328906976]
+
+[node name="L8ToL9" type="Marker2D" parent="L9ToL8" unique_id=357204120]
+
+[node name="L9ToL10" type="Area2D" parent="." unique_id=1756532528]
+script = ExtResource("5_1d0bi")
+
+[node name="L9ToL10Collision" type="CollisionShape2D" parent="L9ToL10" unique_id=59486328]
+
+[node name="L9ToL10" type="Marker2D" parent="L9ToL10" unique_id=2099921981]
+
+[connection signal="body_entered" from="L9ToL8" to="L9ToL8" method="_on_body_entered"]
+[connection signal="body_entered" from="L9ToL10" to="L9ToL10" method="_on_body_entered"]

@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_0eemd"]
 [ext_resource type="Texture2D" uid="uid://dyewu80cwi50e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/Interior.png" id="3_lkjea"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_e3gu4"]
+[ext_resource type="Script" uid="uid://k168v78l8aio" path="res://Doors/L15ToL14.gd" id="6_e3gu4"]
+[ext_resource type="Script" uid="uid://w3lkg7xggty1" path="res://Doors/L15ToL16.gd" id="7_gu1rs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkjea"]
 texture = ExtResource("1_0eemd")
@@ -2369,3 +2371,20 @@ position = Vector2(313, 184)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=341325942]
 polygon = PackedVector2Array(0, 122, 0, 304, 640, 304, 640, 122, 0, 122, -1, 31, 641, 32, 641, 305, -1, 305, -1, 31)
+
+[node name="L15ToL14" type="Area2D" parent="." unique_id=1645343573 groups=["player"]]
+script = ExtResource("6_e3gu4")
+
+[node name="L15ToL14Collision" type="CollisionShape2D" parent="L15ToL14" unique_id=1218805236]
+
+[node name="L14ToL15" type="Marker2D" parent="L15ToL14" unique_id=1451767376]
+
+[node name="L15ToL16" type="Area2D" parent="." unique_id=1185724633 groups=["player"]]
+script = ExtResource("7_gu1rs")
+
+[node name="L15ToL16Collision" type="CollisionShape2D" parent="L15ToL16" unique_id=775060221]
+
+[node name="L16ToL15" type="Marker2D" parent="L15ToL16" unique_id=406438333]
+
+[connection signal="body_entered" from="L15ToL14" to="L15ToL14" method="_on_body_entered"]
+[connection signal="body_entered" from="L15ToL16" to="L15ToL16" method="_on_body_entered"]

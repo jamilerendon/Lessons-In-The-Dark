@@ -3918,7 +3918,7 @@ shape = SubResource("CapsuleShape2D_xvx6h")
 position = Vector2(393, 56)
 script = ExtResource("7_40w01")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="L1ToL2" unique_id=573241130]
+[node name="L1ToL2Collision" type="CollisionShape2D" parent="L1ToL2" unique_id=573241130]
 shape = SubResource("SegmentShape2D_r56om")
 
 [node name="L2ToL1" type="Marker2D" parent="L1ToL2" unique_id=1268613766]
