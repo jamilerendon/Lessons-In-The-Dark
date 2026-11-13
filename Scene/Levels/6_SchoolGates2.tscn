@@ -8891,6 +8891,14 @@ sources/0 = SubResource("TileSetAtlasSource_xg71x")
 sources/1 = SubResource("TileSetAtlasSource_xnrjw")
 sources/2 = SubResource("TileSetAtlasSource_nvryw")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ptrmd"]
+a = Vector2(65, -31)
+b = Vector2(65, 19)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_m0my3"]
+a = Vector2(-33, -164)
+b = Vector2(24, -164)
+
 [node name="6SchoolGates2" type="Node2D" unique_id=1656592141]
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1193690339]
@@ -8947,7 +8955,7 @@ tile_map_data = PackedByteArray("AAAJAPz/AgAAAAEAAAAJAP3/AgAAAAIAAAAJAP7/AgAAAAM
 tile_set = SubResource("TileSet_5qhnh")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_q6rsr")]
-position = Vector2(584, 471)
+position = Vector2(518, 422)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1752355181]
 
@@ -8955,18 +8963,24 @@ position = Vector2(584, 471)
 polygon = PackedVector2Array(0, 0, 0, 634, 1024, 634, 1024, 0, 0, 0, -1, -1, 1025, -1, 1025, 635, -1, 635, -1, -1)
 
 [node name="L6ToL5" type="Area2D" parent="." unique_id=327849057 groups=["player"]]
+position = Vector2(917, 62)
 script = ExtResource("5_nbrb2")
 
 [node name="L6ToL5Collision" type="CollisionShape2D" parent="L6ToL5" unique_id=179429031]
+shape = SubResource("SegmentShape2D_ptrmd")
 
 [node name="L5ToL6" type="Marker2D" parent="L6ToL5" unique_id=351275214]
+position = Vector2(27, -3)
 
 [node name="L6ToL7" type="Area2D" parent="." unique_id=1703194260 groups=["player"]]
+position = Vector2(526, 340)
 script = ExtResource("6_q6rsr")
 
 [node name="L6ToL7Collision" type="CollisionShape2D" parent="L6ToL7" unique_id=358769661]
+shape = SubResource("SegmentShape2D_m0my3")
 
 [node name="L7ToL6" type="Marker2D" parent="L6ToL7" unique_id=2130594941]
+position = Vector2(-2, -42)
 
 [connection signal="body_entered" from="L6ToL5" to="L6ToL5" method="_on_body_entered"]
 [connection signal="body_entered" from="L6ToL7" to="L6ToL7" method="_on_body_entered"]

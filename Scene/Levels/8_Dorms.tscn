@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://yqc7ttwg2x4e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png" id="3_e1b7o"]
 [ext_resource type="Texture2D" uid="uid://0vvcdrrnem62" path="res://Assets/Outsource Assets/Chapel/PNG/Exterior.png" id="4_gkcwf"]
 [ext_resource type="Script" uid="uid://v2lyjuu0kenq" path="res://Doors/L8ToL7.gd" id="6_h6bby"]
+[ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="6_naabe"]
 [ext_resource type="Script" uid="uid://yr667n8j41ca" path="res://Doors/L8ToL9.gd" id="7_naabe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6bby"]
@@ -4222,6 +4223,14 @@ texture = ExtResource("1_s7osg")
 [sub_resource type="TileSet" id="TileSet_m0my3"]
 sources/0 = SubResource("TileSetAtlasSource_s7osg")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_6fmya"]
+a = Vector2(-52, -34)
+b = Vector2(-55, 25)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2nkcy"]
+a = Vector2(0, 44)
+b = Vector2(0, -32)
+
 [node name="8Dorms - Ext_Day" type="Node2D" unique_id=1947451764]
 
 [node name="Grass_1" type="TileMapLayer" parent="." unique_id=831613712]
@@ -4289,24 +4298,34 @@ tile_set = SubResource("TileSet_ptrmd")
 tile_map_data = PackedByteArray("AAAHAP//AAAKAAAAAAAHAAAAAAAKAAEAAAAHAAEAAAAKAAIAAAAIAP//AAALAAAAAAAIAAAAAAALAAEAAAAIAAEAAAALAAIAAAAJAP//AAAMAAAAAAAJAAAAAAAMAAEAAAAJAAEAAAAMAAIAAAAKAP//AAANAAAAAAAKAAAAAAANAAEAAAAKAAEAAAANAAIAAAALAP//AAAOAAAAAAALAAAAAAAOAAEAAAALAAEAAAAOAAIAAAAMAP//AAAPAAAAAAAMAAAAAAAPAAEAAAAMAAEAAAAPAAIAAAAHAAIAAAAKAAMAAAAIAAIAAAALAAMAAAAJAAIAAAAMAAMAAAAKAAIAAAANAAMAAAALAAIAAAAOAAMAAAAMAAIAAAAPAAMAAAA=")
 tile_set = SubResource("TileSet_m0my3")
 
+[node name="Player" parent="." unique_id=981118384 instance=ExtResource("6_naabe")]
+position = Vector2(321, 180)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1244499104]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1170333182]
 polygon = PackedVector2Array(0, 0, 2, 363, 640, 363, 641, 0, 0, 0, -1, -1, 642, -1, 641, 364, 1, 364, -1, -1)
 
 [node name="L8ToL7" type="Area2D" parent="." unique_id=2050438937]
+position = Vector2(118, 92)
 script = ExtResource("6_h6bby")
 
 [node name="L8ToL7Collision" type="CollisionShape2D" parent="L8ToL7" unique_id=511366252]
+shape = SubResource("SegmentShape2D_6fmya")
 
 [node name="L7ToL8" type="Marker2D" parent="L8ToL7" unique_id=2132162359]
+position = Vector2(0, 1)
 
 [node name="L8ToL9" type="Area2D" parent="." unique_id=1311590095]
+position = Vector2(558, 76)
 script = ExtResource("7_naabe")
 
 [node name="L8ToL9Collision" type="CollisionShape2D" parent="L8ToL9" unique_id=45394901]
+position = Vector2(3, -4)
+shape = SubResource("SegmentShape2D_2nkcy")
 
 [node name="L9ToL8" type="Marker2D" parent="L8ToL9" unique_id=1050990447]
+position = Vector2(-35, 2)
 
 [connection signal="body_entered" from="L8ToL7" to="L8ToL7" method="_on_body_entered"]
 [connection signal="body_entered" from="L8ToL9" to="L8ToL9" method="_on_body_entered"]

@@ -2337,6 +2337,14 @@ sources/0 = SubResource("TileSetAtlasSource_rdd7w")
 sources/1 = SubResource("TileSetAtlasSource_o7j81")
 sources/2 = SubResource("TileSetAtlasSource_6rs7r")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_48od0"]
+a = Vector2(5, 148)
+b = Vector2(5, 234)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_k58hk"]
+a = Vector2(0, -32)
+b = Vector2(0, 31)
+
 [node name="7SchoolHalls" type="Node2D" unique_id=439098571]
 
 [node name="Level Edges" type="TileMapLayer" parent="." unique_id=1088031262]
@@ -2365,7 +2373,7 @@ tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQ
 tile_set = SubResource("TileSet_ptrmd")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("2_uf5v1")]
-position = Vector2(313, 184)
+position = Vector2(321, 182)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=176311892]
 
@@ -2376,15 +2384,21 @@ polygon = PackedVector2Array(0, 122, 0, 304, 640, 304, 640, 122, 0, 122, -1, 31,
 script = ExtResource("6_nyb0r")
 
 [node name="L7ToL6Collision" type="CollisionShape2D" parent="L7ToL6" unique_id=842850230]
+shape = SubResource("SegmentShape2D_48od0")
 
 [node name="L6ToL7" type="Marker2D" parent="L7ToL6" unique_id=461470726]
+position = Vector2(42, 193)
 
 [node name="L7ToL8" type="Area2D" parent="." unique_id=1921478380 groups=["player"]]
+position = Vector2(627, 195)
 script = ExtResource("7_aujjt")
 
 [node name="L7ToL8Collision" type="CollisionShape2D" parent="L7ToL8" unique_id=1958196550]
+position = Vector2(-20, 1)
+shape = SubResource("SegmentShape2D_k58hk")
 
 [node name="L8ToL7" type="Marker2D" parent="L7ToL8" unique_id=1051775374]
+position = Vector2(-54, 1)
 
 [connection signal="body_entered" from="L7ToL6" to="L7ToL6" method="_on_body_entered"]
 [connection signal="body_entered" from="L7ToL8" to="L7ToL8" method="_on_body_entered"]
