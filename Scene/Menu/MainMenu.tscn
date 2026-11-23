@@ -7,6 +7,9 @@
 [ext_resource type="Script" uid="uid://3f7fs3xj6km2" path="res://Scripts/MainVolume.gd" id="3_q7bsc"]
 [ext_resource type="Script" uid="uid://cc6rlpa2s5qh0" path="res://Scripts/MusicVolume.gd" id="4_ng4i6"]
 [ext_resource type="Script" uid="uid://pa872f0t5nuk" path="res://Scripts/SFXVolume.gd" id="5_kbsla"]
+[ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="8_tqsei"]
+[ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="9_gccs5"]
+[ext_resource type="AudioStream" uid="uid://bxsfvfad8efyx" path="res://Assets/Music/Fart.mp3" id="10_gccs5"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_xvx6h"]
 color = Color(1, 1, 1, 1)
@@ -196,7 +199,7 @@ offset_bottom = 10.0
 grow_vertical = 2
 text = "Music"
 
-[node name="SFXVolume" type="HSlider" parent="Settings/VBoxContainer/Audio Control" unique_id=1856597416]
+[node name="SFXVolume" type="HSlider" parent="Settings/VBoxContainer/Audio Control" unique_id=1856597416 node_paths=PackedStringArray("preview_player")]
 layout_mode = 2
 theme_override_styles/slider = SubResource("StyleBoxLine_xvx6h")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_r56om")
@@ -206,6 +209,7 @@ step = 0.01
 value = 1.0
 script = ExtResource("5_kbsla")
 audio_bus_name = "SFX"
+preview_player = NodePath("../../../../SFXPreview")
 
 [node name="SFXVolumeLabel" type="Label" parent="Settings/VBoxContainer/Audio Control/SFXVolume" unique_id=931376095]
 layout_mode = 1
@@ -322,6 +326,15 @@ offset_right = 80.75
 grow_horizontal = 2
 grow_vertical = 0
 text = "Back to Menu"
+
+[node name="Level Music" type="Node" parent="." unique_id=1044615990]
+script = ExtResource("8_tqsei")
+track = ExtResource("9_gccs5")
+
+[node name="SFXPreview" type="AudioStreamPlayer" parent="." unique_id=1932832050]
+process_mode = 3
+stream = ExtResource("10_gccs5")
+bus = &"SFX"
 
 [connection signal="pressed" from="MainMenuButtons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MainMenuButtons/Settings" to="." method="_on_settings_pressed"]

@@ -7,6 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_gy7ho"]
 [ext_resource type="Script" uid="uid://2ba3w18quivx" path="res://Doors/L17ToL16.gd" id="6_gy7ho"]
 [ext_resource type="Script" uid="uid://m35jlliwe6vb" path="res://Doors/L17ToL18.gd" id="7_n0f72"]
+[ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_n0f72"]
+[ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_82rjf"]
+[ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_vub1f"]
+[ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_dvthc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwplg"]
 texture = ExtResource("1_kr3y0")
@@ -2401,6 +2405,17 @@ shape = SubResource("SegmentShape2D_vr7mt")
 
 [node name="L18Tol17" type="Marker2D" parent="L17ToL18" unique_id=939641628]
 position = Vector2(49, -1)
+
+[node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_n0f72")]
+position = Vector2(427, 393)
+dialogues = Array[String](["Oh man what time is it?", "?!?!", "10 AM!!!", "Oh man I hope I'm not late for class!"])
+speakerNames = Array[String](["Kiki", "Kiki", "Kiki", "Kiki"])
+
+[node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_82rjf")]
+
+[node name="Level Music" type="Node" parent="." unique_id=426362761]
+script = ExtResource("10_vub1f")
+track = ExtResource("11_dvthc")
 
 [connection signal="body_entered" from="L17ToL16" to="L17ToL16" method="_on_body_entered"]
 [connection signal="body_entered" from="L17ToL18" to="L17ToL18" method="_on_body_entered"]

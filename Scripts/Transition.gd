@@ -5,6 +5,7 @@ var next_poe: String = "Default" #next_poe means the next point of entry
 var return_scene_path: String = "res://Scene/Menu/MainMenu.tscn"
 var return_entry_point: String = "EntryDefault"
 var reopen_pause_menu: bool = false
+var seen_dialogues: Dictionary = {}
 
 func room_change(scene: String, poe_name: String):
 	next_poe = poe_name
