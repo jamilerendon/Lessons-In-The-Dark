@@ -2337,6 +2337,14 @@ sources/0 = SubResource("TileSetAtlasSource_hxqbp")
 sources/1 = SubResource("TileSetAtlasSource_bfd4d")
 sources/2 = SubResource("TileSetAtlasSource_64rcw")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_e3gu4"]
+a = Vector2(0, -25)
+b = Vector2(0, 31)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gu1rs"]
+a = Vector2(0, -20)
+b = Vector2(-1, 31)
+
 [node name="15SchoolHalls4 - Evening" type="Node2D" unique_id=1459730034]
 
 [node name="Level Edges" type="TileMapLayer" parent="." unique_id=154159189]
@@ -2373,18 +2381,26 @@ position = Vector2(313, 184)
 polygon = PackedVector2Array(0, 122, 0, 304, 640, 304, 640, 122, 0, 122, -1, 31, 641, 32, 641, 305, -1, 305, -1, 31)
 
 [node name="L15ToL14" type="Area2D" parent="." unique_id=1645343573 groups=["player"]]
+position = Vector2(50, 199)
 script = ExtResource("6_e3gu4")
 
 [node name="L15ToL14Collision" type="CollisionShape2D" parent="L15ToL14" unique_id=1218805236]
+position = Vector2(-43, -3)
+shape = SubResource("SegmentShape2D_e3gu4")
 
 [node name="L14ToL15" type="Marker2D" parent="L15ToL14" unique_id=1451767376]
+position = Vector2(-43, -3)
 
 [node name="L15ToL16" type="Area2D" parent="." unique_id=1185724633 groups=["player"]]
+position = Vector2(595, 201)
 script = ExtResource("7_gu1rs")
 
 [node name="L15ToL16Collision" type="CollisionShape2D" parent="L15ToL16" unique_id=775060221]
+position = Vector2(31, -8)
+shape = SubResource("SegmentShape2D_gu1rs")
 
 [node name="L16ToL15" type="Marker2D" parent="L15ToL16" unique_id=406438333]
+position = Vector2(31, -4)
 
 [connection signal="body_entered" from="L15ToL14" to="L15ToL14" method="_on_body_entered"]
 [connection signal="body_entered" from="L15ToL16" to="L15ToL16" method="_on_body_entered"]

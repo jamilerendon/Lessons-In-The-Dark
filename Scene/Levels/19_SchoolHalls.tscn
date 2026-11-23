@@ -2336,6 +2336,14 @@ sources/0 = SubResource("TileSetAtlasSource_038vy")
 sources/1 = SubResource("TileSetAtlasSource_602tn")
 sources/2 = SubResource("TileSetAtlasSource_7cq2m")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vwffl"]
+a = Vector2(0, 32)
+b = Vector2(0, -23)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_627ol"]
+a = Vector2(0, -25)
+b = Vector2(0, 28)
+
 [node name="19SchoolHalls - Evening" type="Node2D" unique_id=1582982644]
 
 [node name="Level Edges" type="TileMapLayer" parent="." unique_id=941562123]
@@ -2372,16 +2380,24 @@ position = Vector2(313, 184)
 polygon = PackedVector2Array(0, 122, 0, 304, 640, 304, 640, 122, 0, 122, -1, 31, 641, 32, 641, 305, -1, 305, -1, 31)
 
 [node name="L19ToL18" type="Area2D" parent="." unique_id=1978461390 groups=["player"]]
+position = Vector2(55, 197)
 script = ExtResource("6_vj83p")
 
 [node name="L19ToL18Collision" type="CollisionShape2D" parent="L19ToL18" unique_id=1628554836]
+position = Vector2(-44, -1)
+shape = SubResource("SegmentShape2D_vwffl")
 
 [node name="L18Tol19" type="Marker2D" parent="L19ToL18" unique_id=1244521715]
+position = Vector2(-44, -1)
 
 [node name="L19ToL20" type="Area2D" parent="." unique_id=1017858967]
+position = Vector2(579, 201)
 
 [node name="L19ToL20Collision" type="CollisionShape2D" parent="L19ToL20" unique_id=767317522]
+position = Vector2(45, -2)
+shape = SubResource("SegmentShape2D_627ol")
 
 [node name="L20ToL19" type="Marker2D" parent="L19ToL20" unique_id=2101317512]
+position = Vector2(45, -2)
 
 [connection signal="body_entered" from="L19ToL18" to="L19ToL18" method="_on_body_entered"]

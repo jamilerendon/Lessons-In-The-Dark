@@ -3303,6 +3303,14 @@ texture = ExtResource("2_c2rjd")
 [sub_resource type="TileSet" id="TileSet_jnv65"]
 sources/0 = SubResource("TileSetAtlasSource_r0wyc")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gy7ho"]
+a = Vector2(0, -30)
+b = Vector2(0, 33)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_n0f72"]
+a = Vector2(0, -28)
+b = Vector2(-1, 35)
+
 [node name="18SchoolForest" type="Node2D" unique_id=787758131]
 
 [node name="Grass_1" type="TileMapLayer" parent="." unique_id=847987081]
@@ -3350,18 +3358,26 @@ position = Vector2(321, 181)
 polygon = PackedVector2Array(1, 1, 0, 362, 641, 362, 641, 1, 1, 1, 0, 0, 642, 0, 642, 363, -1, 363, 0, 0)
 
 [node name="L18ToL17" type="Area2D" parent="." unique_id=2073250590 groups=["player"]]
+position = Vector2(120, 104)
 script = ExtResource("5_vwffl")
 
 [node name="L18ToL17Collision" type="CollisionShape2D" parent="L18ToL17" unique_id=891494544]
+position = Vector2(-53, 2)
+shape = SubResource("SegmentShape2D_gy7ho")
 
 [node name="L17Tol18" type="Marker2D" parent="L18ToL17" unique_id=1031844796]
+position = Vector2(-53, 2)
 
 [node name="L18ToL19" type="Area2D" parent="." unique_id=1063619415 groups=["player"]]
+position = Vector2(499, 102)
 script = ExtResource("6_627ol")
 
 [node name="L18ToL19Collision" type="CollisionShape2D" parent="L18ToL19" unique_id=1051771956]
+position = Vector2(46, -1)
+shape = SubResource("SegmentShape2D_n0f72")
 
 [node name="L19ToL18" type="Marker2D" parent="L18ToL19" unique_id=1432706656]
+position = Vector2(45, -1)
 
 [connection signal="body_entered" from="L18ToL17" to="L18ToL17" method="_on_body_entered"]
 [connection signal="body_entered" from="L18ToL19" to="L18ToL19" method="_on_body_entered"]
