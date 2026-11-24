@@ -31,13 +31,10 @@ func _notification(what):
 	if what == NOTIFICATION_APPLICATION_FOCUS_OUT:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
-
-
 func _on_credits_pressed() -> void:
 	game_name.visible=false
 	main_menu_buttons.visible=false
 	credits.visible=true
-
 
 func _on_back_to_menu_pressed() -> void:
 	_ready()

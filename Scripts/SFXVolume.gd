@@ -1,7 +1,7 @@
 extends HSlider
 
 @export var audio_bus_name: String
-@export var preview_player: AudioStreamPlayer # optional, assign on the SFX slider only
+@export var preview_player: AudioStreamPlayer
 @export var preview_stream: AudioStream
 
 const PREVIEW_SOUND_PATH := "res://Assets/Music/Fart.mp3"
@@ -10,7 +10,7 @@ var audio_bus_id: int
 func _ready() -> void:
 	if preview_player == null and owner:
 		preview_player = owner.find_child("SFXPreview", true, false) as AudioStreamPlayer
-	drag_ended.connect(_on_drag_ended)
+	drag_ended.connect(_on_drag)
 	audio_bus_id = AudioServer.get_bus_index(audio_bus_name)
 	if audio_bus_id == -1:
 		push_warning("Bus not found: '%s'" % audio_bus_name)
@@ -23,7 +23,7 @@ func _on_value_changed(new_value: float) -> void:
 		return
 	AudioServer.set_bus_volume_db(audio_bus_id, linear_to_db(new_value))
 
-func _on_drag_ended(_value_changed: bool) -> void:
+func _on_drag(_value_changed: bool) -> void:
 	print("drag ended | slider: ", name, " | bus: '", audio_bus_name, "'")
 	if audio_bus_name != "SFX":
 		return

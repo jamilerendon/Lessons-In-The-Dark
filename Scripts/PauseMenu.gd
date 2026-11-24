@@ -1,17 +1,27 @@
 extends Control
 
+const IGNORED_SCENES := ["res://Scene/Menu/MainMenu.tscn","res://Scene/Menu/Settings.tscn"]
+
+func _is_ignored_scene() -> bool:
+	var scene := get_tree().current_scene
+	return scene != null and scene.scene_file_path in IGNORED_SCENES
+
+func _hide_immediately():
+	$AnimationPlayer.stop()
+	$PanelContainer.visible = false
+	_update_button_interactivity()
+
 func _update_button_interactivity():
 	var buttons = $PanelContainer/PauseMenuButtons
-	buttons.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	buttons.focus_mode = Control.FOCUS_NONE
-	
-	if get_tree().paused:
-		buttons.mouse_filter = Control.MOUSE_FILTER_STOP
-		buttons.focus_mode = Control.FOCUS_ALL
+	var paused := get_tree().paused
+
+	mouse_filter = Control.MOUSE_FILTER_STOP if paused else Control.MOUSE_FILTER_IGNORE
+	buttons.mouse_filter = Control.MOUSE_FILTER_STOP if paused else Control.MOUSE_FILTER_IGNORE
+	buttons.focus_mode = Control.FOCUS_ALL if paused else Control.FOCUS_NONE
 
 func resume():
 	get_tree().paused = false
-	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	Mouse.apply_current()
 	$AnimationPlayer.play_backwards("Blur")
 	await $AnimationPlayer.animation_finished
 	$PanelContainer.visible = false
@@ -20,11 +30,13 @@ func resume():
 func pause():
 	get_tree().paused = true
 	$PanelContainer.visible = true
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Mouse.apply_current()
 	$AnimationPlayer.play("Blur")
 	_update_button_interactivity()
 
 func _input(event):
+	if _is_ignored_scene():
+		return
 	if event.is_action_pressed("ui_cancel"):
 		if get_tree().paused:
 			resume()
@@ -43,10 +55,12 @@ func _on_settings_pressed():
 	Transition.return_entry_point = "EntryDefault"
 	Transition.reopen_pause_menu = true
 	get_tree().paused = false
+	_hide_immediately()
 	Transition.room_change("res://Scene/Menu/Settings.tscn", "EntryDefault")
 
 func _on_main_menu_pressed():
 	get_tree().paused = false
+	_hide_immediately()
 	Transition.room_change("res://Scene/Menu/MainMenu.tscn", "EntryDefault")
 
 func _on_quit_and_save_pressed():

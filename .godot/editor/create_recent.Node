@@ -1,3 +1,4 @@
+CanvasLayer
 AudioStreamPlayer
 Node
 Area2D
@@ -12,4 +13,3 @@ ColorRect
 TextureRect
 Button
 Label
-ScrollContainer
