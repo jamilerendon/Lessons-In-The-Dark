@@ -18,7 +18,7 @@ func _ready():
 	
 	if Transition.reopen_pause_menu:
 		Transition.reopen_pause_menu = false
-		var pause_menu = get_node_or_null("Pause/PauseMenu")  # adjust to match actual path
+		var pause_menu = get_node_or_null("Pause/PauseMenu") 
 		if pause_menu:
 			pause_menu.pause()
 

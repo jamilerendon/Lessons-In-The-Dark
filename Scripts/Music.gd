@@ -1,15 +1,20 @@
 extends AudioStreamPlayer
 
-var current_audio: AudioStream
+var audio: AudioStream
 
 func _ready() -> void:
 	bus = "Music"
-
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	finished.connect(replay)
+	
 func play_audio(track: AudioStream) -> void:
 	if track == null:
 		return
-	if track == current_audio and playing:
+	if track == audio and playing:
 		return
-	current_audio = track
+	audio = track
 	stream = track
+	play()
+
+func replay() -> void:
 	play()

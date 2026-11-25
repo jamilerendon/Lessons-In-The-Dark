@@ -4111,7 +4111,7 @@ tile_map_data = PackedByteArray("AAAJAPz/AgAAAAEAAAAJAP3/AgAAAAIAAAAJAP7/AgAAAAM
 tile_set = SubResource("TileSet_hhk1v")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_3vhby")]
-position = Vector2(517, 445)
+position = Vector2(131, 591)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1128576149]
 
@@ -4141,9 +4141,9 @@ shape = SubResource("SegmentShape2D_r56om")
 position = Vector2(-72, 8)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_0nsx5")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Oh man what time is it?", "?!?!", "10 AM!!!", "Oh man I hope I'm not late for class!"])
-speakerNames = Array[String](["Kiki", "Kiki", "Kiki", "Kiki"])
+position = Vector2(559, 350)
+dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
+speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_goq1x")]
 

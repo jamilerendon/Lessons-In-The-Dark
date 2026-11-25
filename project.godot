@@ -24,6 +24,8 @@ buses/default_bus_layout="uid://4cvofdp4jbf7"
 
 Transition="*uid://3tdnsxsbq8cg"
 Music="*uid://dlvnnuu6iw7r8"
+PauseMenu="*uid://bgg3ica6df1gh"
+Mouse="*uid://bpxr2n7n3j2bb"
 
 [display]
 

@@ -76,6 +76,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_wbhlf")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1840687374]
@@ -86,6 +87,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1651299231]
 modulate = Color(1, 1, 1, 0)
@@ -102,6 +104,7 @@ offset_right = 89.5
 offset_bottom = 94.5
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="PauseMenuButtons" type="VBoxContainer" parent="PanelContainer" unique_id=1495160977]
 layout_mode = 2
