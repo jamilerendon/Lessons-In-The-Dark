@@ -6486,8 +6486,8 @@ texture = ExtResource("3_bw8ir")
 sources/1 = SubResource("TileSetAtlasSource_al5kf")
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_1w3ds"]
-a = Vector2(9, 93)
-b = Vector2(9, 138)
+a = Vector2(0, -32)
+b = Vector2(1, 30)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_g5sx7"]
 a = Vector2(0, 21)
@@ -6556,13 +6556,15 @@ position = Vector2(321, 181)
 polygon = PackedVector2Array(0, 90, 0, 352, 640, 352, 640, 90, 0, 90, -1, -1, 641, -1, 641, 353, -1, 353, -1, -1)
 
 [node name="L10ToL9" type="Area2D" parent="." unique_id=1478499871]
+position = Vector2(42, 116)
 script = ExtResource("7_30lki")
 
 [node name="L10ToL9Collision" type="CollisionShape2D" parent="L10ToL9" unique_id=1107353641]
+position = Vector2(-37, 3)
 shape = SubResource("SegmentShape2D_1w3ds")
 
 [node name="L9ToL10" type="Marker2D" parent="L10ToL9" unique_id=1349199676]
-position = Vector2(25, 115)
+position = Vector2(7, -1)
 
 [node name="L10ToL11" type="Area2D" parent="." unique_id=1722120155]
 position = Vector2(294, -238)
@@ -6573,7 +6575,7 @@ position = Vector2(338, 357)
 shape = SubResource("SegmentShape2D_g5sx7")
 
 [node name="L11ToL10" type="Marker2D" parent="L10ToL11" unique_id=1898695262]
-position = Vector2(316, 353)
+position = Vector2(296, 352)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("10_1w3ds")]
 position = Vector2(427, 393)

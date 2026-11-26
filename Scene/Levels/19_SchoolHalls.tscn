@@ -2392,7 +2392,7 @@ position = Vector2(-44, -1)
 shape = SubResource("SegmentShape2D_vwffl")
 
 [node name="L18Tol19" type="Marker2D" parent="L19ToL18" unique_id=1244521715]
-position = Vector2(-44, -1)
+position = Vector2(1, 0)
 
 [node name="L19ToL20" type="Area2D" parent="." unique_id=1017858967]
 position = Vector2(579, 201)
@@ -2402,7 +2402,7 @@ position = Vector2(45, -2)
 shape = SubResource("SegmentShape2D_627ol")
 
 [node name="L20ToL19" type="Marker2D" parent="L19ToL20" unique_id=2101317512]
-position = Vector2(45, -2)
+position = Vector2(0, -1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_kyj83")]
 position = Vector2(427, 393)

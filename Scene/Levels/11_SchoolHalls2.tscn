@@ -2392,7 +2392,7 @@ position = Vector2(6, 196)
 shape = SubResource("SegmentShape2D_2egsw")
 
 [node name="L10ToL11" type="Marker2D" parent="L11ToL10" unique_id=2101777778]
-position = Vector2(38, 199)
+position = Vector2(63, 197)
 
 [node name="L11ToL12" type="Area2D" parent="." unique_id=1667241065 groups=["player"]]
 script = ExtResource("7_dx2ly")
@@ -2402,7 +2402,7 @@ position = Vector2(629, 197)
 shape = SubResource("SegmentShape2D_1w3ds")
 
 [node name="L12ToL11" type="Marker2D" parent="L11ToL12" unique_id=868462801]
-position = Vector2(600, 199)
+position = Vector2(582, 197)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_dx2ly")]
 position = Vector2(427, 393)

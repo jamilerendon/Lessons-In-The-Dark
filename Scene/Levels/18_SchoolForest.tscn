@@ -3370,7 +3370,7 @@ position = Vector2(-53, 2)
 shape = SubResource("SegmentShape2D_gy7ho")
 
 [node name="L17Tol18" type="Marker2D" parent="L18ToL17" unique_id=1031844796]
-position = Vector2(-53, 2)
+position = Vector2(-11, 1)
 
 [node name="L18ToL19" type="Area2D" parent="." unique_id=1063619415 groups=["player"]]
 position = Vector2(499, 102)
@@ -3381,7 +3381,7 @@ position = Vector2(46, -1)
 shape = SubResource("SegmentShape2D_n0f72")
 
 [node name="L19ToL18" type="Marker2D" parent="L18ToL19" unique_id=1432706656]
-position = Vector2(45, -1)
+position = Vector2(-6, 1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_627ol")]
 position = Vector2(427, 393)
