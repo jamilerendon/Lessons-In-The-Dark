@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://doxg5ai681w1t"]
 
+[ext_resource type="Texture2D" uid="uid://cm5o3pyinvhao" path="res://Assets/Created Assets/UI/Dialogue Box - Jamile Rendon-Torres.png" id="1_72bn8"]
+
 [node name="dialogue_ui" type="Control" unique_id=1023885564]
 visible = false
 layout_mode = 3
@@ -10,6 +12,11 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Canvas" type="CanvasLayer" parent="." unique_id=1693578444]
+
+[node name="TextureRect" type="TextureRect" parent="Canvas" unique_id=83743518]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_72bn8")
 
 [node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=617731522]
 offset_top = 247.0

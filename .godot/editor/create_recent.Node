@@ -1,3 +1,4 @@
+TextureRect
 CanvasLayer
 AudioStreamPlayer
 Node
@@ -10,6 +11,4 @@ CollisionPolygon2D
 StaticBody2D
 TileMapLayer
 ColorRect
-TextureRect
 Button
-Label
