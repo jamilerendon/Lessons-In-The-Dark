@@ -2406,8 +2406,8 @@ position = Vector2(0, -1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_kyj83")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Kiki hears screams and destruction as she enters the school. She runs into the school yelling for Tiki, but starts to slow down as she sees blood everywhere. She continues on calling for Tiki, she continues to hear screams as she approaches Professor Sylvie's classroom she hears the voice.", "No, don't go there.. They won't hurt us. They won't separate us. Don't get near. Stop!", "Kiki continues to approach the classroom slowly as she reaches the door and peeks out of the side of the door. She can't see anything, so she casts the light spell and freezes. Kiki sees a terrifying sight. She sees a grotesque Viper eating something, Kiki shakingly shines the light to what Viper was eating and sees the devoured body of Amethyst. The voice speaks once more.", "You weren't supposed to see that.. but, I fixed it. I fixed it all.. They won't hurt you anymore. I will always protect you. Are you proud of me?"])
+speakerNames = Array[String](["Narrator", "Velgrog", "Narrator", "Velgrog"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("7_p26qr")]
 

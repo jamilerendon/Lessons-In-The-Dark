@@ -4244,8 +4244,8 @@ position = Vector2(596, 223)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_b6hh2")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Jane takes Kiki to the library.", "Here is the library. We're normally not allowed in there until the second day of school. It's the first day right now. So we gotta go to our classes, have the professors give us a list of what textbooks we need, then go to the library.  ", "Oh okay wait, are birds allowed in the school actually?", "Most animals are allowed as long as they aren't aggressive or massive, and they need to be trained. Most animals here are cats, birds, some small dogs, some people have mice, and hamsters. I even saw a ferret and a possum once.", "It's good to hear, Tiki is trained at least around me. I don't know how he will behave with others, I don't think he likes the stares I get from people.", "What stares?", "Everywhere I go people stare at me… it creeps me out. It's because I'm the only one in this school that doesn't have the magic aura around me.", "Don’t worry about the stares, truthfully.. I did… also judge you for not having the magical aura, BUT I went out of my way to get to know you and I know you have great potential, so don't worry about them and focus on yourself okay? Now come on, we have a few minutes left before class starts. Let me show you where the cafeteria is.", "Thank you Jane."])
+speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_hcdyh")]
 

@@ -4142,8 +4142,8 @@ position = Vector2(-72, 8)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_0nsx5")]
 position = Vector2(559, 350)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Oh, Hi! Um, are you lost? Only people with magic can come here.", "No no no, I'm not lost, I’m… Uh… here for my… uh… first day actually.", "Wait, you can use magic?", "Yeah.. I’m pretty decent..", "You can! Oooo, show me something.", "Uh.. yeah, I’ll uh… I’ll see what I can do…", "How did you learn those spells and how are you able to use magic? ", "I.. taught myself I’ve been.. alone for most of my childhood.", "Oh, I'm sorry, do you know what happened to your parents?", "No, I was a.. Kid when my parents disappeared, all I remember is…"])
+speakerNames = Array[String](["Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_goq1x")]
 

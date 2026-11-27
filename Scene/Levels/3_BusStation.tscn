@@ -4078,8 +4078,8 @@ shape = SubResource("SegmentShape2D_r56om")
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_vooaa")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Kiki walks to the bus station and hands the driver her ticket to Vonaria, he gives her an odd look and motions her to sit. As she walks through the bus she gets odd stares from the passengers.", "The bus arrives at the Vonaria bus drop off Kiki gets off and heads to the front gate as she walks she continues to receive odd stares from the people (Tiki starts feeling threatened) Kiki arrives at the front gate where she meets a kind stranger."])
+speakerNames = Array[String](["Narrator", "Narrator"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_opvmf")]
 

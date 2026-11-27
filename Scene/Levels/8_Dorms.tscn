@@ -4333,8 +4333,8 @@ position = Vector2(-35, 2)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("9_6fmya")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Jane takes Kiki to the dorm building.", "Here's your dorm, but you won't have time to go in. I'll help you settle in after class okay?", "Okay, wait, do you have a roommate Jane?", "I haven't met them yet. Every year your roommates change so I have a new roommate that I’ll meet afterwards. Now come on, let me show you where the library is."])
+speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jane"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("10_2nkcy")]
 

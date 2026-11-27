@@ -3929,8 +3929,8 @@ shape = SubResource("SegmentShape2D_r56om")
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("9_q2t8w")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Oh man what time is it?", "?!?!", "10 AM!!!", "Oh man I hope I'm not late for class!"])
-speakerNames = Array[String](["Kiki", "Kiki", "Kiki", "Kiki"])
+dialogues = Array[String](["Oh my goodness! My letter finally got here!? I hope I get accepted! Do you think they’ll really accept me??", "Chirp!", "You’re right I will get accepted, oooh but I don't know aren't they very picky on who they choose? ahhhh let me check.", "Ahhh I can't wait anymore, Tiki can you go retrieve the letter please.", "YEEESSSS!! Tiki! I got accepted! Oh my god this is my dream come true! And look! you can come with me, I'm allowed to bring an animal companion, YEEESS. I have to start packing."])
+speakerNames = Array[String](["Kiki", "Tiki", "Kiki", "Kiki", "Kiki"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_5gx3e")]
 

@@ -5090,8 +5090,8 @@ position = Vector2(-7, 0)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_vr7mt")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Alright Kiki, listen up! You have a few things here, let's get the obvious stuff out the way. Here is the closet, don't think I need to explain stuff here, and then over here is your cauldron so you can make magic potions for stuff like healing, strength, speed, etc. Then over here is your grimoire stand. You know the book Professor Sylvie told you to get, you put it on the stand. This is so you can study all you need to know about the different magic spells, what they do, their stats and casting movement. And lastly you got the wand stand. This is to upgrade your wand and to customize it, just get the stuff you need, bring it here and boom you upgrade your wand. Here take this.", "Jane hands Kiki some materials. ", "Use the materials to upgrade your wand and look at your grimoire to look for the creation spell. ", "Kiki does as instructed. ", "Now use the spell to create a place for Tiki to sleep in.", "Kiki casts creation and creates a fancy parrot cage for Tiki. Tiki is very excited about his new cage.", "Omg, I love the cage. Is there a limit to the creation spell?", "Only the level of the wand and magic user.", "That's so cool! Thank you Jane, for everything, really.", "No problem bestie! I got you, alright, I'm tired so I’ll go to my dorm and get some sleep. You should sleep too Kiki, you’re gonna need it.", "I will don't worry, I'll see you tomorrow morning, good night..", "Goodnight bestie!", "The first day is now over."])
+speakerNames = Array[String](["Jane", "Narrator", "Jane", "Narrator", "Jane", "Narrator", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Narrator"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_gnumx")]
 

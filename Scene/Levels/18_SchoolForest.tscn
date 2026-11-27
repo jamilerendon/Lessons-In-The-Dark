@@ -3385,8 +3385,8 @@ position = Vector2(-6, 1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_627ol")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
+dialogues = Array[String](["Text 1Drop her here. Listen, you useless normie. I don't know how you are able to use advanced magic, but I'm not gonna sit and wait to find out. Get up, I’ll make it fair for you, we'll let you fight back.", "Lets see what you got coco, this is oddly exciting.", "Gosh, what is this feeling? Do I feel bad? Nah, I hope you can at least last. I get bored easily.", "Kiki gets up and prepares to fight the three. As the fight goes on the school sets out a danger alarm stopping the fight instantly.", "Why is the alarm going on?", "It's the intruder alarm, something got into the school.", "How did an intruder even get into the school? The school has the most prestige defenses. Let's go check it out.", "The four of them start to run to the school, but stop midway and push Kiki back.", "Not you normie! We'll come back for you. This is a job for the gifted.", "Leona casts wing bind on Kiki restraining her while the 3 run back to the school.", "Argh.. those …. whats the word… ah whatever. ", "Kiki casts a release spell freeing herself. ", "Tiki.. I'm coming back for you."])
+speakerNames = Array[String](["Leona", "Lexi", "Valeria", "Narrator", "Lexi", "Kiki", "Leona", "Narrator", "Valeria", "Narrator", "Kiki", "Narrator", "Kiki"])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_ebal7")]
 

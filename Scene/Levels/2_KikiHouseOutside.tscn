@@ -8,8 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="6_essnw"]
 [ext_resource type="Script" uid="uid://cxffuacekg88o" path="res://Doors/L2ToL1.gd" id="7_dsy2d"]
 [ext_resource type="Script" uid="uid://dcsg7hvt0ajlp" path="res://Doors/L2ToL3.gd" id="8_qimsi"]
-[ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="9_brm10"]
-[ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="10_tj2xi"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="11_dlfcb"]
 [ext_resource type="AudioStream" uid="uid://bi3tmtqdwg1em" path="res://Assets/Music/LITD Forest.mp3" id="12_s7usm"]
 
@@ -6107,13 +6105,6 @@ shape = SubResource("SegmentShape2D_r56om")
 
 [node name="L3ToL2" type="Marker2D" parent="L2ToL3" unique_id=1195754356]
 position = Vector2(976, 415)
-
-[node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("9_brm10")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Text 1", "Text 2", "Text 3", "Text 4"])
-speakerNames = Array[String](["Speaker", "Speaker", "Speaker", "Speaker"])
-
-[node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("10_tj2xi")]
 
 [node name="Level Music" type="Node" parent="." unique_id=10992472]
 script = ExtResource("11_dlfcb")
