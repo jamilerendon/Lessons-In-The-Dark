@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://doxg5ai681w1t"]
 
 [ext_resource type="Texture2D" uid="uid://cm5o3pyinvhao" path="res://Assets/Created Assets/UI/Dialogue Box - Jamile Rendon-Torres.png" id="1_72bn8"]
+[ext_resource type="FontFile" uid="uid://criadhkfkeewx" path="res://Scene/Menu/CrowveilRegular-1jxjv.ttf" id="2_rxxoq"]
 
 [node name="dialogue_ui" type="Control" unique_id=1023885564]
 visible = false
@@ -14,34 +15,42 @@ grow_vertical = 2
 [node name="Canvas" type="CanvasLayer" parent="." unique_id=1693578444]
 
 [node name="TextureRect" type="TextureRect" parent="Canvas" unique_id=83743518]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = -1
+anchor_left = 0.25300002
+anchor_top = 0.708
+anchor_right = 0.74700004
+anchor_bottom = 0.90300006
+offset_left = -77.92001
+offset_top = -95.90405
+offset_right = 3701.92
+offset_bottom = -166.10406
+scale = Vector2(0.115, 0.083)
 texture = ExtResource("1_72bn8")
-
-[node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=617731522]
-offset_top = 247.0
-offset_right = 640.0
-offset_bottom = 351.0
-color = Color(0, 0, 0, 1)
+expand_mode = 1
+stretch_mode = 2
 
 [node name="DialogueText" type="RichTextLabel" parent="Canvas" unique_id=1327571914]
-offset_left = 22.0
-offset_top = 274.0
-offset_right = 625.0
-offset_bottom = 351.0
+offset_left = 176.0
+offset_top = 279.0
+offset_right = 463.0
+offset_bottom = 312.0
+theme_override_fonts/normal_font = ExtResource("2_rxxoq")
+theme_override_font_sizes/normal_font_size = 8
 text = "This is Dialogue Text..."
 
 [node name="SpeakerName" type="RichTextLabel" parent="Canvas" unique_id=697746614]
-offset_left = 22.0
-offset_top = 247.0
-offset_right = 172.0
-offset_bottom = 287.0
+offset_left = 176.0
+offset_top = 267.0
+offset_right = 463.0
+offset_bottom = 279.0
+theme_override_fonts/normal_font = ExtResource("2_rxxoq")
+theme_override_font_sizes/normal_font_size = 8
 text = "Speaker Name"
 
 [node name="Button" type="Button" parent="Canvas" unique_id=1430894970]
-offset_left = 461.0
-offset_top = 318.0
-offset_right = 614.0
-offset_bottom = 349.0
-theme_override_font_sizes/font_size = 13
+offset_left = 421.0
+offset_top = 297.0
+offset_right = 462.72455
+offset_bottom = 312.0
+theme_override_font_sizes/font_size = 4
 text = "Continue"

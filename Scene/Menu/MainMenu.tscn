@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://b3tnjnrvhvbbw"]
 
 [ext_resource type="Script" uid="uid://dw8jypu1efae5" path="res://Scripts/MainMenu.gd" id="1_v5mi7"]
-[ext_resource type="FontFile" uid="uid://dfkdbs8f7wygw" path="res://Scene/Menu/Milky Cream.otf" id="2_60v5t"]
 [ext_resource type="Texture2D" uid="uid://dphmgnq6wv04q" path="res://Assets/LessonsInTheDarkMainMenuScreen.png" id="2_weyvt"]
 [ext_resource type="Script" uid="uid://desd00t8yedbt" path="res://Scripts/DisplaySettings.gd" id="3_kbsla"]
+[ext_resource type="FontFile" uid="uid://b4hev34vmpxx6" path="res://Scene/Menu/KingstoneDemoRegular-G3n5G.ttf" id="3_nnft0"]
 [ext_resource type="Script" uid="uid://3f7fs3xj6km2" path="res://Scripts/MainVolume.gd" id="3_q7bsc"]
+[ext_resource type="FontFile" uid="uid://criadhkfkeewx" path="res://Scene/Menu/CrowveilRegular-1jxjv.ttf" id="4_b6xib"]
 [ext_resource type="Script" uid="uid://cc6rlpa2s5qh0" path="res://Scripts/MusicVolume.gd" id="4_ng4i6"]
 [ext_resource type="Script" uid="uid://pa872f0t5nuk" path="res://Scripts/SFXVolume.gd" id="5_kbsla"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="8_tqsei"]
@@ -82,7 +83,7 @@ offset_right = 194.0
 offset_bottom = 28.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_60v5t")
+theme_override_fonts/font = ExtResource("3_nnft0")
 theme_override_font_sizes/font_size = 40
 text = "Lessons 
 in the Dark"
@@ -112,7 +113,7 @@ offset_left = -96.0
 offset_right = 96.0
 offset_bottom = 34.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("2_60v5t")
+theme_override_fonts/font = ExtResource("4_b6xib")
 theme_override_font_sizes/font_size = 20
 text = "Settings"
 horizontal_alignment = 1
@@ -246,7 +247,7 @@ offset_left = -96.0
 offset_right = 96.0
 offset_bottom = 34.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("2_60v5t")
+theme_override_fonts/font = ExtResource("4_b6xib")
 theme_override_font_sizes/font_size = 20
 text = "Credits"
 horizontal_alignment = 1
@@ -261,6 +262,23 @@ offset_bottom = 280.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Credits/ScrollContainer" unique_id=1162156336]
 layout_mode = 2
+
+[node name="Studio Label" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=488443436]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "CREATED BY MOONI STUDIOS"
+
+[node name="Script Writers" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=173147709]
+layout_mode = 2
+text = "Script Writers"
+
+[node name="Script Writer Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=733620101]
+layout_mode = 2
+text = "Jamile Rendon-Torres
+Fernando Perez
+NPC Writer - Ann Le
+Dorian Villegas
+"
 
 [node name="Game Director" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=872848501]
 layout_mode = 2
@@ -277,9 +295,25 @@ text = "Artists"
 
 [node name="Artist Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=1084762867]
 layout_mode = 2
-text = "Jamile Rendon-Torres
-Kino
-jahroo
+text = "2D Character Artist - Kino
+2D Character Artist - Jahroo
+2D Character / Pixel Artist - Jamile Rendon-Torres
+"
+
+[node name="Voice Actors" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=846605206]
+layout_mode = 2
+text = "Voice Actors"
+
+[node name="VA Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=437126080]
+layout_mode = 2
+text = "Kiki - Jamile Rendon-Torres
+Jaime - Dorian Villegas
+Lexi & Professor Sylvie - letsplaykay
+Jane - Alexis
+Tiki - Jason
+Amethyst & Leona - Janely Rendon-Torres
+Viper - Ann Le
+Valeria - 
 "
 
 [node name="Music Artists" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=476170641]
@@ -288,28 +322,17 @@ text = "Music Artists"
 
 [node name="Music Artist Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=1353772421]
 layout_mode = 2
-text = "xavioul
+text = "Xaviol
 "
 
-[node name="Programmers" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=1178042328]
+[node name="Coders" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=1178042328]
 layout_mode = 2
-text = "Programmers"
+text = "Coders"
 
-[node name="Programmer Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=404619130]
+[node name="Coder Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=404619130]
 layout_mode = 2
-text = "Jamile Rendon-Torres
-Magic Eagle
-Steven Mai
-"
-
-[node name="Script Writers" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=173147709]
-layout_mode = 2
-text = "Script Writers"
-
-[node name="Script Writer Names" type="Label" parent="Credits/ScrollContainer/VBoxContainer" unique_id=733620101]
-layout_mode = 2
-text = "Fernie Perez
-Dorian Villegas
+text = "Main Programmer - Steven Mai
+Dialogue Programmer - Legion
 
 "
 
