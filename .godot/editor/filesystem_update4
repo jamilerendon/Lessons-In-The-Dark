@@ -1,4 +1,3 @@
-res://Scene/Levels/9_Library.tscn
-res://Scene/Menu/PauseMenu.gdshader
 res://Scene/dialogue_ui.tscn
-res://Scene/Levels/1_KikiHouseInside.tscn
+res://Scene/Menu/PauseMenu.gdshader
+res://Scene/Menu/MainMenu.tscn
