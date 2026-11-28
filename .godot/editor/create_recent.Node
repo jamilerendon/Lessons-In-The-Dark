@@ -1,5 +1,6 @@
-Label
+ColorRect
 TextureRect
+Label
 CanvasLayer
 AudioStreamPlayer
 Node
@@ -11,5 +12,3 @@ TileMap
 CollisionPolygon2D
 StaticBody2D
 TileMapLayer
-ColorRect
-Button

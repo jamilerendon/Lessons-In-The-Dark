@@ -1,3 +1,7 @@
-res://Scene/dialogue_ui.tscn
+res://Scene/Levels/1_KikiHouseInside.tscn
 res://Scene/Menu/PauseMenu.gdshader
-res://Scene/Menu/MainMenu.tscn
+res://Scene/Dialogue/dialogue_trigger.gd
+res://Scene/dialogue_ui.tscn
+res://Scene/Levels/2_KikiHouseOutside.tscn
+res://Scene/Levels/3_BusStation.tscn
+res://Scene/Levels/4_SchoolGates.tscn
