@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cejr4j86id1nk"
+path="res://.godot/imported/No, dont go there....mp3-3ae541f1c0978f12b8d85f77bae6d0e4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Created Assets/Voice Lines/Velgrog_Tiki/No, dont go there....mp3"
+dest_files=["res://.godot/imported/No, dont go there....mp3-3ae541f1c0978f12b8d85f77bae6d0e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

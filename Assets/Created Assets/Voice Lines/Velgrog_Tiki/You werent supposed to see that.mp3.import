@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cp11y34y4slk7"
+path="res://.godot/imported/You werent supposed to see that.mp3-f2217f0f43af67148e29b4080eb00af1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Created Assets/Voice Lines/Velgrog_Tiki/You werent supposed to see that.mp3"
+dest_files=["res://.godot/imported/You werent supposed to see that.mp3-f2217f0f43af67148e29b4080eb00af1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

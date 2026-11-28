@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m3xca3f0tm0w"
+path="res://.godot/imported/I wont let her (no shush).mp3-312472bb554fad85a6919a6077d39f97.mp3str"
+
+[deps]
+
+source_file="res://Assets/Created Assets/Voice Lines/Velgrog_Tiki/I wont let her (no shush).mp3"
+dest_files=["res://.godot/imported/I wont let her (no shush).mp3-312472bb554fad85a6919a6077d39f97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

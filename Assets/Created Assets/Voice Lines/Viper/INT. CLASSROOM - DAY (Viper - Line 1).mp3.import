@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://x8lgmwh1kd4c"
+path="res://.godot/imported/INT. CLASSROOM - DAY (Viper - Line 1).mp3-930ba11769aeb17e4036026fb045cf95.mp3str"
+
+[deps]
+
+source_file="res://Assets/Created Assets/Voice Lines/Viper/INT. CLASSROOM - DAY (Viper - Line 1).mp3"
+dest_files=["res://.godot/imported/INT. CLASSROOM - DAY (Viper - Line 1).mp3-930ba11769aeb17e4036026fb045cf95.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
