@@ -5,12 +5,30 @@
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_l2w0o"]
 [ext_resource type="Texture2D" uid="uid://dyewu80cwi50e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/Interior.png" id="3_82cnd"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_10tc3"]
+[ext_resource type="Texture2D" uid="uid://co54nttwlhuqp" path="res://Assets/Created Assets/Characters/Pixel Sprites/LeonaCharacterBase_1.png" id="5_br3io"]
 [ext_resource type="Script" uid="uid://c5gap8dnjnwp6" path="res://Doors/L13ToL12.gd" id="6_10tc3"]
 [ext_resource type="Script" uid="uid://dhpvyv2x3dhmg" path="res://Doors/L13ToL14.gd" id="7_1cciy"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_1cciy"]
+[ext_resource type="Texture2D" uid="uid://cof5fkk5olwn4" path="res://Assets/Created Assets/Characters/Pixel Sprites/LexiCharacterBase_1.png" id="8_weood"]
+[ext_resource type="Texture2D" uid="uid://6pjnrvyciyrc" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_leona_happy_bust_1.png" id="9_a0m5g"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_cus7y"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="9_hox7e"]
+[ext_resource type="Texture2D" uid="uid://c5b2hhw1ri1ui" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_valeria_happy_1.png" id="10_0ixyj"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_3fx0k"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="10_p6gxf"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_8i7x1"]
+[ext_resource type="Texture2D" uid="uid://df6whvyuglraf" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_lexi__angry_bust_1.png" id="11_ojt7p"]
+[ext_resource type="Texture2D" uid="uid://cjt1o14jknq4n" path="res://Assets/Created Assets/Characters/Pixel Sprites/ViperCharacterBase_1.png" id="12_hox7e"]
+[ext_resource type="Texture2D" uid="uid://bcx5m54gpjelt" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_lexi__happy_bust_1.png" id="13_5aden"]
+[ext_resource type="Texture2D" uid="uid://k4b5uw0c60ey" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaimeCharacterBase_1.png" id="14_p6gxf"]
+[ext_resource type="Texture2D" uid="uid://1qkieoisw1dv" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_valeria_serious_1.png" id="15_bxaht"]
+[ext_resource type="Texture2D" uid="uid://bvlbm5yjihov8" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_amethyst__angry_bust_1.png" id="17_5aden"]
+[ext_resource type="Texture2D" uid="uid://hvldhj8imm67" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Scared_1.png" id="18_p6gxf"]
+[ext_resource type="Texture2D" uid="uid://cdky3yg7i5cg3" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Sad_1.png" id="19_5aden"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="21_bxaht"]
+[ext_resource type="Texture2D" uid="uid://d2xn6bnd246jp" path="res://Assets/Created Assets/Characters/Pixel Sprites/ValeriaCharacterBase_1.png" id="26_wll0i"]
+[ext_resource type="Texture2D" uid="uid://cn13yo8fx2g0q" path="res://Assets/Created Assets/Characters/Pixel Sprites/AmethystCharacterBase_1.png" id="28_8daan"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="29_wqrtl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82cnd"]
 texture = ExtResource("1_l2w0o")
@@ -2376,6 +2394,26 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_1vh4g")
 
+[node name="LeonaCharacterBase1" type="Sprite2D" parent="." unique_id=808056431]
+position = Vector2(43, 134)
+texture = ExtResource("5_br3io")
+
+[node name="ValeriaCharacterBase1" type="Sprite2D" parent="." unique_id=968025927]
+position = Vector2(99, 148)
+texture = ExtResource("26_wll0i")
+
+[node name="ViperCharacterBase1" type="Sprite2D" parent="." unique_id=1227021805]
+position = Vector2(112, 253)
+texture = ExtResource("12_hox7e")
+
+[node name="LexiCharacterBase1" type="Sprite2D" parent="." unique_id=1838641316]
+position = Vector2(48, 252)
+texture = ExtResource("8_weood")
+
+[node name="AmethystCharacterBase1" type="Sprite2D" parent="." unique_id=1793210663]
+position = Vector2(143, 135)
+texture = ExtResource("28_8daan")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_10tc3")]
 position = Vector2(313, 184)
 
@@ -2407,15 +2445,25 @@ shape = SubResource("SegmentShape2D_67oeh")
 position = Vector2(-7, 0)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_1cciy")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Kiki leaves the classroom completely terrified. She holds Tiki closer to hopefully calm her nerves (she is having a panic attack). As she slowly walks around the school she sees every student looking at her in a dead deformed way making her panic attack worse as she hyperventilates, a familiar bunch approaches her.", "Oh look girls, our little baby isn’t doing too well, did the mean lady hurt you cutie?", "The professor for sure did something, she isn't too kind to the normies.", "How come the professor gets to hurt her? That's not fair.. I want to hurt her too!", "You're going to touch that thing? Ew, girls, have some dignity, we don't touch trash.", "Lexi pulls her wand out but stops after what viper said.", "Ugh, you're right, but wait, do you know what we do to trash.", "She pulls her wand again.", "We burn it. ", "Lexi lights her wand and prepares to burn kiki, but someone redirects the fire.", "Yo, the hell are you girls thinking!", "Oh look, the boyfriend is here, ha! Mind your business nerd.", "Uh, this is my business. You're about to use reckless magic, are you trying to get in trouble?", "And what are the sorcerers gonna do? They love us, for obvious reasons.", "You really think they won't punish you?", "No yea the nerd is right, that's a little weird Val.", "The other girls agree.", "It's because one of the elite sorcerers is Valeria's father. So it makes what you said worse.", "Ugh! You guys are too serious, I don't mean it that way, but you know what. I’m not gonna talk anymore. Let's just go, this is a waste of my time.", "The girls leave. Jamie goes to Kiki and helps her.", "Are you okay? Did they hurt you? Kiki?", "Kiki is slowly calming down.   ", "I….. uh……. I’m…….. I’m ok. It's just….. ", "From a few feet Jane comes and sees the state Kiki is in.", "Kiki! Are you alright!? What happened? Did those demons hurt you?", "No they didn't, but… ", "Kiki looks up and sees everything went back to normal, she doesn't see them anymore.", "They…. Tried to hurt me, Jamie stopped them.", "That's good, but was it them that had you like that? It looked like you had a panic attack.", "I don’t know what happened, Professor Sylvie was talking to me and she threatened me, but…", "Kiki hears the voice again.", "Threatened you??? WHAT! What do you mean, what happened? Kiki! ", "Don't tell them. They can't know. They won't believe you", "What was that, did you guys hear that?", "Kiki, what happened, what do you mean she threatened you? Are you sure you're okay? Are you hearing things?", "I… I… don’t know… I’m.. Scared.", "Hey, calm down, come let’s go to the library. There's a spell that helps calm you down so you can focus.", "Jane and Jamie take Kiki to the library, on their way there. Jane and Jamie are talking to each other. Kiki can't hear them well as her panic attack continues.", "What do you mean you don't know? You were with her?", "I don't know what happened. I just saw the five of them surrounding her and about to burn her. And did you hear her say the professor threatened her? ", "Yes, I heard her but she isn't doing well. We’ll ask her at the library when she gets better, okay?"])
+position = Vector2(160, 149)
 speakerNames = Array[String](["Narrator", "Leona", "Valeria", "Lexi", "Viper", "Narrator", "Lexi", "Narrator", "Lexi", "Narrator", "Jaime", "Valeria", "Jaime", "Valeria", "Jaime", "Lexi", "Narrator", "Amethyst", "Valeria", "Narrator", "Jaime", "Narrator", "Kiki", "Narrator", "Jane", "Kiki", "Narrator", "Kiki", "Jane", "Kiki", "Narrator", "Jane", "Tiki", "Kiki", "Jane", "Kiki", "Jaime", "Narrator", "Jane", "Jaime", "Jane"])
+dialogues = Array[String](["Kiki leaves the classroom completely terrified. She holds Tiki closer to hopefully calm her nerves (she is having a panic attack). As she slowly walks around the school she sees every student looking at her in a dead deformed way making her panic attack worse as she hyperventilates, a familiar bunch approaches her.", "Oh look girls, our little baby isn’t doing too well, did the mean lady hurt you cutie?", "The professor for sure did something, she isn't too kind to the normies.", "How come the professor gets to hurt her? That's not fair.. I want to hurt her too!", "You're going to touch that thing? Ew, girls, have some dignity, we don't touch trash.", "Lexi pulls her wand out but stops after what viper said.", "Ugh, you're right, but wait, do you know what we do to trash.", "She pulls her wand again.", "We burn it. ", "Lexi lights her wand and prepares to burn kiki, but someone redirects the fire.", "Yo, the hell are you girls thinking!", "Oh look, the boyfriend is here, ha! Mind your business nerd.", "Uh, this is my business. You're about to use reckless magic, are you trying to get in trouble?", "And what are the sorcerers gonna do? They love us, for obvious reasons.", "You really think they won't punish you?", "No yea the nerd is right, that's a little weird Val.", "The other girls agree.", "It's because one of the elite sorcerers is Valeria's father. So it makes what you said worse.", "Ugh! You guys are too serious, I don't mean it that way, but you know what. I’m not gonna talk anymore. Let's just go, this is a waste of my time.", "The girls leave. Jamie goes to Kiki and helps her.", "Are you okay? Did they hurt you? Kiki?", "Kiki is slowly calming down.   ", "I….. uh……. I’m…….. I’m ok. It's just….. ", "From a few feet Jane comes and sees the state Kiki is in.", "Kiki! Are you alright!? What happened? Did those demons hurt you?", "No they didn't, but… ", "Kiki looks up and sees everything went back to normal, she doesn't see them anymore.", "They…. Tried to hurt me, Jamie stopped them.", "That's good, but was it them that had you like that? It looked like you had a panic attack.", "I don’t know what happened, Professor Sylvie was talking to me and she threatened me, but…", "Kiki hears the voice again.", "Threatened you??? WHAT! What do you mean, what happened? Kiki! ", "Don't tell them. They can't know. They won't believe you", "What was that, did you guys hear that?", "Kiki, what happened, what do you mean she threatened you? Are you sure you're okay? Are you hearing things?", "I… I… don’t know… I’m.. Scared.", "Hey, calm down, come let’s go to the library. There's a spell that helps calm you down so you can focus.", "Jane and Jamie take Kiki to the library, on their way there. Jane and Jamie are talking to each other. Kiki can't hear them well as her panic attack continues.", "What do you mean you don't know? You were with her?", "I don't know what happened. I just saw the five of them surrounding her and about to burn her. And did you hear her say the professor threatened her? ", "Yes, I heard her but she isn't doing well. We’ll ask her at the library when she gets better, okay?"])
+leftPortraits = Array[Texture2D]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ExtResource("9_hox7e"), null, null, ExtResource("9_hox7e"), null, ExtResource("9_hox7e"), null, ExtResource("10_p6gxf"), null, null, null, ExtResource("9_hox7e"), null, ExtResource("9_hox7e"), null, null, null, null, null])
+rightPortraits = Array[Texture2D]([null, ExtResource("9_a0m5g"), ExtResource("10_0ixyj"), ExtResource("11_ojt7p"), ExtResource("12_hox7e"), null, ExtResource("13_5aden"), null, ExtResource("11_ojt7p"), null, ExtResource("14_p6gxf"), ExtResource("15_bxaht"), ExtResource("14_p6gxf"), ExtResource("10_0ixyj"), ExtResource("14_p6gxf"), ExtResource("13_5aden"), null, ExtResource("17_5aden"), ExtResource("15_bxaht"), null, ExtResource("14_p6gxf"), null, null, null, ExtResource("18_p6gxf"), null, null, null, ExtResource("19_5aden"), null, null, ExtResource("18_p6gxf"), null, null, ExtResource("18_p6gxf"), null, ExtResource("14_p6gxf"), null, ExtResource("21_bxaht"), ExtResource("14_p6gxf"), ExtResource("21_bxaht")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_cus7y")]
 
 [node name="Level Music" type="Node" parent="." unique_id=75081793]
 script = ExtResource("10_3fx0k")
 track = ExtResource("11_8i7x1")
+
+[node name="JaimeCharacterBase1" type="Sprite2D" parent="." unique_id=1580139917]
+position = Vector2(379, 154)
+texture = ExtResource("14_p6gxf")
+
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=1139210101]
+position = Vector2(416, 235)
+texture = ExtResource("29_wqrtl")
 
 [connection signal="body_entered" from="L13ToL12" to="L13ToL12" method="_on_body_entered"]
 [connection signal="body_entered" from="L13ToL14" to="L13ToL14" method="_on_body_entered"]

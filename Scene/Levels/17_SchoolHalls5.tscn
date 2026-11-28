@@ -9,8 +9,16 @@
 [ext_resource type="Script" uid="uid://m35jlliwe6vb" path="res://Doors/L17ToL18.gd" id="7_n0f72"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_n0f72"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_82rjf"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="9_jwcj5"]
+[ext_resource type="Texture2D" uid="uid://6pjnrvyciyrc" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_leona_happy_bust_1.png" id="10_volrh"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_vub1f"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_dvthc"]
+[ext_resource type="Texture2D" uid="uid://ivo5r1knc4lc" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_leona_angry_bust_1.png" id="11_volrh"]
+[ext_resource type="Texture2D" uid="uid://co54nttwlhuqp" path="res://Assets/Created Assets/Characters/Pixel Sprites/LeonaCharacterBase_1.png" id="15_c45ht"]
+[ext_resource type="Texture2D" uid="uid://cof5fkk5olwn4" path="res://Assets/Created Assets/Characters/Pixel Sprites/LexiCharacterBase_1.png" id="16_eagyg"]
+[ext_resource type="Texture2D" uid="uid://d2xn6bnd246jp" path="res://Assets/Created Assets/Characters/Pixel Sprites/ValeriaCharacterBase_1.png" id="17_o1p61"]
+[ext_resource type="Texture2D" uid="uid://cjt1o14jknq4n" path="res://Assets/Created Assets/Characters/Pixel Sprites/ViperCharacterBase_1.png" id="18_l8coi"]
+[ext_resource type="Texture2D" uid="uid://cn13yo8fx2g0q" path="res://Assets/Created Assets/Characters/Pixel Sprites/AmethystCharacterBase_1.png" id="19_tq4vf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwplg"]
 texture = ExtResource("1_kr3y0")
@@ -2376,6 +2384,26 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_lgm8q")
 
+[node name="LeonaCharacterBase1" type="Sprite2D" parent="." unique_id=1335154160]
+position = Vector2(554, 156)
+texture = ExtResource("15_c45ht")
+
+[node name="LexiCharacterBase1" type="Sprite2D" parent="." unique_id=2085892662]
+position = Vector2(498, 157)
+texture = ExtResource("16_eagyg")
+
+[node name="ValeriaCharacterBase1" type="Sprite2D" parent="." unique_id=733368824]
+position = Vector2(582, 248)
+texture = ExtResource("17_o1p61")
+
+[node name="ViperCharacterBase1" type="Sprite2D" parent="." unique_id=1684022175]
+position = Vector2(517, 257)
+texture = ExtResource("18_l8coi")
+
+[node name="AmethystCharacterBase1" type="Sprite2D" parent="." unique_id=1148142545]
+position = Vector2(459, 240)
+texture = ExtResource("19_tq4vf")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_gy7ho")]
 position = Vector2(313, 184)
 
@@ -2407,9 +2435,11 @@ shape = SubResource("SegmentShape2D_vr7mt")
 position = Vector2(5, -2)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_n0f72")]
-position = Vector2(427, 393)
-dialogues = Array[String](["We now start off in a 2 week time skip although Jane and Jamie have tried their best they haven't been able to properly assist Kiki against the five girls and Kiki's visions have been getting worse and her panic attacks happen more times. While tiki has gotten extremely aggressive against every student that poses a threat to kiki. Kiki's school time hasn't been pleasant at all. It will all take a horrible turn on this day as she is about to receive the worst bullying she's ever had. The five girls approach kiki at the front gate once more, this time they decide to separate tiki from kiki to make kiki easier prey.", "Aw, by yourself again normie? Well.. mostly alone, for now at least. Val, catch it.", "Valeria uses the creation spell and creates a cage for Tiki, trapping him.", "HEY! No, no, no, stop! Please don’t. Do whatever you want to me, but leave Tiki out of it! ", "Lexi and Leona hold Kiki back. ", "Stop! let him go! Val please.. he means everything to me! Don’t do this! ", "Valeria hands the cage to Viper and Amethyst, and the three of them mock Kiki while slowly using small magic spells to hurt Tiki.", "Stop it! Please don't hurt him, PLEASE!", "As the three keep torturing Tiki, Kiki's instincts kick in granting her the ability to cast wind gusts, knocking all the girls to the floor. She then hears the voice once more. Leona gets up and uses wind gusts to throw Kiki away.", "Don’t be scared, I’ll fix them. Don’t be scared.", "Ugh, how in the world did you learn that spell!? Only advanced wind users know that spell! Viper! Amethyst! take the bird somewhere, we are taking Kiki somewhere fun. ", "Lexi, Valeria, and Leona grab Kiki and drag her to the forest, while Viper and Amethyst take Tiki into the school, both Kiki and Tiki screaming."])
+position = Vector2(462, 163)
 speakerNames = Array[String](["Narrator", "Leona", "Narrator", "Kiki", "Narrator", "Kiki", "Narrator", "Kiki", "Narrator", "Tiki", "Leona", "Narrator"])
+dialogues = Array[String](["We now start off in a 2 week time skip although Jane and Jamie have tried their best they haven't been able to properly assist Kiki against the five girls and Kiki's visions have been getting worse and her panic attacks happen more times. While tiki has gotten extremely aggressive against every student that poses a threat to kiki. Kiki's school time hasn't been pleasant at all. It will all take a horrible turn on this day as she is about to receive the worst bullying she's ever had. The five girls approach kiki at the front gate once more, this time they decide to separate tiki from kiki to make kiki easier prey.", "Aw, by yourself again normie? Well.. mostly alone, for now at least. Val, catch it.", "Valeria uses the creation spell and creates a cage for Tiki, trapping him.", "HEY! No, no, no, stop! Please don’t. Do whatever you want to me, but leave Tiki out of it! ", "Lexi and Leona hold Kiki back. ", "Stop! let him go! Val please.. he means everything to me! Don’t do this! ", "Valeria hands the cage to Viper and Amethyst, and the three of them mock Kiki while slowly using small magic spells to hurt Tiki.", "Stop it! Please don't hurt him, PLEASE!", "As the three keep torturing Tiki, Kiki's instincts kick in granting her the ability to cast wind gusts, knocking all the girls to the floor. She then hears the voice once more. Leona gets up and uses wind gusts to throw Kiki away.", "Don’t be scared, I’ll fix them. Don’t be scared.", "Ugh, how in the world did you learn that spell!? Only advanced wind users know that spell! Viper! Amethyst! take the bird somewhere, we are taking Kiki somewhere fun. ", "Lexi, Valeria, and Leona grab Kiki and drag her to the forest, while Viper and Amethyst take Tiki into the school, both Kiki and Tiki screaming."])
+leftPortraits = Array[Texture2D]([null, null, null, ExtResource("9_jwcj5"), null, ExtResource("9_jwcj5"), null, ExtResource("9_jwcj5"), null, null, null, null])
+rightPortraits = Array[Texture2D]([null, ExtResource("10_volrh"), null, null, null, null, null, null, null, null, ExtResource("11_volrh"), null])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_82rjf")]
 

@@ -4030,7 +4030,7 @@ tile_map_data = PackedByteArray("AAAGAAYAAAAEADYAAAAeABMAAAAEADYAAAAHABQAAAAEADY
 tile_set = SubResource("TileSet_er03j")
 
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("3_eksel")]
-position = Vector2(321, 181)
+position = Vector2(108, 147)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1985161909]
 
@@ -4057,9 +4057,9 @@ shape = SubResource("SegmentShape2D_r56om")
 [node name="L6ToL5" type="Marker2D" parent="L5ToL6" unique_id=1950624426]
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_k58hk")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Here we see how Kiki met Tiki. She was alone waiting for her parents to come home. She waited a bit too long so she decided to search for them and she followed their footsteps.", "Once she reached the end of the footprints she heard some rustling in the bushes a few seconds after waiting for whatever was waiting in the bushes a pesquets parrot emerged and flew around the area scanning for any threats. After a bit the parrot lands on Kiki's side she named it Tiki."])
+position = Vector2(263, 137)
 speakerNames = Array[String](["Narrator", "Narrator"])
+dialogues = Array[String](["Here we see how Kiki met Tiki. She was alone waiting for her parents to come home. She waited a bit too long so she decided to search for them and she followed their footsteps.", "Once she reached the end of the footprints she heard some rustling in the bushes a few seconds after waiting for whatever was waiting in the bushes a pesquets parrot emerged and flew around the area scanning for any threats. After a bit the parrot lands on Kiki's side she named it Tiki."])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_kfbwy")]
 

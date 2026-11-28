@@ -5,11 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_onuoq"]
 [ext_resource type="Texture2D" uid="uid://dyewu80cwi50e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/Interior.png" id="3_vj83p"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_p26qr"]
+[ext_resource type="Texture2D" uid="uid://dss4stlgs5fd7" path="res://Assets/Created Assets/Characters/Pixel Sprites/VelgrogCharacterBase_1.png" id="5_7cq2m"]
 [ext_resource type="Script" uid="uid://bstgklyloo8nt" path="res://Doors/L19ToL18.gd" id="6_vj83p"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_kyj83"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="7_p26qr"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="8_038vy"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_5ssxk"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="10_038vy"]
+[ext_resource type="Texture2D" uid="uid://cq36qi1cure50" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_tiki_evil1_1.png" id="10_uvl8n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vj83p"]
 texture = ExtResource("1_onuoq")
@@ -2375,6 +2378,10 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_5ssxk")
 
+[node name="VelgrogCharacterBase1" type="Sprite2D" parent="." unique_id=1561704148]
+position = Vector2(591, 155)
+texture = ExtResource("5_7cq2m")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_p26qr")]
 position = Vector2(313, 184)
 
@@ -2406,8 +2413,10 @@ position = Vector2(0, -1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_kyj83")]
 position = Vector2(427, 393)
-dialogues = Array[String](["Kiki hears screams and destruction as she enters the school. She runs into the school yelling for Tiki, but starts to slow down as she sees blood everywhere. She continues on calling for Tiki, she continues to hear screams as she approaches Professor Sylvie's classroom she hears the voice.", "No, don't go there.. They won't hurt us. They won't separate us. Don't get near. Stop!", "Kiki continues to approach the classroom slowly as she reaches the door and peeks out of the side of the door. She can't see anything, so she casts the light spell and freezes. Kiki sees a terrifying sight. She sees a grotesque Viper eating something, Kiki shakingly shines the light to what Viper was eating and sees the devoured body of Amethyst. The voice speaks once more.", "You weren't supposed to see that.. but, I fixed it. I fixed it all.. They won't hurt you anymore. I will always protect you. Are you proud of me?"])
 speakerNames = Array[String](["Narrator", "Velgrog", "Narrator", "Velgrog"])
+dialogues = Array[String](["Kiki hears screams and destruction as she enters the school. She runs into the school yelling for Tiki, but starts to slow down as she sees blood everywhere. She continues on calling for Tiki, she continues to hear screams as she approaches Professor Sylvie's classroom she hears the voice.", "No, don't go there.. They won't hurt us. They won't separate us. Don't get near. Stop!", "Kiki continues to approach the classroom slowly as she reaches the door and peeks out of the side of the door. She can't see anything, so she casts the light spell and freezes. Kiki sees a terrifying sight. She sees a grotesque Viper eating something, Kiki shakingly shines the light to what Viper was eating and sees the devoured body of Amethyst. The voice speaks once more.", "You weren't supposed to see that.. but, I fixed it. I fixed it all.. They won't hurt you anymore. I will always protect you. Are you proud of me?"])
+leftPortraits = Array[Texture2D]([null, null, null, ExtResource("8_038vy")])
+rightPortraits = Array[Texture2D]([null, null, null, ExtResource("10_uvl8n")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("7_p26qr")]
 

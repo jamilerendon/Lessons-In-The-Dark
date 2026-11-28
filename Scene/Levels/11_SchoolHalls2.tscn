@@ -5,12 +5,18 @@
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_6dv8f"]
 [ext_resource type="Texture2D" uid="uid://dyewu80cwi50e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/Interior.png" id="3_csgep"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_rl2x5"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="5_mhsvb"]
+[ext_resource type="Texture2D" uid="uid://k4b5uw0c60ey" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaimeCharacterBase_1.png" id="6_27ovr"]
 [ext_resource type="Script" uid="uid://cja0fa44eyvsw" path="res://Doors/L11ToL10.gd" id="6_rl2x5"]
 [ext_resource type="Script" uid="uid://cfc3lnf08qhnr" path="res://Doors/L11ToL12.gd" id="7_dx2ly"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_dx2ly"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_mevet"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_3rcni"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_6ad6n"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="11_kxdco"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="12_011sy"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="13_75yjh"]
+[ext_resource type="Texture2D" uid="uid://6j31fltiipcg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_tiki_bird.png" id="14_011sy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_csgep"]
 texture = ExtResource("1_6dv8f")
@@ -2376,8 +2382,16 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_twg30")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=319548631]
+position = Vector2(456, 151)
+texture = ExtResource("5_mhsvb")
+
+[node name="JaimeCharacterBase1" type="Sprite2D" parent="." unique_id=305508617]
+position = Vector2(453, 254)
+texture = ExtResource("6_27ovr")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_rl2x5")]
-position = Vector2(313, 184)
+position = Vector2(65, 194)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=76529491]
 
@@ -2405,9 +2419,11 @@ shape = SubResource("SegmentShape2D_1w3ds")
 position = Vector2(582, 197)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_dx2ly")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Kiki follows Jane to the end of the hall.", "Yup, right here! Classroom number 54. Oh, this is an advanced class, that's weird. You barely know any magic.. Well, just be attentive, Professor Sylvie is very strict. Good luck. ", "Thank you! Good luck in your classes.", "Be careful in Ms. Sylvie's class. She isn't kind to normal people. I say get ready to show off your magic, but best of luck, you got this Kiki! if you need anything I’m in the first class on the third floor, I gotta go now, see yah.", "Jamie runs to his classroom.", "See you…. later …. and.. there he goes. Alright Tiki, are you ready for our first class?", "Tiki nods yes.", "Alright, good, first day! Hopefully this goes well."])
+position = Vector2(480, 153)
 speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jaime", "Narrator", "Kiki", "Narrator", "Kiki"])
+dialogues = Array[String](["Kiki follows Jane to the end of the hall.", "Yup, right here! Classroom number 54. Oh, this is an advanced class, that's weird. You barely know any magic.. Well, just be attentive, Professor Sylvie is very strict. Good luck. ", "Thank you! Good luck in your classes.", "Be careful in Ms. Sylvie's class. She isn't kind to normal people. I say get ready to show off your magic, but best of luck, you got this Kiki! if you need anything I’m in the first class on the third floor, I gotta go now, see yah.", "Jamie runs to his classroom.", "See you…. later …. and.. there he goes. Alright Tiki, are you ready for our first class?", "Tiki nods yes.", "Alright, good, first day! Hopefully this goes well."])
+leftPortraits = Array[Texture2D]([null, ExtResource("11_kxdco"), ExtResource("12_011sy"), ExtResource("11_kxdco"), null, ExtResource("12_011sy"), null, ExtResource("11_kxdco")])
+rightPortraits = Array[Texture2D]([null, ExtResource("13_75yjh"), ExtResource("13_75yjh"), ExtResource("6_27ovr"), null, ExtResource("14_011sy"), null, null])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_mevet")]
 

@@ -10,7 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_vr7mt"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="8_gnumx"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_yao5i"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="10_4ui80"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="10_soccr"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="11_gwqv3"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="11_ldo5q"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="12_twalr"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="13_474sl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gnumx"]
 texture = ExtResource("1_muj6j")
@@ -5058,8 +5063,12 @@ scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAATAAYAAAAUABMAABASAAYAAAAVABMAABATAAcAAAAUABQAABASAAcAAAAVABQAABATAAgAAAAUABUAABASAAgAAAAVABUAABABAAYAAAAVABMAAAAAAAYAAAAUABMAAAABAAcAAAAVABQAAAAAAAcAAAAUABQAAAABAAgAAAAVABUAAAAAAAgAAAAUABUAAAA=")
 tile_set = SubResource("TileSet_jq2s7")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=2110874315]
+position = Vector2(382, 175)
+texture = ExtResource("12_twalr")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("5_soccr")]
-position = Vector2(309, 173)
+position = Vector2(84, 176)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1444568177]
 
@@ -5089,9 +5098,11 @@ shape = SubResource("SegmentShape2D_gu1rs")
 position = Vector2(-7, 0)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_vr7mt")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Alright Kiki, listen up! You have a few things here, let's get the obvious stuff out the way. Here is the closet, don't think I need to explain stuff here, and then over here is your cauldron so you can make magic potions for stuff like healing, strength, speed, etc. Then over here is your grimoire stand. You know the book Professor Sylvie told you to get, you put it on the stand. This is so you can study all you need to know about the different magic spells, what they do, their stats and casting movement. And lastly you got the wand stand. This is to upgrade your wand and to customize it, just get the stuff you need, bring it here and boom you upgrade your wand. Here take this.", "Jane hands Kiki some materials. ", "Use the materials to upgrade your wand and look at your grimoire to look for the creation spell. ", "Kiki does as instructed. ", "Now use the spell to create a place for Tiki to sleep in.", "Kiki casts creation and creates a fancy parrot cage for Tiki. Tiki is very excited about his new cage.", "Omg, I love the cage. Is there a limit to the creation spell?", "Only the level of the wand and magic user.", "That's so cool! Thank you Jane, for everything, really.", "No problem bestie! I got you, alright, I'm tired so I’ll go to my dorm and get some sleep. You should sleep too Kiki, you’re gonna need it.", "I will don't worry, I'll see you tomorrow morning, good night..", "Goodnight bestie!", "The first day is now over."])
+position = Vector2(222, 143)
 speakerNames = Array[String](["Jane", "Narrator", "Jane", "Narrator", "Jane", "Narrator", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Narrator"])
+dialogues = Array[String](["Alright Kiki, listen up! You have a few things here, let's get the obvious stuff out the way. Here is the closet, don't think I need to explain stuff here, and then over here is your cauldron so you can make magic potions for stuff like healing, strength, speed, etc. Then over here is your grimoire stand. You know the book Professor Sylvie told you to get, you put it on the stand. This is so you can study all you need to know about the different magic spells, what they do, their stats and casting movement. And lastly you got the wand stand. This is to upgrade your wand and to customize it, just get the stuff you need, bring it here and boom you upgrade your wand. Here take this.", "Jane hands Kiki some materials. ", "Use the materials to upgrade your wand and look at your grimoire to look for the creation spell. ", "Kiki does as instructed. ", "Now use the spell to create a place for Tiki to sleep in.", "Kiki casts creation and creates a fancy parrot cage for Tiki. Tiki is very excited about his new cage.", "Omg, I love the cage. Is there a limit to the creation spell?", "Only the level of the wand and magic user.", "That's so cool! Thank you Jane, for everything, really.", "No problem bestie! I got you, alright, I'm tired so I’ll go to my dorm and get some sleep. You should sleep too Kiki, you’re gonna need it.", "I will don't worry, I'll see you tomorrow morning, good night..", "Goodnight bestie!", "The first day is now over."])
+leftPortraits = Array[Texture2D]([null, null, null, null, null, null, ExtResource("10_4ui80"), null, ExtResource("10_4ui80"), null, ExtResource("11_ldo5q"), null, null])
+rightPortraits = Array[Texture2D]([ExtResource("11_gwqv3"), null, ExtResource("11_gwqv3"), null, ExtResource("11_gwqv3"), null, null, ExtResource("11_gwqv3"), null, ExtResource("13_474sl"), null, ExtResource("13_474sl"), null])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_gnumx")]
 

@@ -4,12 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://bm2rxr7ijyffh" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Walls_interior.png" id="1_vdgxu"]
 [ext_resource type="Texture2D" uid="uid://bhck5vs2d6wkj" path="res://Assets/Outsource Assets/Guild Hall/Tiled_files/Interior_objects.png" id="2_s47h5"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_1d0bi"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="4_tp4lv"]
 [ext_resource type="Script" uid="uid://dqhsrcskxtrq1" path="res://Doors/L9ToL8.gd" id="4_yk8ub"]
 [ext_resource type="Script" uid="uid://bv7r8d06jjgyh" path="res://Doors/L9ToL10.gd" id="5_1d0bi"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_b6hh2"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="8_hcdyh"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="9_dxibe"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_p12ux"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="10_s3os7"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="10_tp4lv"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="11_pmy2e"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="11_s3os7"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="12_p8a6g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aeag7"]
 texture = ExtResource("1_s47h5")
@@ -4216,8 +4222,12 @@ scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAAHAAEAAAAQABMAAAAHAAIAAAAQABQAAAAHAAMAAAAQABUAAAAIAAEAAAARABMAAAAIAAIAAAARABQAAAAIAAMAAAARABUAAAAPAAEAAAAQABMAAAAPAAIAAAAQABQAAAAPAAMAAAAQABUAAAAQAAEAAAARABMAAAAQAAIAAAARABQAAAAQAAMAAAARABUAAAA=")
 tile_set = SubResource("TileSet_jq2s7")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=51576572]
+position = Vector2(223, 181)
+texture = ExtResource("4_tp4lv")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_1d0bi")]
-position = Vector2(320, 179)
+position = Vector2(211, 302)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=905804069]
 
@@ -4245,9 +4255,11 @@ shape = SubResource("SegmentShape2D_6fmya")
 position = Vector2(43, 3)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_b6hh2")]
-position = Vector2(367, 142)
-dialogues = Array[String](["Jane takes Kiki to the library.", "Here is the library. We're normally not allowed in there until the second day of school. It's the first day right now. So we gotta go to our classes, have the professors give us a list of what textbooks we need, then go to the library.  ", "Oh okay wait, are birds allowed in the school actually?", "Most animals are allowed as long as they aren't aggressive or massive, and they need to be trained. Most animals here are cats, birds, some small dogs, some people have mice, and hamsters. I even saw a ferret and a possum once.", "It's good to hear, Tiki is trained at least around me. I don't know how he will behave with others, I don't think he likes the stares I get from people.", "What stares?", "Everywhere I go people stare at me… it creeps me out. It's because I'm the only one in this school that doesn't have the magic aura around me.", "Don’t worry about the stares, truthfully.. I did… also judge you for not having the magical aura, BUT I went out of my way to get to know you and I know you have great potential, so don't worry about them and focus on yourself okay? Now come on, we have a few minutes left before class starts. Let me show you where the cafeteria is.", "Thank you Jane."])
+position = Vector2(256, 143)
 speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki"])
+dialogues = Array[String](["Jane takes Kiki to the library.", "Here is the library. We're normally not allowed in there until the second day of school. It's the first day right now. So we gotta go to our classes, have the professors give us a list of what textbooks we need, then go to the library.  ", "Oh okay wait, are birds allowed in the school actually?", "Most animals are allowed as long as they aren't aggressive or massive, and they need to be trained. Most animals here are cats, birds, some small dogs, some people have mice, and hamsters. I even saw a ferret and a possum once.", "It's good to hear, Tiki is trained at least around me. I don't know how he will behave with others, I don't think he likes the stares I get from people.", "What stares?", "Everywhere I go people stare at me… it creeps me out. It's because I'm the only one in this school that doesn't have the magic aura around me.", "Don’t worry about the stares, truthfully.. I did… also judge you for not having the magical aura, BUT I went out of my way to get to know you and I know you have great potential, so don't worry about them and focus on yourself okay? Now come on, we have a few minutes left before class starts. Let me show you where the cafeteria is.", "Thank you Jane."])
+leftPortraits = Array[Texture2D]([null, ExtResource("9_dxibe"), ExtResource("9_dxibe"), ExtResource("9_dxibe"), ExtResource("10_s3os7"), ExtResource("10_s3os7"), ExtResource("11_s3os7"), ExtResource("11_s3os7"), ExtResource("10_s3os7")])
+rightPortraits = Array[Texture2D]([null, ExtResource("11_pmy2e"), ExtResource("11_pmy2e"), ExtResource("12_p8a6g"), ExtResource("12_p8a6g"), ExtResource("11_pmy2e"), ExtResource("11_pmy2e"), ExtResource("12_p8a6g"), ExtResource("12_p8a6g")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_hcdyh")]
 

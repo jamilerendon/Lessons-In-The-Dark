@@ -4,12 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="2_3vhby"]
 [ext_resource type="Texture2D" uid="uid://0vvcdrrnem62" path="res://Assets/Outsource Assets/Chapel/PNG/Exterior.png" id="3_8400w"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_3vhby"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="4_udtex"]
 [ext_resource type="Script" uid="uid://31gl8tf1lro6" path="res://Doors/L4ToL3.gd" id="5_uqa0u"]
 [ext_resource type="Script" uid="uid://0ei21j3t04p" path="res://Doors/L4ToL5.gd" id="6_0nsx5"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_0nsx5"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="8_goq1x"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="8_hhk1v"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_2es1j"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="9_hhk1v"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="9_w44bk"]
 [ext_resource type="AudioStream" uid="uid://bi3tmtqdwg1em" path="res://Assets/Music/LITD Forest.mp3" id="10_2es1j"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="10_t8cxr"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="12_lx185"]
+[ext_resource type="Texture2D" uid="uid://cdky3yg7i5cg3" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Sad_1.png" id="13_lx185"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3vhby"]
 texture = ExtResource("1_vaki1")
@@ -4110,6 +4117,10 @@ scale = Vector2(2.5, 2.5)
 tile_map_data = PackedByteArray("AAAJAPz/AgAAAAEAAAAJAP3/AgAAAAIAAAAJAP7/AgAAAAMAAAAJAP//AgAAAAQAAAAJAAAAAgAAAAUAAAAJAAEAAgAAAAYAAAAJAAIAAgAAAAcAAAAJAAMAAgAAAAgAAAAJAAQAAgAAAAkAAAAKAPv/AgABAAAAAAAKAPz/AgABAAEAAAAKAP3/AgABAAIAAAAKAP7/AgABAAMAAAAKAP//AgABAAQAAAAKAAAAAgABAAUAAAAKAAEAAgABAAYAAAAKAAIAAgABAAcAAAAKAAMAAgABAAgAAAAKAAQAAgABAAkAAAALAPz/AgACAAEAAAALAP3/AgACAAIAAAALAP7/AgACAAMAAAALAP//AgACAAQAAAALAAAAAgACAAUAAAALAAEAAgACAAYAAAALAAIAAgACAAcAAAALAAMAAgACAAgAAAALAAQAAgACAAkAAAAMAPv/AgADAAAAAAAMAPz/AgADAAEAAAAMAP3/AgADAAIAAAAMAP7/AgADAAMAAAAMAP//AgADAAQAAAAMAAAAAgADAAUAAAAMAAEAAgADAAYAAAAMAAIAAgADAAcAAAAMAAMAAgADAAgAAAAMAAQAAgADAAkAAAANAPv/AgAEAAAAAAANAPz/AgAEAAEAAAANAP3/AgAEAAIAAAANAP7/AgAEAAMAAAANAP//AgAEAAQAAAANAAAAAgAEAAUAAAANAAEAAgAEAAYAAAANAAIAAgAEAAcAAAANAAMAAgAEAAgAAAANAAQAAgAEAAkAAAAOAPz/AgAFAAEAAAAOAP3/AgAFAAIAAAAOAP7/AgAFAAMAAAAOAP//AgAFAAQAAAAOAAAAAgAFAAUAAAAOAAEAAgAFAAYAAAAOAAIAAgAFAAcAAAAOAAMAAgAFAAgAAAAOAAQAAgAFAAkAAAAPAPv/AgAGAAAAAAAPAPz/AgAGAAEAAAAPAP3/AgAGAAIAAAAPAP7/AgAGAAMAAAAPAP//AgAGAAQAAAAPAAAAAgAGAAUAAAAPAAEAAgAGAAYAAAAPAAIAAgAGAAcAAAAPAAMAAgAGAAgAAAAPAAQAAgAGAAkAAAAQAPz/AgAHAAEAAAAQAP3/AgAHAAIAAAAQAP7/AgAHAAMAAAAQAP//AgAHAAQAAAAQAAAAAgAHAAUAAAAQAAEAAgAHAAYAAAAQAAIAAgAHAAcAAAAQAAMAAgAHAAgAAAAQAAQAAgAHAAkAAAA=")
 tile_set = SubResource("TileSet_hhk1v")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=1463540911]
+position = Vector2(626, 361)
+texture = ExtResource("4_udtex")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_3vhby")]
 position = Vector2(131, 591)
 
@@ -4141,9 +4152,11 @@ shape = SubResource("SegmentShape2D_r56om")
 position = Vector2(-72, 8)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_0nsx5")]
-position = Vector2(559, 350)
-dialogues = Array[String](["Oh, Hi! Um, are you lost? Only people with magic can come here.", "No no no, I'm not lost, I’m… Uh… here for my… uh… first day actually.", "Wait, you can use magic?", "Yeah.. I’m pretty decent..", "You can! Oooo, show me something.", "Uh.. yeah, I’ll uh… I’ll see what I can do…", "How did you learn those spells and how are you able to use magic? ", "I.. taught myself I’ve been.. alone for most of my childhood.", "Oh, I'm sorry, do you know what happened to your parents?", "No, I was a.. Kid when my parents disappeared, all I remember is…"])
+position = Vector2(461, 333)
 speakerNames = Array[String](["Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki"])
+dialogues = Array[String](["Oh, Hi! Um, are you lost? Only people with magic can come here.", "No no no, I'm not lost, I’m… Uh… here for my… uh… first day actually.", "Wait, you can use magic?", "Yeah.. I’m pretty decent..", "You can! Oooo, show me something.", "Uh.. yeah, I’ll uh… I’ll see what I can do…", "How did you learn those spells and how are you able to use magic? ", "I.. taught myself I’ve been.. alone for most of my childhood.", "Oh, I'm sorry, do you know what happened to your parents?", "No, I was a.. Kid when my parents disappeared, all I remember is…"])
+leftPortraits = Array[Texture2D]([ExtResource("8_hhk1v"), ExtResource("9_w44bk"), ExtResource("9_w44bk"), ExtResource("10_t8cxr"), ExtResource("10_t8cxr"), ExtResource("8_hhk1v"), ExtResource("8_hhk1v"), ExtResource("8_hhk1v"), ExtResource("8_hhk1v"), ExtResource("8_hhk1v")])
+rightPortraits = Array[Texture2D]([ExtResource("9_hhk1v"), ExtResource("9_hhk1v"), ExtResource("12_lx185"), ExtResource("9_hhk1v"), ExtResource("12_lx185"), ExtResource("9_hhk1v"), ExtResource("9_hhk1v"), ExtResource("9_hhk1v"), ExtResource("13_lx185"), ExtResource("13_lx185")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_goq1x")]
 

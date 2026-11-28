@@ -9,10 +9,19 @@
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="7_2egsw"]
 [ext_resource type="Script" uid="uid://c6kok3tiajiek" path="res://Doors/L10ToL9.gd" id="7_30lki"]
 [ext_resource type="Script" uid="uid://bwtoto2bt2ve2" path="res://Doors/L10ToL11.gd" id="8_2egsw"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="8_mqqy6"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="10_1w3ds"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="11_f10lu"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="11_g5sx7"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="12_lea41"]
+[ext_resource type="Texture2D" uid="uid://k4b5uw0c60ey" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaimeCharacterBase_1.png" id="12_mqqy6"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="13_0nw5d"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="13_amgqv"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="14_al5kf"]
+[ext_resource type="Texture2D" uid="uid://upy6bi1p0v64" path="res://Assets/Created Assets/Characters/Pixel Sprites/NPC_1.png" id="15_e7x8k"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="15_ecx3g"]
+[ext_resource type="Texture2D" uid="uid://b4l3jy83jedl" path="res://Assets/Created Assets/Characters/Pixel Sprites/NPC_2.png" id="16_al5kf"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="19_wru0n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1w3ds"]
 texture = ExtResource("1_nmhl8")
@@ -6547,8 +6556,16 @@ scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAACAAEAAQAQABMAAAACAAIAAQAQABQAAAACAAMAAQAQABUAAAADAAEAAQARABMAAAADAAIAAQARABQAAAADAAMAAQARABUAAAARAAEAAQAQABMAABAQAAEAAQARABMAABARAAIAAQAQABQAABAQAAIAAQARABQAABARAAMAAQAQABUAABAQAAMAAQARABUAABANAAEAAQASABMAAAANAAIAAQASABQAAAANAAMAAQASABUAAAAOAAEAAQATABMAAAAOAAIAAQATABQAAAAOAAMAAQATABUAAAAGAAEAAQASABMAABAFAAEAAQATABMAABAGAAIAAQASABQAABAFAAIAAQATABQAABAGAAMAAQASABUAABAFAAMAAQATABUAABA=")
 tile_set = SubResource("TileSet_u5aer")
 
+[node name="JaimeCharacterBase1" type="Sprite2D" parent="." unique_id=1497257342]
+position = Vector2(398, 128)
+texture = ExtResource("12_mqqy6")
+
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=940786116]
+position = Vector2(246, 181)
+texture = ExtResource("8_mqqy6")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("7_2egsw")]
-position = Vector2(321, 181)
+position = Vector2(68, 120)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=257490849]
 
@@ -6578,9 +6595,11 @@ shape = SubResource("SegmentShape2D_g5sx7")
 position = Vector2(296, 352)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("10_1w3ds")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Kiki follows Jane to the cafeteria as Kiki enters she receives even more stares especially from this group of 5 girls. Before Kiki says anything to Jane they are approached by a boy.", "Hey Jane, who's your new friend, you do remember that normal humans aren't allowed in the school right?", "Hi Jamie, yes I do remember, but she isn’t just a normal human she can conjure magic trust. Look, show him.", "Kiki demonstrates her magic once again but with a bigger audience. As Kiki shows off her mediocre spells, many students approach the three to ask questions.", "Yoo, how can a normie use magic?", "Yeah, who even let you in and how did you get in? Aye, but your magic is kinda cool though.", "Jane seeing the upcoming crowd she pulls both Kiki and Jamie with tiki flying above in a panic. They lose the crowd.", "Woah that got crazy fast ok so uhh whats your name?", "My name is Kiki.", "Kiki huh that's a cute name.   ", "Kiki begins to blush and she looks down towards the floor timidly.", "Okay, so you can conjure magic, that's actually super cool! Did your parents teach you or did you learn by yourself?", "I mostly taught myself and Tiki helped me a lot too.", "It's genuinely cool that Tiki has tricks of his own.", "Wait tiki helped you? How did he help?", "Tiki helped me by showing me how to motion my wand to use the light spell.", "Tiki flies up and mimics the motion of the light spell.", "Oh he is a clever little bird, aren't you! Here I have leftover mango if you want it.", "Jane reaches into her backpack and grabs a mango and hands it to Tiki who takes it without hesitation. Then the 1st period bell rings.", "Oh that's the first bell, we gotta get to class Kiki. Your class is actually right over here, follow me."])
+position = Vector2(244, 98)
 speakerNames = Array[String](["Narrator", "Jaime", "Jane", "Narrator", "Student 1", "Student 2", "Narrator", "Jaime", "Kiki", "Jaime", "Narrator", "Jaime", "Kiki", "Jaime", "Jane", "Kiki", "Narrator", "Jane", "Narrator", "Jane"])
+dialogues = Array[String](["Kiki follows Jane to the cafeteria as Kiki enters she receives even more stares especially from this group of 5 girls. Before Kiki says anything to Jane they are approached by a boy.", "Hey Jane, who's your new friend, you do remember that normal humans aren't allowed in the school right?", "Hi Jamie, yes I do remember, but she isn’t just a normal human she can conjure magic trust. Look, show him.", "Kiki demonstrates her magic once again but with a bigger audience. As Kiki shows off her mediocre spells, many students approach the three to ask questions.", "Yoo, how can a normie use magic?", "Yeah, who even let you in and how did you get in? Aye, but your magic is kinda cool though.", "Jane seeing the upcoming crowd she pulls both Kiki and Jamie with tiki flying above in a panic. They lose the crowd.", "Woah that got crazy fast ok so uhh whats your name?", "My name is Kiki.", "Kiki huh that's a cute name.   ", "Kiki begins to blush and she looks down towards the floor timidly.", "Okay, so you can conjure magic, that's actually super cool! Did your parents teach you or did you learn by yourself?", "I mostly taught myself and Tiki helped me a lot too.", "It's genuinely cool that Tiki has tricks of his own.", "Wait tiki helped you? How did he help?", "Tiki helped me by showing me how to motion my wand to use the light spell.", "Tiki flies up and mimics the motion of the light spell.", "Oh he is a clever little bird, aren't you! Here I have leftover mango if you want it.", "Jane reaches into her backpack and grabs a mango and hands it to Tiki who takes it without hesitation. Then the 1st period bell rings.", "Oh that's the first bell, we gotta get to class Kiki. Your class is actually right over here, follow me."])
+leftPortraits = Array[Texture2D]([null, ExtResource("11_f10lu"), ExtResource("11_f10lu"), null, ExtResource("14_al5kf"), ExtResource("14_al5kf"), null, ExtResource("11_f10lu"), ExtResource("11_f10lu"), ExtResource("11_f10lu"), null, ExtResource("15_ecx3g"), ExtResource("15_ecx3g"), ExtResource("11_f10lu"), ExtResource("11_f10lu"), ExtResource("15_ecx3g"), null, ExtResource("15_ecx3g"), null, ExtResource("15_ecx3g")])
+rightPortraits = Array[Texture2D]([null, ExtResource("12_mqqy6"), ExtResource("13_amgqv"), null, ExtResource("15_e7x8k"), ExtResource("16_al5kf"), null, ExtResource("12_mqqy6"), ExtResource("12_mqqy6"), ExtResource("12_mqqy6"), null, ExtResource("12_mqqy6"), ExtResource("12_mqqy6"), ExtResource("12_mqqy6"), ExtResource("19_wru0n"), ExtResource("19_wru0n"), null, ExtResource("13_amgqv"), null, ExtResource("13_amgqv")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("11_g5sx7")]
 

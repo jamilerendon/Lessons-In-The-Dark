@@ -5,13 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="2_gkcwf"]
 [ext_resource type="Texture2D" uid="uid://yqc7ttwg2x4e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png" id="3_e1b7o"]
 [ext_resource type="Texture2D" uid="uid://0vvcdrrnem62" path="res://Assets/Outsource Assets/Chapel/PNG/Exterior.png" id="4_gkcwf"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="6_6isrd"]
 [ext_resource type="Script" uid="uid://v2lyjuu0kenq" path="res://Doors/L8ToL7.gd" id="6_h6bby"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="6_naabe"]
 [ext_resource type="Script" uid="uid://yr667n8j41ca" path="res://Doors/L8ToL9.gd" id="7_naabe"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="9_6fmya"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="10_2nkcy"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="11_c04pa"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="11_tb71d"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="12_bngpw"]
 [ext_resource type="AudioStream" uid="uid://bi3tmtqdwg1em" path="res://Assets/Music/LITD Forest.mp3" id="12_tb71d"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="13_3amfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6bby"]
 texture = ExtResource("1_0uy8h")
@@ -4302,8 +4306,12 @@ tile_set = SubResource("TileSet_ptrmd")
 tile_map_data = PackedByteArray("AAAHAP//AAAKAAAAAAAHAAAAAAAKAAEAAAAHAAEAAAAKAAIAAAAIAP//AAALAAAAAAAIAAAAAAALAAEAAAAIAAEAAAALAAIAAAAJAP//AAAMAAAAAAAJAAAAAAAMAAEAAAAJAAEAAAAMAAIAAAAKAP//AAANAAAAAAAKAAAAAAANAAEAAAAKAAEAAAANAAIAAAALAP//AAAOAAAAAAALAAAAAAAOAAEAAAALAAEAAAAOAAIAAAAMAP//AAAPAAAAAAAMAAAAAAAPAAEAAAAMAAEAAAAPAAIAAAAHAAIAAAAKAAMAAAAIAAIAAAALAAMAAAAJAAIAAAAMAAMAAAAKAAIAAAANAAMAAAALAAIAAAAOAAMAAAAMAAIAAAAPAAMAAAA=")
 tile_set = SubResource("TileSet_m0my3")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=802172101]
+position = Vector2(98, 198)
+texture = ExtResource("6_6isrd")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("6_naabe")]
-position = Vector2(321, 180)
+position = Vector2(117, 91)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1244499104]
 
@@ -4332,9 +4340,11 @@ shape = SubResource("SegmentShape2D_2nkcy")
 position = Vector2(-35, 2)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("9_6fmya")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Jane takes Kiki to the dorm building.", "Here's your dorm, but you won't have time to go in. I'll help you settle in after class okay?", "Okay, wait, do you have a roommate Jane?", "I haven't met them yet. Every year your roommates change so I have a new roommate that I’ll meet afterwards. Now come on, let me show you where the library is."])
+position = Vector2(96, 152)
 speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jane"])
+dialogues = Array[String](["Jane takes Kiki to the dorm building.", "Here's your dorm, but you won't have time to go in. I'll help you settle in after class okay?", "Okay, wait, do you have a roommate Jane?", "I haven't met them yet. Every year your roommates change so I have a new roommate that I’ll meet afterwards. Now come on, let me show you where the library is."])
+leftPortraits = Array[Texture2D]([null, ExtResource("11_c04pa"), ExtResource("11_c04pa"), ExtResource("11_c04pa")])
+rightPortraits = Array[Texture2D]([null, ExtResource("12_bngpw"), ExtResource("12_bngpw"), ExtResource("13_3amfs")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("10_2nkcy")]
 

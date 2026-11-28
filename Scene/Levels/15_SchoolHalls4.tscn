@@ -8,9 +8,15 @@
 [ext_resource type="Script" uid="uid://k168v78l8aio" path="res://Doors/L15ToL14.gd" id="6_e3gu4"]
 [ext_resource type="Script" uid="uid://w3lkg7xggty1" path="res://Doors/L15ToL16.gd" id="7_gu1rs"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_gu1rs"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="9_2rt7q"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_lqqwq"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_hxqbp"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="10_oce2i"]
+[ext_resource type="Texture2D" uid="uid://k4b5uw0c60ey" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaimeCharacterBase_1.png" id="11_4ukmk"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_bfd4d"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="12_14a6k"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="13_oxcyt"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="17_oce2i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkjea"]
 texture = ExtResource("1_0eemd")
@@ -2376,6 +2382,14 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_s7xo5")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=219638805]
+position = Vector2(434, 151)
+texture = ExtResource("17_oce2i")
+
+[node name="JaimeCharacterBase1" type="Sprite2D" parent="." unique_id=1525700750]
+position = Vector2(435, 249)
+texture = ExtResource("11_4ukmk")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_e3gu4")]
 position = Vector2(313, 184)
 
@@ -2407,9 +2421,11 @@ shape = SubResource("SegmentShape2D_gu1rs")
 position = Vector2(31, -4)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_gu1rs")]
-position = Vector2(427, 393)
-dialogues = Array[String](["The four of them hug and start to head to their dorms.", "What dorm building are you guys at?", "Dorm building 4.", "Yo, you guys for real? I'm also at dorm building 4. What rooms are you in? I'm in room 13.", "Oh, you're Jane's roommate, that's cool, we're all together.", "Oh! That's so awesome! Wow, having a chud as a roommate.", "CHUD? What do you mean CHUD I'm not a chud.", "Oh, you are a chud, the chudiest of them all.", "Okay, you're just dragging it bro.", "What's a chud?", "Don't worry about it.", "Basically Jamie.", "Okay bro, still dragging it.", "The four arrive at the dorm rooms.", "Alright Kiki! This is your dorm. You don't have a roommate so your room is gonna be empty. Open it using the magic guide on your dorm handbook.", "Kiki uses the guide to open the door.", "Oh, using magic for the door is cool.", "I know right! Jamie, you go settle in our dorm, I’ll help Kiki.", "Alright, let me know if you need anything. It was nice meeting you Kiki. I look forward to getting to know you better.", "Same, I… look forward to it."])
+position = Vector2(460, 153)
 speakerNames = Array[String](["Narrator", "Jaime", "Jane and Kiki", "Jaime", "Kiki", "Jane", "Jaime", "Jane", "Jaime", "Kiki", "Jaime", "Jane", "Jaime", "Narrator", "Jane", "Narrator", "Kiki", "Jane", "Jaime", "Kiki"])
+dialogues = Array[String](["The four of them hug and start to head to their dorms.", "What dorm building are you guys at?", "Dorm building 4.", "Yo, you guys for real? I'm also at dorm building 4. What rooms are you in? I'm in room 13.", "Oh, you're Jane's roommate, that's cool, we're all together.", "Oh! That's so awesome! Wow, having a chud as a roommate.", "CHUD? What do you mean CHUD I'm not a chud.", "Oh, you are a chud, the chudiest of them all.", "Okay, you're just dragging it bro.", "What's a chud?", "Don't worry about it.", "Basically Jamie.", "Okay bro, still dragging it.", "The four arrive at the dorm rooms.", "Alright Kiki! This is your dorm. You don't have a roommate so your room is gonna be empty. Open it using the magic guide on your dorm handbook.", "Kiki uses the guide to open the door.", "Oh, using magic for the door is cool.", "I know right! Jamie, you go settle in our dorm, I’ll help Kiki.", "Alright, let me know if you need anything. It was nice meeting you Kiki. I look forward to getting to know you better.", "Same, I… look forward to it."])
+leftPortraits = Array[Texture2D]([null, null, ExtResource("9_2rt7q"), null, ExtResource("10_oce2i"), null, null, null, null, ExtResource("9_2rt7q"), null, null, null, null, null, null, ExtResource("9_2rt7q"), null, null, ExtResource("10_oce2i")])
+rightPortraits = Array[Texture2D]([null, ExtResource("11_4ukmk"), ExtResource("12_14a6k"), ExtResource("11_4ukmk"), null, ExtResource("13_oxcyt"), ExtResource("11_4ukmk"), ExtResource("13_oxcyt"), ExtResource("11_4ukmk"), null, ExtResource("11_4ukmk"), ExtResource("12_14a6k"), ExtResource("11_4ukmk"), null, ExtResource("12_14a6k"), null, null, ExtResource("13_oxcyt"), ExtResource("11_4ukmk"), null])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_lqqwq")]
 

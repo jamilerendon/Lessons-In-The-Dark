@@ -8,8 +8,14 @@
 [ext_resource type="Script" uid="uid://bcusaxm52oe73" path="res://Doors/L6ToL7.gd" id="6_q6rsr"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_q6rsr"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="8_lmfi3"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="9_43kob"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_a2t7c"]
 [ext_resource type="AudioStream" uid="uid://bi3tmtqdwg1em" path="res://Assets/Music/LITD Forest.mp3" id="10_a2t7c"]
+[ext_resource type="Texture2D" uid="uid://dxhjemi3fjrrj" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikihappy.png" id="10_xppx4"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="11_h6ikq"]
+[ext_resource type="Texture2D" uid="uid://cdky3yg7i5cg3" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Sad_1.png" id="11_himsi"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="12_es6yc"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="13_xppx4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmfi3"]
 texture = ExtResource("1_nxrb7")
@@ -8958,6 +8964,10 @@ scale = Vector2(2.5, 2.5)
 tile_map_data = PackedByteArray("AAAJAPz/AgAAAAEAAAAJAP3/AgAAAAIAAAAJAP7/AgAAAAMAAAAJAP//AgAAAAQAAAAJAAAAAgAAAAUAAAAJAAEAAgAAAAYAAAAJAAIAAgAAAAcAAAAJAAMAAgAAAAgAAAAJAAQAAgAAAAkAAAAKAPv/AgABAAAAAAAKAPz/AgABAAEAAAAKAP3/AgABAAIAAAAKAP7/AgABAAMAAAAKAP//AgABAAQAAAAKAAAAAgABAAUAAAAKAAEAAgABAAYAAAAKAAIAAgABAAcAAAAKAAMAAgABAAgAAAAKAAQAAgABAAkAAAALAPz/AgACAAEAAAALAP3/AgACAAIAAAALAP7/AgACAAMAAAALAP//AgACAAQAAAALAAAAAgACAAUAAAALAAEAAgACAAYAAAALAAIAAgACAAcAAAALAAMAAgACAAgAAAALAAQAAgACAAkAAAAMAPv/AgADAAAAAAAMAPz/AgADAAEAAAAMAP3/AgADAAIAAAAMAP7/AgADAAMAAAAMAP//AgADAAQAAAAMAAAAAgADAAUAAAAMAAEAAgADAAYAAAAMAAIAAgADAAcAAAAMAAMAAgADAAgAAAAMAAQAAgADAAkAAAANAPv/AgAEAAAAAAANAPz/AgAEAAEAAAANAP3/AgAEAAIAAAANAP7/AgAEAAMAAAANAP//AgAEAAQAAAANAAAAAgAEAAUAAAANAAEAAgAEAAYAAAANAAIAAgAEAAcAAAANAAMAAgAEAAgAAAANAAQAAgAEAAkAAAAOAPz/AgAFAAEAAAAOAP3/AgAFAAIAAAAOAP7/AgAFAAMAAAAOAP//AgAFAAQAAAAOAAAAAgAFAAUAAAAOAAEAAgAFAAYAAAAOAAIAAgAFAAcAAAAOAAMAAgAFAAgAAAAOAAQAAgAFAAkAAAAPAPv/AgAGAAAAAAAPAPz/AgAGAAEAAAAPAP3/AgAGAAIAAAAPAP7/AgAGAAMAAAAPAP//AgAGAAQAAAAPAAAAAgAGAAUAAAAPAAEAAgAGAAYAAAAPAAIAAgAGAAcAAAAPAAMAAgAGAAgAAAAPAAQAAgAGAAkAAAAQAPz/AgAHAAEAAAAQAP3/AgAHAAIAAAAQAP7/AgAHAAMAAAAQAP//AgAHAAQAAAAQAAAAAgAHAAUAAAAQAAEAAgAHAAYAAAAQAAIAAgAHAAcAAAAQAAMAAgAHAAgAAAAQAAQAAgAHAAkAAAA=")
 tile_set = SubResource("TileSet_5qhnh")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=226869901]
+position = Vector2(631, 358)
+texture = ExtResource("11_h6ikq")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_q6rsr")]
 position = Vector2(518, 422)
 
@@ -8987,9 +8997,11 @@ shape = SubResource("SegmentShape2D_m0my3")
 position = Vector2(-2, -42)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_q6rsr")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Wait, did you not look for them? What do you mean the footsteps ended and they weren't anywhere to be found?", "I looked everywhere and I never found them. I was… abandoned.", "Omg, I'm so sorry. How long have you been by yourself?", "Half my… life, but I.. I made my peace with it though….. They just didn't want a kid who couldn’t conjure magic, but hey jokes on them…. Right?", "Oh yeah, absolutely you are very unique, a human born without being able to use magic and learned how, you are going to impress so many people. I know it! Not only that, you have a cute bird with you! Could I hold him?", "You can, I don't know if he will let you, he's only been around me. Tiki is my best friend. He's been by my side since my parents disappeared. Here, put your arm like this.", "Jane extends her right arm and waits for Tiki to fly to her. Tiki hesitates as he leans to her, does a small little bite then climbs to her arm Jane has made a new little friend.", "Oh my god, he loves me! This is so cool. He is a very beautiful bird. Do you know what kind of bird he is?", "I actually never did my research on him. All I know is that he's a parrot, but I don't know what kind of parrot.", "Maybe one of the professors knows, come, follow me and I'll show you around.", "Jane grabs Kiki's arm and pulls her to the school entrance. ", "Wait, What's your name actually?", "My name is Kiki. What's yours?", "My name is Jane. Nice to meet you Kiki. I know for a fact we are gonna be best friends for life. You, me, and the handsome Tiki, best friends forever!", "KIKII look forward to it and so does Tiki."])
+position = Vector2(459, 197)
 speakerNames = Array[String](["Jane", "Kiki", "Jane", "Kiki", "Jane", "Kiki", "Narrator", "Jane", "Kiki", "Jane", "Narrator", "Jane", "Kiki", "Jane", "Kiki"])
+dialogues = Array[String](["Wait, did you not look for them? What do you mean the footsteps ended and they weren't anywhere to be found?", "I looked everywhere and I never found them. I was… abandoned.", "Omg, I'm so sorry. How long have you been by yourself?", "Half my… life, but I.. I made my peace with it though….. They just didn't want a kid who couldn’t conjure magic, but hey jokes on them…. Right?", "Oh yeah, absolutely you are very unique, a human born without being able to use magic and learned how, you are going to impress so many people. I know it! Not only that, you have a cute bird with you! Could I hold him?", "You can, I don't know if he will let you, he's only been around me. Tiki is my best friend. He's been by my side since my parents disappeared. Here, put your arm like this.", "Jane extends her right arm and waits for Tiki to fly to her. Tiki hesitates as he leans to her, does a small little bite then climbs to her arm Jane has made a new little friend.", "Oh my god, he loves me! This is so cool. He is a very beautiful bird. Do you know what kind of bird he is?", "I actually never did my research on him. All I know is that he's a parrot, but I don't know what kind of parrot.", "Maybe one of the professors knows, come, follow me and I'll show you around.", "Jane grabs Kiki's arm and pulls her to the school entrance. ", "Wait, What's your name actually?", "My name is Kiki. What's yours?", "My name is Jane. Nice to meet you Kiki. I know for a fact we are gonna be best friends for life. You, me, and the handsome Tiki, best friends forever!", "I look forward to it and so does Tiki."])
+leftPortraits = Array[Texture2D]([ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("10_xppx4"), ExtResource("10_xppx4"), ExtResource("10_xppx4"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("9_43kob"), ExtResource("10_xppx4")])
+rightPortraits = Array[Texture2D]([ExtResource("11_himsi"), ExtResource("11_himsi"), ExtResource("11_himsi"), ExtResource("11_himsi"), ExtResource("12_es6yc"), ExtResource("12_es6yc"), ExtResource("12_es6yc"), ExtResource("12_es6yc"), ExtResource("12_es6yc"), ExtResource("13_xppx4"), ExtResource("13_xppx4"), ExtResource("13_xppx4"), ExtResource("13_xppx4"), ExtResource("12_es6yc"), ExtResource("12_es6yc")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_lmfi3")]
 

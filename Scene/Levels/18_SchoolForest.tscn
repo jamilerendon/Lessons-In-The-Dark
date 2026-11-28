@@ -3,13 +3,23 @@
 [ext_resource type="Texture2D" uid="uid://5o0kd0wfswv8" path="res://Assets/Outsource Assets/Pixel Art Top Down by Cainos/TX Tileset Grass.png" id="1_4657n"]
 [ext_resource type="Texture2D" uid="uid://0b17i2orjqhh" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/exterior.png" id="2_c2rjd"]
 [ext_resource type="Texture2D" uid="uid://yqc7ttwg2x4e" path="res://Assets/Outsource Assets/Main Character House/Tiled_files/ground_grass_details.png" id="3_vwffl"]
+[ext_resource type="Texture2D" uid="uid://cof5fkk5olwn4" path="res://Assets/Created Assets/Characters/Pixel Sprites/LexiCharacterBase_1.png" id="4_3ub22"]
 [ext_resource type="PackedScene" uid="uid://cxxwgiy6njsrw" path="res://Scene/Other/Player.tscn" id="4_627ol"]
+[ext_resource type="Texture2D" uid="uid://d2xn6bnd246jp" path="res://Assets/Created Assets/Characters/Pixel Sprites/ValeriaCharacterBase_1.png" id="5_r0wyc"]
 [ext_resource type="Script" uid="uid://c7auv8xtl1ou2" path="res://Doors/L18ToL17.gd" id="5_vwffl"]
 [ext_resource type="Script" uid="uid://df6edavh6gpil" path="res://Doors/L18ToL19.gd" id="6_627ol"]
+[ext_resource type="Texture2D" uid="uid://co54nttwlhuqp" path="res://Assets/Created Assets/Characters/Pixel Sprites/LeonaCharacterBase_1.png" id="6_jnv65"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="7_627ol"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="8_ebal7"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="9_uyl3i"]
 [ext_resource type="AudioStream" uid="uid://bi3tmtqdwg1em" path="res://Assets/Music/LITD Forest.mp3" id="10_uyl3i"]
+[ext_resource type="Texture2D" uid="uid://d1x6f8ng0m6h5" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikifear.png" id="11_gwa4a"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="12_0gd7b"]
+[ext_resource type="Texture2D" uid="uid://1qkieoisw1dv" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_valeria_serious_1.png" id="12_xh2pw"]
+[ext_resource type="Texture2D" uid="uid://bcx5m54gpjelt" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_lexi__happy_bust_1.png" id="13_0gd7b"]
+[ext_resource type="Texture2D" uid="uid://c5b2hhw1ri1ui" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_valeria_happy_1.png" id="14_svm7n"]
+[ext_resource type="Texture2D" uid="uid://df6whvyuglraf" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_lexi__angry_bust_1.png" id="15_qqj54"]
+[ext_resource type="Texture2D" uid="uid://ivo5r1knc4lc" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_leona_angry_bust_1.png" id="16_xh2pw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebal7"]
 texture = ExtResource("1_4657n")
@@ -3353,6 +3363,18 @@ tile_set = SubResource("TileSet_3ub22")
 tile_map_data = PackedByteArray("AAAhAAIAAAANABsAAAAhAAMAAAANABwAAAAhAAQAAAANAB0AAAAiAAIAAAAOABsAAAAiAAMAAAAOABwAAAAiAAQAAAAOAB0AAAAjAAIAAAAPABsAAAAjAAMAAAAPABwAAAAjAAQAAAAPAB0AAAAFAAIAAAANABsAAAAFAAMAAAANABwAAAAFAAQAAAANAB0AAAAGAAIAAAAOABsAAAAGAAMAAAAOABwAAAAGAAQAAAAOAB0AAAAHAAIAAAAPABsAAAAHAAMAAAAPABwAAAAHAAQAAAAPAB0AAAAlAAMAAAAFACUAAAAlAAQAAAAFACYAAAAlAAUAAAAFACcAAAAmAAMAAAAGACUAAAAmAAQAAAAGACYAAAAmAAUAAAAGACcAAAAeAAEAAAAKABwAAAAeAAIAAAAKAB0AAAAeAAMAAAAKAB4AAAAfAAEAAAALABwAAAAfAAIAAAALAB0AAAAfAAMAAAALAB4AAAAgAAEAAAAMABwAAAAgAAIAAAAMAB0AAAAgAAMAAAAMAB4AAAAEABUAAAAKAB0AAAAEABYAAAAKAB4AAAAFABUAAAALAB0AAAAFABYAAAALAB4AAAAGABUAAAAMAB0AAAAGABYAAAAMAB4AAAAEABQAAAAKABwAAAAFABQAAAALABwAAAAGABQAAAAMABwAAAA=")
 tile_set = SubResource("TileSet_jnv65")
 
+[node name="LexiCharacterBase1" type="Sprite2D" parent="." unique_id=1717833317]
+position = Vector2(318, 74)
+texture = ExtResource("4_3ub22")
+
+[node name="ValeriaCharacterBase1" type="Sprite2D" parent="." unique_id=918385420]
+position = Vector2(264, 106)
+texture = ExtResource("5_r0wyc")
+
+[node name="LeonaCharacterBase1" type="Sprite2D" parent="." unique_id=1409501800]
+position = Vector2(383, 104)
+texture = ExtResource("6_jnv65")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("4_627ol")]
 position = Vector2(321, 181)
 
@@ -3384,9 +3406,11 @@ shape = SubResource("SegmentShape2D_n0f72")
 position = Vector2(-6, 1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("7_627ol")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Text 1Drop her here. Listen, you useless normie. I don't know how you are able to use advanced magic, but I'm not gonna sit and wait to find out. Get up, I’ll make it fair for you, we'll let you fight back.", "Lets see what you got coco, this is oddly exciting.", "Gosh, what is this feeling? Do I feel bad? Nah, I hope you can at least last. I get bored easily.", "Kiki gets up and prepares to fight the three. As the fight goes on the school sets out a danger alarm stopping the fight instantly.", "Why is the alarm going on?", "It's the intruder alarm, something got into the school.", "How did an intruder even get into the school? The school has the most prestige defenses. Let's go check it out.", "The four of them start to run to the school, but stop midway and push Kiki back.", "Not you normie! We'll come back for you. This is a job for the gifted.", "Leona casts wing bind on Kiki restraining her while the 3 run back to the school.", "Argh.. those …. whats the word… ah whatever. ", "Kiki casts a release spell freeing herself. ", "Tiki.. I'm coming back for you."])
+position = Vector2(257, 88)
 speakerNames = Array[String](["Leona", "Lexi", "Valeria", "Narrator", "Lexi", "Kiki", "Leona", "Narrator", "Valeria", "Narrator", "Kiki", "Narrator", "Kiki"])
+dialogues = Array[String](["Drop her here. Listen, you useless normie. I don't know how you are able to use advanced magic, but I'm not gonna sit and wait to find out. Get up, I’ll make it fair for you, we'll let you fight back.", "Lets see what you got coco, this is oddly exciting.", "Gosh, what is this feeling? Do I feel bad? Nah, I hope you can at least last. I get bored easily.", "Kiki gets up and prepares to fight the three. As the fight goes on the school sets out a danger alarm stopping the fight instantly.", "Why is the alarm going on?", "It's the intruder alarm, something got into the school.", "How did an intruder even get into the school? The school has the most prestige defenses. Let's go check it out.", "The four of them start to run to the school, but stop midway and push Kiki back.", "Not you normie! We'll come back for you. This is a job for the gifted.", "Leona casts wing bind on Kiki restraining her while the 3 run back to the school.", "Argh.. those …. whats the word… ah whatever. ", "Kiki casts a release spell freeing herself. ", "Tiki.. I'm coming back for you."])
+leftPortraits = Array[Texture2D]([null, null, null, null, null, ExtResource("11_gwa4a"), null, null, null, null, ExtResource("12_0gd7b"), null, ExtResource("12_0gd7b")])
+rightPortraits = Array[Texture2D]([ExtResource("12_xh2pw"), ExtResource("13_0gd7b"), ExtResource("14_svm7n"), null, ExtResource("15_qqj54"), null, ExtResource("16_xh2pw"), null, ExtResource("12_xh2pw"), null, null, null, null])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("8_ebal7")]
 

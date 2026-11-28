@@ -9,8 +9,12 @@
 [ext_resource type="Script" uid="uid://hhxe11tsfirs" path="res://Doors/L7ToL8.gd" id="7_aujjt"]
 [ext_resource type="PackedScene" uid="uid://dsru0pb0ktb4f" path="res://Scene/Dialogue/dialogue_trigger.tscn" id="8_aujjt"]
 [ext_resource type="PackedScene" uid="uid://doxg5ai681w1t" path="res://Scene/dialogue_ui.tscn" id="9_hh8qp"]
+[ext_resource type="Texture2D" uid="uid://c8qt2yaac5bns" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_kikineutral.png" id="9_rg1ul"]
+[ext_resource type="Texture2D" uid="uid://iigjcedxtflg" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Neutral_1.png" id="10_o00a8"]
 [ext_resource type="Script" uid="uid://c4r0jkkjf8li7" path="res://Scripts/Level_Music.gd" id="10_o7j81"]
 [ext_resource type="AudioStream" uid="uid://2srn2ya7eveq" path="res://Assets/Music/LITD Home.mp3" id="11_6rs7r"]
+[ext_resource type="Texture2D" uid="uid://dipxnock3ngfl" path="res://Assets/Created Assets/Characters/Character PNGs/LITD_Jane_Happy_1.png" id="11_o00a8"]
+[ext_resource type="Texture2D" uid="uid://dysn0gh6aqoaw" path="res://Assets/Created Assets/Characters/Pixel Sprites/JaneCharacterBase_1.png" id="15_v8qf1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x3dwl"]
 texture = ExtResource("1_1ecrw")
@@ -2376,8 +2380,12 @@ scale = Vector2(1.5, 1.5)
 tile_map_data = PackedByteArray("AAABAAIAAQAMABQAAAABAAMAAQAMABUAAAACAAIAAQANABQAAAACAAMAAQANABUAAAAAAAEAAQALABMAAAAAAAIAAQALABQAAAAAAAMAAQALABUAAAABAAEAAQAMABMAAAACAAEAAQANABMAAAAGAAEAAQALABMAAAAGAAIAAQALABQAAAAGAAMAAQALABUAAAAHAAEAAQAMABMAAAAHAAIAAQAMABQAAAAHAAMAAQAMABUAAAAIAAEAAQANABMAAAAIAAIAAQANABQAAAAIAAMAAQANABUAAAAYAAEAAQALABMAAAAYAAIAAQALABQAAAAYAAMAAQALABUAAAAZAAEAAQAMABMAAAAZAAIAAQAMABQAAAAZAAMAAQAMABUAAAAaAAEAAQANABMAAAAaAAIAAQANABQAAAAaAAMAAQANABUAAAASAAEAAQALABMAAAASAAIAAQALABQAAAASAAMAAQALABUAAAATAAEAAQAMABMAAAATAAIAAQAMABQAAAATAAMAAQAMABUAAAAUAAEAAQANABMAAAAUAAIAAQANABQAAAAUAAMAAQANABUAAAAMAAEAAQALABMAAAAMAAIAAQALABQAAAAMAAMAAQALABUAAAANAAEAAQAMABMAAAANAAIAAQAMABQAAAANAAMAAQAMABUAAAAOAAEAAQANABMAAAAOAAIAAQANABQAAAAOAAMAAQANABUAAAA=")
 tile_set = SubResource("TileSet_ptrmd")
 
+[node name="JaneCharacterBase1" type="Sprite2D" parent="." unique_id=1928250925]
+position = Vector2(160, 158)
+texture = ExtResource("15_v8qf1")
+
 [node name="Player" parent="." unique_id=981118384 instance=ExtResource("2_uf5v1")]
-position = Vector2(321, 182)
+position = Vector2(76, 198)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=176311892]
 
@@ -2405,9 +2413,11 @@ shape = SubResource("SegmentShape2D_k58hk")
 position = Vector2(-54, 1)
 
 [node name="DialogueTrigger" parent="." unique_id=1395628217 instance=ExtResource("8_aujjt")]
-position = Vector2(427, 393)
-dialogues = Array[String](["Jane takes Kiki around the school first to get her schedule at the admissions room, while in the admissions room Jane asks Kiki about the dorm she is staying at.", "What dorm building are you on?", "Uh let me see. Where does it say? Oh wait, I found it, in dorm building 4 in room number 12 it says no occupancy.", "Oh you got a solo dorm you don’t have a roommate, but you're legit right next to my dorm. I'm in dorm number 13 so we are basically roommates. Come, let me show you where the building is."])
+position = Vector2(134, 147)
 speakerNames = Array[String](["Narrator", "Jane", "Kiki", "Jane"])
+dialogues = Array[String](["Jane takes Kiki around the school first to get her schedule at the admissions room, while in the admissions room Jane asks Kiki about the dorm she is staying at.", "What dorm building are you on?", "Uh let me see. Where does it say? Oh wait, I found it, in dorm building 4 in room number 12 it says no occupancy.", "Oh you got a solo dorm you don’t have a roommate, but you're legit right next to my dorm. I'm in dorm number 13 so we are basically roommates. Come, let me show you where the building is."])
+leftPortraits = Array[Texture2D]([null, ExtResource("9_rg1ul"), ExtResource("9_rg1ul"), ExtResource("9_rg1ul")])
+rightPortraits = Array[Texture2D]([null, ExtResource("10_o00a8"), ExtResource("10_o00a8"), ExtResource("11_o00a8")])
 
 [node name="dialogue_ui" parent="." unique_id=1023885564 instance=ExtResource("9_hh8qp")]
 
